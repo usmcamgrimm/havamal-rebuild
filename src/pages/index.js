@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import '../styles/style.less'
 
 import Logo from "../components/logo/logo"
