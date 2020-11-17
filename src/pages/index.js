@@ -1,14 +1,12 @@
 import React from "react"
 
-import Image from "../components/image"
+import Logo from "../components/Logo"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
+    <Logo />
     <h1>Hail, Hordes of Havamal!</h1>
   </>
 )
