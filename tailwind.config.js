@@ -5,9 +5,9 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    container: (theme) => ({
+    container: {
       center: true,
-    }),
+    },
     extend: {
       colors: {
       yellow: `#ffcd00`,

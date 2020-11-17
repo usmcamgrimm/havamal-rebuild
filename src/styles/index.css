@@ -5,3 +5,6 @@
 html {
     background-color: #0e181f;
 }
+.gatsby-image-wrapper {
+    width: 800px;
+}
