@@ -7,7 +7,7 @@ const IndexPage = () => (
   <>
     <SEO title="Home" />
     <Logo />
-    <h1>Hail, Hordes of Havamal!</h1>
+    <h1 class="text-4xl font-bold">Hail, Hordes of Havamal!</h1>
   </>
 )
 
