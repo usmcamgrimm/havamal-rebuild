@@ -6,8 +6,10 @@ import SEO from "../components/seo"
 const IndexPage = () => (
   <>
     <SEO title="Home" />
-    <Logo />
-    <h1 class="text-4xl font-bold text-blue-lighter">Hail, Hordes of Havamal!</h1>
+    <div className="container px-4 mx-auto">
+      <Logo />
+      <h1 class="text-4xl font-bold text-blue-lighter">Hail, Hordes of Havamal!</h1>
+    </div>
   </>
 )
 

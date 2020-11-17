@@ -5,7 +5,11 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
-    colors: {
+    container: (theme) => ({
+      center: true,
+    }),
+    extend: {
+      colors: {
       yellow: `#ffcd00`,
       blue: {
         lighter: `#66add9`,
@@ -16,6 +20,7 @@ module.exports = {
         darker: `#d50000`,
       }
     },
+    }
   },
   variants: {},
   plugins: [],
