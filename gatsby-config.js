@@ -5,8 +5,13 @@ module.exports = {
     author: `Adrian Grimm`,
   },
   plugins: [
-    `gatsby-plugin-postcss`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-postcss`,
+      options: {
+        postCssPlugins: [require('tailwindcss')('./tailwind.config.js')],
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
