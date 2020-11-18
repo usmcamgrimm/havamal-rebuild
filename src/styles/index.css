@@ -5,6 +5,9 @@
 html {
     background-color: #0e181f;
 }
+
+/* purgecss start ignore */
 .gatsby-image-wrapper {
     width: 800px;
 }
+/* purgecss end ignore */
