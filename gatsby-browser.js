@@ -6,4 +6,3 @@
 
 // You can delete this file if you're not using it
 import './src/styles/index.css'
-import './src/components/tailwind.css'
