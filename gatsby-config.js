@@ -41,6 +41,25 @@ module.exports = {
         tailwind: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options:{
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`300`, `500`],
+          },
+          {
+            family: `Grenze`,
+            variants: [`400`, `600`, `700`],
+          },
+          {
+            family: `Pirata One`,
+          }
+        ],
+        display: 'swap'
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
