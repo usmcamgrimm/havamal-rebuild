@@ -20,12 +20,7 @@ module.exports = {
         darker: `#d50000`,
       }
     },
-    },
-    fontFamily: {
-      'Roboto': ['Roboto', 'sans-serif'],
-      'Grenze': ['Grenze', 'serif'],
-      'PirataOne': ['"Pirata One"', 'serif']
-    },
+    }
   },
   variants: {},
   plugins: [],
