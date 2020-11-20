@@ -57,7 +57,6 @@ module.exports = {
             family: `Pirata One`,
           }
         ],
-        display: 'swap'
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
