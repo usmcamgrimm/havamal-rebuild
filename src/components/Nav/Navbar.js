@@ -20,16 +20,16 @@ const Nav = () => {
             <Link to="/music" className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Music
             </Link>
-            <Link to={`/page-2`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
+            <Link to={`/media`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Media
             </Link>
-            <Link to={`/page-2`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
+            <Link to={`/saga`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Saga
             </Link>
-            <Link to={`/page-2`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
+            <Link to={`/raids`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Raids
             </Link>
-            <Link to={`/page-2`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
+            <Link to={`/resources`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Resources
             </Link>
           </div>
