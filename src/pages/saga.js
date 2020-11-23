@@ -2,11 +2,13 @@ import React from 'react'
 
 import SEO from "../components/seo"
 import Nav from '../components/Nav/Navbar'
+import BandGallery from '../components/BandGallery'
 
 const SagaPage = () => (
   <>
     <SEO title="Saga" />
     <Nav />
+    <BandGallery />
     <h1 className="text-4xl text-center my-16 font-bold text-blue-lighter">
         The Havamal Saga
     </h1>
