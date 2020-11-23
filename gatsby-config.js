@@ -50,8 +50,17 @@ module.exports = {
         apiKey: process.env.CLOUDINARY_API_KEY,
         apiSecret: process.env.CLOPUDINARY_API_SECRET,
         resourceType: `image`,
-        type: `type Value`,
         prefix: `havamal`
+      }
+    },
+    {
+      resolve: `gatsby-source-cloudinary`,
+      options: {
+        cloudName: process.env.CLOUDINARY_CLOUD_NAME,
+        apiKey: process.env.CLOUDINARY_API_KEY,
+        apiSecret: process.env.CLOPUDINARY_API_SECRET,
+        resourceType: `image`,
+        prefix: `band`
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
