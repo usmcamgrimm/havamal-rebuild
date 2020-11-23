@@ -48,7 +48,7 @@ module.exports = {
       options: {
         cloudName: process.env.CLOUDINARY_CLOUD_NAME,
         apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOPUDINARY_API_SECRET,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
         prefix: `havamal`
       }
@@ -58,7 +58,7 @@ module.exports = {
       options: {
         cloudName: process.env.CLOUDINARY_CLOUD_NAME,
         apiKey: process.env.CLOUDINARY_API_KEY,
-        apiSecret: process.env.CLOPUDINARY_API_SECRET,
+        apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
         prefix: `band`
       }
