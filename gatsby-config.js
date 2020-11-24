@@ -21,6 +21,24 @@ module.exports = {
         path: `${__dirname}/src/`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Roboto`,
+            variants: [`300`, `500`],
+          },
+          {
+            family: `Grenze`,
+            variants: [`400`, `600`, `700`],
+          },
+          {
+            family: `Pirata One`,
+          },
+        ],
+      },
+    },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
