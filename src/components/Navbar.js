@@ -15,7 +15,7 @@ const Nav = () => {
           </button>
         </div>
         <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow lg:flex lg:items-center lg:w-auto`}>
-          <div className="text-md font-sans lg:flex lg:justify-center lg:flex-grow">
+          <div className="text-lg font-grenze lg:flex lg:justify-center lg:flex-grow">
             <Link to="/" className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Home
             </Link>
