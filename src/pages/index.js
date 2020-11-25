@@ -2,7 +2,7 @@ import React from "react"
 
 import Logo from "../components/Logo"
 import SEO from "../components/seo"
-import Nav from '../components/Nav/Navbar'
+import Nav from '../components/Navbar'
 
 const IndexPage = () => (
   <>
