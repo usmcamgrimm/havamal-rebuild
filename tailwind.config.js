@@ -5,6 +5,13 @@ module.exports = {
   },
   purge: ["./src/**/*.js", "./src/**/*.jsx", "./src/**/*.ts", "./src/**/*.tsx"],
   theme: {
+    extend: {
+      fontFamily: {
+        sans: ["roboto", "sans-serif"],
+        serif: ["grenze", "serif"],
+        mono: ["pirata one", "sans-serif"],
+      },
+    },
     container: {
       center: true,
     },
