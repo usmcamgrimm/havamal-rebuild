@@ -7,7 +7,7 @@ const ResourcesPage = () => (
   <>
     <SEO title="Resources" />
     <Nav />
-    <h1 className="text-4xl text-center my-16 font-bold text-blue-lighter">
+    <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         Resources
     </h1>
   </>

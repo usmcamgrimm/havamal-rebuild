@@ -8,11 +8,11 @@ const SagaPage = () => (
   <>
     <SEO title="Saga" />
     <Nav />
-    <h1 className="text-5xl text-center my-16 font-pirata font-bold text-blue-lighter">
+    <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
       The Hymn-Weavers
     </h1>
     <BandGallery />
-    <h1 className="text-5xl text-center my-16 font-pirata font-bold text-blue-lighter">
+    <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
       The Havamal Saga
     </h1>
     <div className="lg:px-24 text-center">
