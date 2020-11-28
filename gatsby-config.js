@@ -52,15 +52,7 @@ module.exports = {
         resourceType: `image`,
         prefix: `band`
       }
-    },
-    {
-    resolve: `gatsby-source-youtube-v2`,
-    options: {
-      channelId: ['UCmGfesgQAVTgpJqGf9dt3wA'],
-      apiKey: process.env.YOUTUBE_API_KEY,
-      maxVideos: 10,
-    },
-  },
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
