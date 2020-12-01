@@ -2,7 +2,6 @@ import React from 'react'
 
 import SEO from "../components/seo"
 import Nav from '../components/Navbar'
-import JarfallaFlyer from '../components/flyers/JarfallaFlyer'
 
 const RaidsPage = () => (
   <>
@@ -14,7 +13,7 @@ const RaidsPage = () => (
     <div className="container mx-auto">
       <div className="flex justify-between items-center">
         <div>
-          <JarfallaFlyer />
+          <img src="../resources/flyers/jarfalla.jpg" alt="Järfälla Metal Fest" />
         </div>
         <div className="flex flex-col justify-center font-sans text-white">
           <p className="date">29 May 2021</p>
