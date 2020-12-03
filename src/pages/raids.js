@@ -11,12 +11,11 @@ const RaidsPage = () => (
           Raids
       </h1>
       <div className="container mx-auto flex flex-col">
-        <div className="flex flex-col justify-center items-center font-grenze text-white text-xl">
-          <p className="date">29 May 2021</p>
-          <p className="title">Järfälla Metal Fest</p>
-          <p className="location">Fredagsmangel, Järfälla, Sweden</p>
+        <div className="flex flex-col justify-center items-center font-grenze text-white text-2xl">
+          <p>Järfälla Metal Fest - 29 May 2021</p>
+          <p>Fredagsmangel, Järfälla, Sweden</p>
         </div>
-        <div className="flex flex-row place-content-center space-x-8 font-grenze text-white text-xl">
+        <div className="flex flex-row place-content-center space-x-16 font-grenze text-white text-xl">
           <a href="https://www.facebook.com/fredagsmangel/photos/a.2228077407277660/3125643040854421" target="_blank" rel="noreferrer">
             <p className="font-grenze text-white">INFO</p>
           </a>
