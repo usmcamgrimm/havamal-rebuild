@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Instagram = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "./instagram.png" }) {
+      placeholderImage: file(relativePath: { eq: "icons/instagram.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_noBase64

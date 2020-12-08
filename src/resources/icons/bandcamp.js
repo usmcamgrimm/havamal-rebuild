@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Bandcamp = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "./bandcamp.png" }) {
+      placeholderImage: file(relativePath: { eq: "icons/bandcamp.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_noBase64

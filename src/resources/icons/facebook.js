@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Facebook = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "./facebook.png" }) {
+      placeholderImage: file(relativePath: { eq: "icons/facebook.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_noBase64

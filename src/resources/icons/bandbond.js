@@ -5,7 +5,7 @@ import Img from "gatsby-image"
 const Bandbond = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "./bandbond.png" }) {
+      placeholderImage: file(relativePath: { eq: "icons/bandbond.png" }) {
         childImageSharp {
           fluid(maxWidth: 1200) {
             ...GatsbyImageSharpFluid_noBase64
