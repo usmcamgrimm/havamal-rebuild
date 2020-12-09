@@ -7,7 +7,6 @@ import Bandbond from '../resources/icons/bandbond'
 import Bandcamp from '../resources/icons/bandcamp'
 import Facebook from '../resources/icons/facebook'
 import Instagram from '../resources/icons/instagram'
-import Twitter from '../resources/icons/twitter'
 import Youtube from '../resources/icons/youtube'
 
 const ResourcesPage = () => (
@@ -18,12 +17,11 @@ const ResourcesPage = () => (
         Resources
       </h1>
       <div id="linksContainer">
-        <div className="container mx-auto">
+        <div className="flex flex-row justify-center container mx-auto">
           <Bandbond />
           <Bandcamp />
           <Facebook />
           <Instagram />
-          <Twitter />
           <Youtube />
         </div>
       </div>
