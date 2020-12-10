@@ -18,16 +18,14 @@ const ResourcesPage = () => (
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         Resources
       </h1>
-      <div id="linksContainer">
+      <div className="flex flex-col justify-between space-y-6">
         <div className="flex flex-row justify-center lg:space-x-3 md:space-x-2">
-          <Bandbond />
           <Bandcamp />
           <Facebook />
+          <Bandbond />
           <Instagram />
           <Youtube />
         </div>
-      </div>
-      <div id="bannerLinks">
         <div className="flex flex-row justify-center lg:space-x-3 md:space-x-2">
           <AGR />
           <Horde />
