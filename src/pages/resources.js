@@ -8,6 +8,8 @@ import Bandcamp from '../resources/icons/bandcamp'
 import Facebook from '../resources/icons/facebook'
 import Instagram from '../resources/icons/instagram'
 import Youtube from '../resources/icons/youtube'
+import AGR from '../resources/icons/AGR'
+import Horde from '../resources/icons/horde'
 
 const ResourcesPage = () => (
   <>
@@ -26,7 +28,10 @@ const ResourcesPage = () => (
         </div>
       </div>
       <div id="bannerLinks">
-        <div className="container mx-auto"></div>
+        <div className="flex flex-row justify-center lg:space-x-3 md:space-x-2">
+          <AGR />
+          <Horde />
+        </div>
       </div>
     </Layout>
   </>
