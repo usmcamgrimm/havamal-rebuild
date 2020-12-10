@@ -17,7 +17,7 @@ const ResourcesPage = () => (
         Resources
       </h1>
       <div id="linksContainer">
-        <div className="flex flex-row justify-center container mx-auto">
+        <div className="flex flex-row justify-center lg:space-x-3 md:space-x-2">
           <Bandbond />
           <Bandcamp />
           <Facebook />

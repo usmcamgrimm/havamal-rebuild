@@ -7,7 +7,7 @@ const Bandbond = () => {
     query {
       placeholderImage: file(relativePath: { eq: "icons/bandbond.png" }) {
         childImageSharp {
-          fluid(maxWidth: 120) {
+          fluid(maxWidth: 96) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
@@ -20,7 +20,7 @@ const Bandbond = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} />
+  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-lg" />
 }
 
 export default Bandbond
