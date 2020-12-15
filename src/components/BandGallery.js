@@ -15,7 +15,7 @@ const BandGallery = () => {
     const BandImages = photos.allCloudinaryMedia.edges
     return (
         <div>
-            <div className="flex flex-wrap justify-around items-center">
+            <div className="flex lg:flex-nowrap flex-wrap justify-center items-center space-x-2">
                 {BandImages.map((image, index) => (
                     <div key={`${index}-cl`}>
                         <img src={image.node.secure_url} className="m-0 band-image rounded" alt={"no alt :("} />
