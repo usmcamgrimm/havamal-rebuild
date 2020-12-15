@@ -29,6 +29,11 @@ const SagaPage = () => (
           Allied once more with Art Gates Records, the hymn-weavers are returning to the studio to record their second full-length album. Look for this epic new album to be released in 2021!
         </p>
       </div>
+      <div className="lg:px-24 text-center">
+        <h2 className="font-grenze text-4xl py-4 text-blue-lighter">
+          Hail Havamal!
+        </h2>
+      </div>
     </Layout>
   </>
 )
