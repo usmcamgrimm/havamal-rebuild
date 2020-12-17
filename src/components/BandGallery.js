@@ -1,26 +1,18 @@
 import React from 'react'
-import {useStaticQuery, graphql} from 'gatsby'
+
+import Andreas from "./BandQueries/Andreas"
+import Bjorn from "./BandQueries/Bjorn"
+import Kjell from "./BandQueries/Kjell"
+import Lennie from "./BandQueries/Lennie"
 
 const BandGallery = () => {
-    const photos = useStaticQuery(graphql`query CloudinaryImage {
-        allCloudinaryMedia {
-            edges {
-                node {
-                    secure_url
-                }
-            }
-        }
-    }`)
-
-    const BandImages = photos.allCloudinaryMedia.edges
     return (
         <div>
-            <div className="flex lg:flex-nowrap sm:flex-wrap justify-center items-center space-x-2">
-                {BandImages.map((image, index) => (
-                    <div key={`${index}-cl`}>
-                        <img src={image.node.secure_url} className="m-0 band-image rounded" alt={"no alt :("} />
-                    </div>
-                ))}
+            <div className="flex md:flex-nowrap justify-center items-center lg:space-x-3">
+                <Andreas />
+                <Bjorn />
+                <Kjell />
+                <Lennie />
             </div>
         </div>
     )
