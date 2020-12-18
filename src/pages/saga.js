@@ -11,6 +11,10 @@ const SagaPage = () => (
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Hymn-Weavers
       </h1>
+      <div className="flex flex-col justify-center items-center">
+        <p>Andreas Herlogsson - Drums</p>
+        <p></p>
+      </div>
       <BandGallery />
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Havamal Saga
