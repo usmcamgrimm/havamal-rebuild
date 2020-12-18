@@ -10,6 +10,13 @@ module.exports = {
       'grenze': ['grenze', 'sans-serif'],
       'pirata': ['"pirata one"', 'serif'],
     },
+    screens: {
+      xxl: { max: '1920px' },
+      xl: { max: '1439px' },
+      lg: { max: '1024px' },
+      md: { max: '768px' },
+      sm: { max: '640' },
+    },
     container: {
       center: true,
     },
@@ -31,10 +38,6 @@ module.exports = {
       'sm': '2px',
       DEFAULT: '5px',
       'lg': '8px',
-    },
-    screens: {
-      '2xl': '1440',
-      '3xl': '1920',
     },
   },
   variants: {},
