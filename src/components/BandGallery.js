@@ -8,7 +8,7 @@ import Lennie from "./BandQueries/Lennie"
 const BandGallery = () => {
     return (
         <div>
-            <div className="flex flex-nowrap justify-center items-center lg:space-x-3">
+            <div className="flex flex-nowrap justify-center items-center space-x-4">
                 <Andreas />
                 <Bjorn />
                 <Kjell />
