@@ -7,7 +7,7 @@ const Kjell = () => {
     query {
       KjellGilliusson: file(relativePath: { eq: "band-photos/kjell.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }

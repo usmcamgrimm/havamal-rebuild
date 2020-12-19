@@ -7,7 +7,7 @@ const Lennie = () => {
     query {
       LennieSpetze: file(relativePath: { eq: "band-photos/lennie.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }

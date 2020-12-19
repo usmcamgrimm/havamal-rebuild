@@ -7,7 +7,7 @@ const Bjorn = () => {
     query {
       BjornLarsson: file(relativePath: { eq: "band-photos/bjorn.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }

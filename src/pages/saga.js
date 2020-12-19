@@ -3,23 +3,21 @@ import React from 'react'
 import SEO from "../components/seo"
 import Layout from '../components/Layout'
 import BandGallery from '../components/BandGallery'
+import HymnWeavers from '../components/HymnWeavers'
 
 const SagaPage = () => (
   <>
     <SEO title="Saga" />
     <Layout>
-      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Hymn-Weavers
       </h1>
-      <div className="flex flex-col justify-center items-center">
-        <p>Andreas Herlogsson - Drums</p>
-        <p></p>
-      </div>
+      <HymnWeavers />
       <BandGallery />
-      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Havamal Saga
       </h1>
-      <div className="lg:px-24 text-center">
+      <div className="container px-8 text-start">
         <p className="font-grenze text-xl text-white">
           Kjell Gilliusson and Lennie Spetze are hailed as the founders of Havamal. They formed the band in Stockholm, Sweden in 2016 and soon invited Björn Larsson. Andreas Herlogsson would join later, after the departure of Rodrigo Valenzuela. Sandra Wallo took over for Pontus Knutsson, until her departure in 2020.
         </p>
@@ -33,7 +31,7 @@ const SagaPage = () => (
           Allied once more with Art Gates Records, the hymn-weavers are returning to the studio to record their second full-length album. Look for this epic new album to be released in 2021!
         </p>
       </div>
-      <div className="lg:px-24 text-center">
+      <div className="text-center">
         <h2 className="font-grenze text-4xl py-4 text-blue-lighter">
           Hail Havamal!
         </h2>

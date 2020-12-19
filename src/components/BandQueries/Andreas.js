@@ -7,7 +7,7 @@ const Andreas = () => {
     query {
       AndreasHerlogsson: file(relativePath: { eq: "band-photos/andreas.png" }) {
         childImageSharp {
-          fluid(maxWidth: 400) {
+          fluid(maxWidth: 250) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
