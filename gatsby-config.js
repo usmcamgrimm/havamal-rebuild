@@ -51,6 +51,15 @@ module.exports = {
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         resourceType: `image`,
         prefix: `band`
+      },
+    },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `wdalvcgt`,
+        dataset: `production`,
+        watchMode: true,
+        token: process.env.SANITY_TOKEN,
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
