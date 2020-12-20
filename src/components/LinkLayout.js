@@ -11,7 +11,7 @@ import Horde from '../resources/icons/horde'
 export default function LinkLayout() {
   return (
     <div className="flex flex-col justify-between py-6">
-      <div className="flex flex-row justify-center lg:space-x-3 md:space-x-2">
+      <div className="flex flex-row justify-center space-x-2 lg:space-x-8">
         <Bandcamp />
         <Facebook />
         <Bandbond />
