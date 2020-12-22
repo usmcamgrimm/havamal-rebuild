@@ -18,6 +18,11 @@ export default {
       },
     },
     {
+      name: 'postDate',
+      title: 'Date of Post',
+      type: 'date'
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
