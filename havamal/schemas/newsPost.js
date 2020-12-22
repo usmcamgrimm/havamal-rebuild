@@ -23,6 +23,12 @@ export default {
       type: 'date'
     },
     {
+      name: 'postAuthor',
+      title: 'Authored By',
+      type: 'string',
+      description: 'Shows if post was written by Havamal or someone else',
+    },
+    {
       name: 'image',
       title: 'Image',
       type: 'image',
