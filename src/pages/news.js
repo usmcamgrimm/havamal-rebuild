@@ -15,3 +15,27 @@ export default function NewsPage() {
     </>
   )
 }
+
+export const query = graphql`
+  query NewsQuery {
+    news: allSanityNewsPost {
+      nodes {
+        name
+        id
+        slug {
+          current
+        }
+        postDate
+        postAuthor
+        newsItem
+        image {
+          asset {
+            fluid(maxWidth: 400) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
