@@ -14,9 +14,10 @@ export default function NewsPage({ data }) {
         <h1 className="text-6xl text-center pt-16 pb-6 font-pirata font-medium text-blue-lighter">
           News
         </h1>
-        <div className=" text-center text-2xl text-white">
+        <div className="font-grenze text-center text-2xl text-white">
           <p>There are {news.length} posts by Havamal</p>
         </div>
+        <NewsPosts news={news} />
       </Layout>
     </>
   )
