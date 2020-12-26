@@ -3,6 +3,7 @@ import { graphql } from 'gatsby';
 
 import SEO from "../components/seo"
 import Layout from '../components/Layout'
+import NewsPosts from '../components/NewsPosts'
 
 export default function NewsPage({ data }) {
   const news = data.news.nodes;
@@ -10,9 +11,12 @@ export default function NewsPage({ data }) {
     <>
       <SEO title="News" />
       <Layout>
-        <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+        <h1 className="text-6xl text-center pt-16 pb-6 font-pirata font-medium text-blue-lighter">
           News
         </h1>
+        <div className=" text-center text-2xl text-white">
+          <p>There are {news.length} posts by Havamal</p>
+        </div>
       </Layout>
     </>
   )
