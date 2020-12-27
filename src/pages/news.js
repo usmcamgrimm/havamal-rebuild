@@ -25,7 +25,7 @@ export default function NewsPage({ data }) {
 
 export const query = graphql`
   query NewsQuery {
-    news: allSanityNewsPost {
+    news: allSanityNewsPost(sort: {fields: postDate, order: DESC}) {
       nodes {
         name
         id
