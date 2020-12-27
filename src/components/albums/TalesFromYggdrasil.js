@@ -7,7 +7,7 @@ const TalesFromYggdrasil = () => {
     query {
       TFY: file(relativePath: { eq: "albums/tfy.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 450) {
+          fluid(maxWidth: 300) {
             ...GatsbyImageSharpFluid_noBase64
           }
         }
