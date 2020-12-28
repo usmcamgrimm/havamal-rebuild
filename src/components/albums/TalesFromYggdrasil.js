@@ -7,15 +7,15 @@ const TalesFromYggdrasil = () => {
     query {
       TFY: file(relativePath: { eq: "albums/tfy.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid_noBase64
+          fixed(width: 400, height: 400) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.TFY.childImageSharp.fluid} />
+  return <Img fixed={data.TFY.childImageSharp.fixed} />
 }
 
 export default TalesFromYggdrasil

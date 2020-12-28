@@ -7,15 +7,15 @@ const CallOfTheNorth = () => {
     query {
       COTN: file(relativePath: { eq: "albums/cotn.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 300) {
-            ...GatsbyImageSharpFluid_noBase64
+          fixed(width: 400, height: 400) {
+            ...GatsbyImageSharpFixed_noBase64
           }
         }
       }
     }
   `)
 
-  return <Img fluid={data.COTN.childImageSharp.fluid} />
+  return <Img fixed={data.COTN.childImageSharp.fixed} />
 }
 
 export default CallOfTheNorth
