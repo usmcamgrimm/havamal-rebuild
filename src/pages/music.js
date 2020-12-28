@@ -15,7 +15,7 @@ const MusicPage = () => (
       <div className="flex justify-center items-center space-x-6 px-6">
         <TalesFromYggdrasil />
         <div className="flex flex-col">
-          <iframe src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe title="Tales From Yggdrasil Sample on Spotify" src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
       <div className="flex">
