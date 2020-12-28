@@ -20,7 +20,7 @@ const AGR = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" />
+  return <a href="https://artgatesrecords.com/" target="_blank" rel="noreferrer" aria-label="Art Gates Records"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default AGR
