@@ -3,10 +3,13 @@ import { Link } from 'gatsby'
 import Img from 'gatsby-image'
 
 function SinglePost({ news }) {
-  return <div className="py-12">
+  return <div className="grid">
     <Link to={`/post/$(news.slug.current)`}>
       <h2 className="text-2xl font-grenze text-blue-lighter hover:underline">
         {news.name}
+      </h2>
+      <h2 className="text-2xl font-grenze text-blue-lighter">
+        {news.postAuthor}
       </h2>
       <Img fluid={news.image.asset.fluid} alt={news.name} className="max-w-xs" />
     </Link>
@@ -14,7 +17,7 @@ function SinglePost({ news }) {
 }
 
 export default function NewsPosts({ news }) {
-  return <div className="flex flex-row flex-wrap md:justify-center px-4 space-x-4">
+  return <div className="grid grid-flow-row grid-cols-3 gap-6">
     {news.map((news) => (
       <SinglePost key={news.id} news={news} />
     ))}
