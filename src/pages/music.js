@@ -12,7 +12,7 @@ const MusicPage = () => (
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         Music
       </h1>
-      <div className="flex flex-wrap justify-center items-center space-x-6 md:space-x-12 px-6">
+      <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
         <TalesFromYggdrasil />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Tales From Yggdrasil</h3>

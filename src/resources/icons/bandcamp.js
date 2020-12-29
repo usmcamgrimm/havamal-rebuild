@@ -20,7 +20,7 @@ const Bandcamp = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-lg" />
+  return <a href="https://havamal.bandcamp.com/" target="_blank" rel="noreferrer" aria-label="Bandcamp"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default Bandcamp

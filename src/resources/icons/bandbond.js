@@ -20,7 +20,7 @@ const Bandbond = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-lg" />
+  return <a href="https://bandbond.com/" target="_blank" rel="noreferrer" aria-label="Bandbond"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default Bandbond

@@ -20,7 +20,7 @@ const Instagram = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-lg" />
+  return <a href="https://www.instagram.com/officialhavamal/" target="_blank" rel="noreferrer" aria-label="Instagram"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default Instagram

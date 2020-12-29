@@ -20,7 +20,7 @@ const Youtube= () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-lg" />
+  return <a href="https://www.youtube.com/channel/UCmGfesgQAVTgpJqGf9dt3wA/videos" target="_blank" rel="noreferrer" aria-label="YouTube"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default Youtube

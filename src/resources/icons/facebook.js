@@ -20,7 +20,7 @@ const Facebook = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-lg" />
+  return <a href="https://www.facebook.com/Havamalofficial" target="_blank" rel="noreferrer" aria-label="Facebook"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default Facebook

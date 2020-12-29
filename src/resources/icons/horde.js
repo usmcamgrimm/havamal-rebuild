@@ -20,7 +20,7 @@ const Horde = () => {
     return <div>Picture not found</div>
   }
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" />
+  return <a href="https://www.facebook.com/groups/338634033565609" target="_blank" rel="noreferrer" aria-label="Hordes of Havamal"><Img fluid={data.placeholderImage.childImageSharp.fluid} className="rounded-sm" /></a>
 }
 
 export default Horde
