@@ -7,6 +7,7 @@ module.exports = {
     author: `Adrian Grimm`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-postcss`,
