@@ -17,9 +17,11 @@ function SinglePost({ news }) {
 }
 
 export default function NewsPosts({ news }) {
-  return <div className="grid grid-flow-row grid-cols-3 gap-6">
-    {news.map((news) => (
-      <SinglePost key={news.id} news={news} />
-    ))}
-  </div>
+  return (
+    <div className="container grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6 justify-center pt-8">
+      {news.map((news) => (
+        <SinglePost key={news.id} news={news} />
+      ))}
+    </div>
+  )
 }
