@@ -3,6 +3,7 @@ import React from 'react'
 import SEO from "../components/seo"
 import Layout from '../components/Layout'
 import LinkLayout from '../components/LinkLayout'
+import Contact from '../components/contact'
 
 const ResourcesPage = () => (
   <>
@@ -12,6 +13,7 @@ const ResourcesPage = () => (
         Resources
       </h1>
     <LinkLayout />
+    <Contact />
     </Layout>
   </>
 )
