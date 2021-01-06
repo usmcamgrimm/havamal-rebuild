@@ -4,6 +4,14 @@ import SEO from "../components/seo"
 import Layout from '../components/Layout'
 import CallOfTheNorth from '../components/albums/CallOfTheNorth'
 import TalesFromYggdrasil from '../components/albums/TalesFromYggdrasil'
+import styled from 'styled-components'
+
+const Line = styled.hr`
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border: 1px solid #262626;
+`;
 
 const MusicPage = () => (
   <>
@@ -20,6 +28,9 @@ const MusicPage = () => (
           <iframe title="Tales From Yggdrasil Sample on Spotify" src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
+
+      <Line />
+
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6 pt-16 pb-10">
         <CallOfTheNorth />
         <div className="flex flex-col items-center">
