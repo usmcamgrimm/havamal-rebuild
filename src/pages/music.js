@@ -7,10 +7,10 @@ import TalesFromYggdrasil from '../components/albums/TalesFromYggdrasil'
 import styled from 'styled-components'
 
 const Line = styled.hr`
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
   margin-top: 1rem;
-  border: 1px solid #262626;
+  border: 1px solid #606060;
 `;
 
 const MusicPage = () => (
