@@ -71,6 +71,7 @@ yarn-error.log
 #sanity
 havamal/node_modules
 havamal/.vscode
+havamal/config
 
 # Local Netlify folder
 .netlify
