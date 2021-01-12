@@ -5,7 +5,7 @@ async function newsPostPages({ graphql, actions }) {
 
   const { data } = await graphql(`
     query {
-      allSanityNewsPost {
+      updates: allSanityNewsPost {
         nodes {
           name
           slug {
@@ -15,15 +15,11 @@ async function newsPostPages({ graphql, actions }) {
       }
     }
   `);
-  data.allSanityNewsPost.nodes.forEach((newsPost) => {
+  data.updates.nodes.forEach((newsPost) => {
     // console.log('Creating news post pages for ', newsPost.name);
     actions.createPage({
       path: `post/${newsPost.slug.current}`,
       component: newsTemplate,
-      context: {
-        name: newsPost.name,
-        slug: newsPost.slug.current,
-      }
     })
   })
 }
