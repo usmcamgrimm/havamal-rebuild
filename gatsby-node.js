@@ -20,6 +20,9 @@ async function newsPostPages({ graphql, actions }) {
     actions.createPage({
       path: `post/${newsPost.slug.current}`,
       component: newsTemplate,
+      context: {
+        slug: newsPost.slug.current,
+      }
     })
   })
 }
