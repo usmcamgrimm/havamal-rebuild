@@ -16,7 +16,7 @@ async function newsPostPages({ graphql, actions }) {
     }
   `);
   data.updates.nodes.forEach((newsPost) => {
-    console.log('Creating news post pages for ', newsPost.name);
+    // console.log('Creating news post pages for ', newsPost.name);
     actions.createPage({
       path: `post/${newsPost.slug.current}`,
       component: newsTemplate,

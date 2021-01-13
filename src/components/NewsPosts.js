@@ -21,7 +21,7 @@ const NewsItem = styled.div`
 
 function SinglePost({ news }) {
   return <NewsItem>
-    <Link to={`/post/$(news.slug.current)`}>
+    <Link to={`/post/${news.slug.current}`}>
       <h2 className="text-2xl font-grenze text-blue-lighter hover:underline m-0">
         {news.name}
       </h2>
