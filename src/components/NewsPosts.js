@@ -5,18 +5,21 @@ import styled from 'styled-components';
 
 const NewsGrid = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
-  grid-auto-rows: auto auto 200px;
 `;
+
 const NewsItem = styled.div`
   display: grid;
-  @supports not (grid-template-rows: subgrid) {
-    --rows: auto auto 1fr;
+  padding: 2rem;
+  text-align: center;
+  img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    display: grid;
+    align-tems: center;
   }
-  grid-template-rows: var(--rows, subgrid);
-  grid-row: span 3;
-  gap: 1.5rem;
 `;
 
 function SinglePost({ news }) {
