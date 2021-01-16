@@ -6,9 +6,10 @@ import TalesFromYggdrasil from '../components/albums/TalesFromYggdrasil'
 import styled from 'styled-components'
 
 const Line = styled.hr`
-  width: 75%;
+  width: 48%;
   margin: 0 auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: 1px solid #606060;
 `;
 
@@ -30,7 +31,7 @@ export default function MusicPage() {
 
       <Line />
 
-      <div className="flex flex-wrap justify-center items-center space-x-6 px-6 pt-16 pb-10">
+      <div className="flex flex-wrap justify-center items-center space-x-6 px-6 pt-6 pb-10">
         <CallOfTheNorth />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Call Of The North</h3>
