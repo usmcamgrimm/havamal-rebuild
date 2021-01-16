@@ -60,12 +60,12 @@ export default function Contact() {
         />
         <label htmlFor="name">
           <p className="font-grenze text-blue-lighter text-xl">Your Name</p>
-          {errors.name && <span>Error message</span>}
+          {errors.name && <span className="font-roboto text-white">Name is required</span>}
           <input className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline" name="name" ref={register({ required: true })} />
         </label>
         <label htmlFor="email">
           <p className="font-grenze text-blue-lighter text-xl mt-4">Email Address</p>
-          {errors.email && <span>Please use a properly formatted email address</span>}
+          {errors.email && <span className="font-roboto text-white">Please use a properly formatted email address</span>}
           <input
             className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
             name="email"
@@ -98,7 +98,7 @@ export default function Contact() {
           }}
         >
           Don't fill this out if you're a human:
-          <input tabIndex="1" name="got-ya" ref={register()} />
+          <input tabIndex="0" name="got-ya" ref={register()} />
         </label>
         <div className="mt-4">
           <button className="text-xl font-grenze text-yellow text-center tracking-wide p-3 mb-2 rounded-lg w-full bg-blue focus:outline-none focus:shadow-outline hover:bg-blue-darker" type="submit">Submit Message</button>
