@@ -62,7 +62,7 @@ module.exports = {
         apiSecret: process.env.CLOUDINARY_API_SECRET,
         uploadFolder: `havamal-upload`,
       }
-    }
+    },
     {
       resolve: `gatsby-source-sanity`,
       options: {
