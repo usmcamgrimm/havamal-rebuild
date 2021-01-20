@@ -18,6 +18,9 @@ const PhotoStyle = styled.div`
     align-items: center;
   }
   padding: 6px;
+  img:hover {
+    transform: scale(2);
+  }
 `;
 
 export default function MediaGallery() {
