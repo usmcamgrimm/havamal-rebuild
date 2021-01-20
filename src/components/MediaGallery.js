@@ -1,5 +1,24 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
+import styled from 'styled-components'
+
+const MediaGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 8px;
+  padding: 2rem 4rem;
+`;
+
+const PhotoStyle = styled.div`
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    display: grid;
+    align-items: center;
+  }
+  padding: 6px;
+`;
 
 export default function MediaGallery() {
   const data = useStaticQuery(graphql`
@@ -17,12 +36,12 @@ export default function MediaGallery() {
 
   const HavamalImages = data.media.edges;
   return (
-    <div className="container">
+    <MediaGrid>
       {HavamalImages.map((image, index) => (
-        <div key={`${index}-image`}>
+        <PhotoStyle key={`${index}-image`}>
           <img src={image.node.secure_url} alt="Havamal photos" />
-        </div>
+        </PhotoStyle>
       ))}
-    </div>
+    </MediaGrid>
   )
 }
