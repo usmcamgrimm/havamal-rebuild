@@ -24,6 +24,26 @@ const PhotoStyle = styled.div`
   }
 `;
 
+const options = {
+  settings: {
+    overlayColor: 'rgba(14, 24, 31, 0.8)',
+    boxShadow: '2px 4px 12px #000000',
+  },
+  buttons: {
+    backgroundColor: 'rgba(14, 24, 31, 0.8)',
+    iconColor: '#66add9',
+    size: '42px',
+  },
+  caption: {
+    showCaption: false,
+  },
+  progressBar: {
+    backgroundColor: '#004b87',
+    fillColor: '#ffcd00',
+    height: '2px',
+  }
+}
+
 export default function MediaGallery() {
   const data = useStaticQuery(graphql`
     query CloudinaryImage {
@@ -40,7 +60,7 @@ export default function MediaGallery() {
 
   const HavamalImages = data.media.edges;
   return (
-    <SRLWrapper>
+    <SRLWrapper options={options}>
       <MediaGrid>
         {HavamalImages.map((image, index) => (
           <PhotoStyle key={`${index}-image`}>
