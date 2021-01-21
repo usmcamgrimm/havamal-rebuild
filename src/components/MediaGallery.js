@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
+import { SRLWrapper } from  'simple-react-lightbox'
 
 const MediaGrid = styled.div`
   display: grid;
@@ -39,12 +40,14 @@ export default function MediaGallery() {
 
   const HavamalImages = data.media.edges;
   return (
-    <MediaGrid>
-      {HavamalImages.map((image, index) => (
-        <PhotoStyle key={`${index}-image`}>
-          <img src={image.node.secure_url} alt="Havamal photos" />
-        </PhotoStyle>
-      ))}
-    </MediaGrid>
+    <SRLWrapper>
+      <MediaGrid>
+        {HavamalImages.map((image, index) => (
+          <PhotoStyle key={`${index}-image`}>
+            <img src={image.node.secure_url} alt="Havamal photos" />
+          </PhotoStyle>
+        ))}
+      </MediaGrid>
+    </SRLWrapper>
   )
 }
