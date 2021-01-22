@@ -22,6 +22,9 @@ const Nav = () => {
             <Link to="/music" className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Music
             </Link>
+            <Link to="/video" className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
+              Videos
+            </Link>
             <Link to={`/media`} className="block mt-4 px-4 lg:inline-block lg:mt-0 text-yellow hover:text-white">
               Media
             </Link>
