@@ -25,7 +25,7 @@ export default function MusicPage() {
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Tales From Yggdrasil</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | June 2019</h4>
-          <iframe title="Tales From Yggdrasil Sample on Spotify" src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe title="Tales From Yggdrasil Sample on Spotify" src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" width="300" height="380" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
 
@@ -36,7 +36,7 @@ export default function MusicPage() {
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Call Of The North</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Independent | June 2017</h4>
-          <iframe title="Call Of The North Sample on Spotify" src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" width="300" height="310" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe title="Call Of The North Sample on Spotify" src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" width="300" height="310" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
   </>
