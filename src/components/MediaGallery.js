@@ -21,6 +21,7 @@ const PhotoStyle = styled.div`
   padding: 6px;
   img:hover {
     transform: scale(2);
+    cursor: crosshair;
   }
 `;
 
