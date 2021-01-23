@@ -1,7 +1,6 @@
 import React from 'react'
 
 import SEO from "../components/seo"
-import BandGallery from '../components/BandGallery'
 import HymnWeavers from '../components/HymnWeavers'
 
 export default function SagaPage() {
@@ -12,7 +11,6 @@ export default function SagaPage() {
         The Hymn-Weavers
       </h1>
       <HymnWeavers />
-      <BandGallery />
       <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Havamal Saga
       </h1>
