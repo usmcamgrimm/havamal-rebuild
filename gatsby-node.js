@@ -27,36 +27,6 @@ async function newsPostPages({ graphql, actions }) {
   })
 }
 
-async function bandMemberPages({ graphql, actions }) {
-  const bandMemberTemplate = path.resolve('./src/templates/HymnWeaver.js');
-  const { data } = await graphql`
-    query {
-      bandmembers: allSanitybandMembers {
-        nodes {
-          name
-          id
-          slug {
-            current
-          }
-        }
-      }
-    }
-  `;
-  data.bandmembers.nodes.forEach((bandmember) => {
-    actions.createPage({
-      component: bandMemberTemplate,
-      path: `/HymnWeavers/${bandmember,slug.current}`,
-      context: {
-        name: bandmember.bandMembers,
-        slug: bandmember.slug.current,
-      }
-    })
-  })
-}
-
 exports.createPages = async function (params) {
-  await Promise.all([
-    newsPostPages(params),
-    bandMemberPages(params),
-  ]) 
+  await newsPostPages(params)
 }
