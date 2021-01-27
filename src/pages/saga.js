@@ -1,16 +1,31 @@
 import React from 'react'
+import { graphql, Link } from 'gatsby'
+import Img from 'gatsby-image'
+// import styled from 'styled-components'
 
 import SEO from "../components/seo"
-import HymnWeavers from '../components/HymnWeavers'
 
 export default function SagaPage() {
+  const hymnweavers = data.HymnWeavers.nodes 
   return (
     <>
       <SEO title="Saga" />
       <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Hymn-Weavers
       </h1>
-      <HymnWeavers />
+      <div>
+        {hymnweavers.map(band => (
+          <div>
+            <Link to={'/hymnweaver/${band.slug.current}'}>
+            <p className="font-grenze text-lg lg:text-xl text-white">
+              {band.name}
+            </p>
+            </Link>
+            <Img fluid={band.image.asset.fluid} />
+            <p className="container">{band.description}</p>
+          </div>
+        ))}
+      </div>
       <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Havamal Saga
       </h1>
@@ -36,3 +51,25 @@ export default function SagaPage() {
     </>
   )
 }
+
+export const query = graphql`
+  query {
+    hymnweavers: allSanityBand {
+      nodes {
+        name
+        id
+        description
+        slug {
+          current
+        }
+        image {
+          asset {
+            fluid(maxWidth: 250) {
+              ...GatsbySanityImageFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;
