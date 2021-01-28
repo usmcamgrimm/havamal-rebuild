@@ -42,7 +42,8 @@ async function HymnWeaverPages({ graphql, actions }) {
       }
     }
   `;
-  data.hymnweavers.forEach((band) => {
+  data.hymnweavers.nodes.forEach((band) => {
+    console.log('CREATING PAGES FOR THE HYMN-WEAVERS');
     actions.createPage({
       path: `/hymnweavers/${band.slug.current}`,
       component: hymnweaverTemplate,
@@ -54,5 +55,8 @@ async function HymnWeaverPages({ graphql, actions }) {
 }
 
 exports.createPages = async function (params) {
-  await newsPostPages(params)
+  await Promise.all([
+    newsPostPages(params),
+    HymnWeaverPages(params),
+  ])
 }
