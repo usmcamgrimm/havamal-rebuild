@@ -5,7 +5,7 @@ import Img from 'gatsby-image'
 
 import SEO from "../components/seo"
 
-export default function SagaPage() {
+export default function SagaPage({ data }) {
   const hymnweavers = data.HymnWeavers.nodes 
   return (
     <>
@@ -58,7 +58,7 @@ export const query = graphql`
       nodes {
         name
         id
-        description
+        bio
         slug {
           current
         }
