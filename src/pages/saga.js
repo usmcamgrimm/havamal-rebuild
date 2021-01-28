@@ -16,10 +16,10 @@ export default function SagaPage({ data }) {
       <div>
         {hymnweavers.map(band => (
           <div>
-            <Link to={'/hymnweaver/${band.slug.current}'}>
-            <p className="font-grenze text-lg lg:text-xl text-white">
-              {band.name}
-            </p>
+            <Link to={`/hymnweaver/${band.slug.current}`}>
+              <p className="font-grenze text-lg lg:text-xl text-white">
+                {band.name}
+              </p>
             </Link>
             <Img fluid={band.image.asset.fluid} />
             <p className="container">{band.description}</p>
