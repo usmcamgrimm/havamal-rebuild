@@ -16,7 +16,6 @@ async function newsPostPages({ graphql, actions }) {
     }
   `);
   data.updates.nodes.forEach((newsPost) => {
-    // console.log('Creating news post pages for ', newsPost.name);
     actions.createPage({
       path: `post/${newsPost.slug.current}`,
       component: newsTemplate,
@@ -29,7 +28,7 @@ async function newsPostPages({ graphql, actions }) {
 
 async function HymnWeaverPages({ graphql, actions }) {
   const hymnweaverTemplate = path.resolve('./src/templates/HymnWeaver.js');
-  const { data } = await graphql`
+  const { data } = await graphql(`
     query {
       hymnweavers: allSanityBand {
         nodes {
@@ -41,9 +40,8 @@ async function HymnWeaverPages({ graphql, actions }) {
         }
       }
     }
-  `;
+  `);
   data.hymnweavers.nodes.forEach((band) => {
-    console.log('CREATING PAGES FOR THE HYMN-WEAVERS');
     actions.createPage({
       path: `/hymnweavers/${band.slug.current}`,
       component: hymnweaverTemplate,
