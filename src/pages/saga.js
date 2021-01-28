@@ -6,7 +6,7 @@ import Img from 'gatsby-image'
 import SEO from "../components/seo"
 
 export default function SagaPage({ data }) {
-  const hymnweavers = data.HymnWeavers.nodes 
+  const hymnweavers = data.hymnweavers.nodes 
   return (
     <>
       <SEO title="Saga" />
