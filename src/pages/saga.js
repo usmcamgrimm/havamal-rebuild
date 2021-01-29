@@ -18,7 +18,7 @@ export default function SagaPage({ data }) {
           <div>
             <Link to={`/hymnweaver/${band.slug.current}`}>
               <p className="font-grenze text-lg lg:text-xl text-white">
-                {band.name}
+                {`${band.name} - ${band.instrument}`}
               </p>
             </Link>
             <Img fluid={band.image.asset.fluid} />
@@ -59,6 +59,7 @@ export const query = graphql`
         name
         id
         bio
+        instrument
         slug {
           current
         }

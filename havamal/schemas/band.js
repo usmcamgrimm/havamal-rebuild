@@ -26,6 +26,11 @@ export default {
       },
     },
     {
+      name: 'instrument',
+      title: 'Instrument',
+      type: 'string',
+    },
+    {
       name: 'bio',
       title: 'Bio',
       type: 'text',
