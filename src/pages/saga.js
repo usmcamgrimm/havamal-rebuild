@@ -16,7 +16,7 @@ export default function SagaPage({ data }) {
       <div>
         {hymnweavers.map(band => (
           <div>
-            <Link to={`/hymnweaver/${band.slug.current}`}>
+            <Link to={`/hymnweavers/${band.slug.current}`}>
               <p className="font-grenze text-lg lg:text-xl text-white">
                 {`${band.name} - ${band.instrument}`}
               </p>
