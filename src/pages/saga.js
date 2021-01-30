@@ -1,9 +1,26 @@
 import React from 'react'
 import { graphql, Link } from 'gatsby'
 import Img from 'gatsby-image'
-// import styled from 'styled-components'
+import styled from 'styled-components'
 
 import SEO from "../components/seo"
+
+const ShowBand = styled.div`
+  display: grid;
+  place-items: center;
+  grid-gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+`;
+
+const HW = styled.div`
+  .gatsby-image-wrapper {
+    max-width: 250px;
+    height: auto;
+  }
+  a {
+    text-align: center;
+  }
+`;
 
 export default function SagaPage({ data }) {
   const hymnweavers = data.hymnweavers.nodes 
@@ -13,19 +30,19 @@ export default function SagaPage({ data }) {
       <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Hymn-Weavers
       </h1>
-      <div>
+      <ShowBand className="container mx-auto">
         {hymnweavers.map(band => (
-          <div>
+          <HW>
             <Link to={`/hymnweavers/${band.slug.current}`}>
-              <p className="font-grenze text-lg lg:text-xl text-white">
-                {`${band.name} - ${band.instrument}`}
+              <p className="font-grenze text-xl lg:text-2xl text-white">
+                {`${band.name}`}
               </p>
             </Link>
             <Img fluid={band.image.asset.fluid} />
-            <p className="container">{band.description}</p>
-          </div>
+            <p className="container font-grenze text-white text-lg">{band.bio}</p>
+          </HW>
         ))}
-      </div>
+      </ShowBand>
       <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Havamal Saga
       </h1>
