@@ -13,11 +13,18 @@ const ShowBand = styled.div`
 `;
 
 const HW = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   .gatsby-image-wrapper {
     max-width: 250px;
     height: auto;
   }
   a {
+    text-align: center;
+  }
+  .bio {
+    padding: 6px;
     text-align: center;
   }
 `;
@@ -39,7 +46,7 @@ export default function SagaPage({ data }) {
               </p>
             </Link>
             <Img fluid={band.image.asset.fluid} />
-            <p className="container font-grenze text-white text-lg">{band.bio}</p>
+            <p className="bio container font-grenze text-white text-xl">{band.bio}</p>
           </HW>
         ))}
       </ShowBand>
