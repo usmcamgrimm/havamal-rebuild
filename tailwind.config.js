@@ -34,10 +34,6 @@ module.exports = {
       'lg': '8px',
     },
   },
-  variants: {
-    aspectRatio: ['responsive']
-  },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  variants: {},
+  plugins: [],
 }
