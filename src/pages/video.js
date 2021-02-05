@@ -24,6 +24,38 @@ export default function VideoPage() {
           HAVAMAL OFFICIAL
         </a>
       </YTLink>
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/nQYwDQd5SBk"
+        videoTitle="Berserker"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/5nb_1gEoIko"
+        videoTitle="Ginnungagap"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/w5ojozH8IAs"
+        videoTitle="Ragnarok, My favorite Havamal song"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/Ks1P1zgKLuQ"
+        videoTitle="Live Stream Rehearsal"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/sc_IlYJ1Fps"
+        videoTitle="Jotun War"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/uAM1b2z75Xg"
+        videoTitle="Death of Balder (Live)"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/1WqMnulsCI8"
+        videoTitle="Dawn of the Frost Giants (Live)"
+      />
+      <HavamalVideo
+        videoURL="https://www.youtube.com/embed/nQDsz0Cz_EI"
+        videoTitle="Death of Balder"
+      />
     </>
   )
 }
