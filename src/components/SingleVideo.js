@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function HavamalVIdeo ({ videoURL, videoTitle, ...props }) {
   return (
-    <div className="aspect-w-16 aspect-h-9 lg:aspect-none">
+    <div className="aspect-w-16 aspect-h-9">
       <iframe
         src={videoURL}
         title={videoTitle}
