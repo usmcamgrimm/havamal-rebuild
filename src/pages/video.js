@@ -25,7 +25,7 @@ export default function VideoPage() {
         </a>
       </YTLink>
       <div className="container mx-auto mt-12">
-        <div className="grid grid-cols-2 gap-16">
+        <div className="grid lg:grid-cols-2 md:gap-16">
           <HavamalVideo
             videoURL="https://www.youtube.com/embed/nQYwDQd5SBk"
             videoTitle="Berserker"
