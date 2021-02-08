@@ -19,6 +19,7 @@ const HW = styled.div`
   .gatsby-image-wrapper {
     max-width: 250px;
     height: auto;
+    box-shadow: 5px 3px 16px rgba(0, 0, 0, 0.8);
   }
   a {
     text-align: center;
@@ -46,7 +47,6 @@ export default function SagaPage({ data }) {
               </p>
             </Link>
             <Img fluid={band.image.asset.fluid} />
-            <p className="bio container font-grenze text-white text-xl">{band.bio}</p>
           </HW>
         ))}
       </ShowBand>

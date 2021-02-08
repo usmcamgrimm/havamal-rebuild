@@ -9,6 +9,8 @@ const SingleImage = styled.div`
     height: auto;
     margin: 0 auto;
     margin-top: 1rem;
+    box-shadow: 5px 3px 16px rgba(0, 0, 0, 0.8);
+
   }
 `;
 
