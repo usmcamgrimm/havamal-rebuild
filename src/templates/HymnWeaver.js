@@ -1,14 +1,24 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
+import styled from 'styled-components'
+
+const SingleImage = styled.div`
+  .gatsby-image-wrapper {
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 1rem;
+  }
+`;
 
 export default function HymnWeaverPage({ data: { hw } }) {
   return (
-    <div className="container">
-      <h2>{hw.name}</h2>
+    <SingleImage className="flex flex-col justify-center">
+      <h2 className="text-center text-white font-grenze text-2xl mt-12">{hw.name}</h2>
       <Img fluid={hw.image.asset.fluid} />
-      <p>{hw.description}</p>
-    </div>
+      <p className="text-center text-white font-grenze text-2xl mt-12">{hw.bio}</p>
+    </SingleImage>
   )
 }
 
