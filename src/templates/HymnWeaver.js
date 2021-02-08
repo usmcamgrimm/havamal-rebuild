@@ -16,8 +16,8 @@ export default function HymnWeaverPage({ data: { hw } }) {
   return (
     <SingleImage className="flex flex-col justify-center">
       <h2 className="text-center text-white font-grenze text-2xl mt-12">{hw.name}</h2>
+      <p className="text-center text-white font-grenze text-2xl">{hw.bio}</p>
       <Img fluid={hw.image.asset.fluid} />
-      <p className="text-center text-white font-grenze text-2xl mt-12">{hw.bio}</p>
     </SingleImage>
   )
 }
@@ -30,7 +30,7 @@ export const query = graphql`
       bio
       image {
         asset {
-          fluid(maxWidth: 500, maxHeight: 500) {
+          fluid(maxWidth: 500, maxHeight: 750) {
             ...GatsbySanityImageFluid
           }
         }
