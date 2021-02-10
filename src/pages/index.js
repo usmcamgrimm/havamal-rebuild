@@ -6,7 +6,6 @@ import SEO from '../components/seo'
 import styled from 'styled-components'
 
 const LogoSection = styled.div`
-  width: 90%;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -37,7 +36,7 @@ export default function IndexPage() {
     query {
       HavamalLogo: file(relativePath: { eq: "images/havamal_bg.png" }) {
         childImageSharp {
-          fluid(maxWidth: 1200) {
+          fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
@@ -54,7 +53,7 @@ export default function IndexPage() {
           <LogoWrapper>
             <Img fluid={data.HavamalLogo.childImageSharp.fluid} />
           </LogoWrapper>
-          <h1 className="text-5xl text-center font-pirata text-blue-lighter mx-6">Hail, Hordes of Havamal!</h1>
+          <h1 className="text-6xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
         </LogoSection>
       </Layout>
     </>
