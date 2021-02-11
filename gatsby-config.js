@@ -39,9 +39,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-purgecss`,
       options: {
-        printRejected: false,
-        develop: false,
+        printRejected: true,
+        develop: true,
         tailwind: true,
+        ignore: ['src/pages/index.js'],
+        whitelist: ['.gatsby-image-wrapper'],
       },
     },
     {

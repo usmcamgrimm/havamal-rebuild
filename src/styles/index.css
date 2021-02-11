@@ -16,7 +16,7 @@ html {
 /* purgecss start ignore */
 
 /* This is messing up the logo image */
-/* Needed for the band photos */
+/* Needed for all the other image queries not handled by SsanitySanity */
 .gatsby-image-wrapper {
     width: 800px;
 }
