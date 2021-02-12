@@ -5,6 +5,11 @@
 html {
   background-color: #0e181f;
 }
+@font-face {
+  font-family: "BlackChancery";
+  src: url("../../static/fonts/blackchancery/BlackChancery.woff");
+  format: ("woff");
+}
 
 /* purgecss start ignore */
 

@@ -59,7 +59,7 @@ export default function IndexPage() {
       <SEO title="Home" />
       <div className="flex flex-col items-center justify-center h-screen">
         <Img fluid={logos} alt="Havamal logo" />
-        <h1 className="text-4xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
+        <h1 className="text-4xl text-center font-BlackChancery text-blue-lighter">Hail, Hordes of Havamal!</h1>
       </div>
     </>
   )

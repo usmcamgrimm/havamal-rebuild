@@ -9,6 +9,7 @@ module.exports = {
       'roboto': ['roboto', 'sans-serif'],
       'grenze': ['grenze', 'sans-serif'],
       'pirata': ['"pirata one"', 'serif'],
+      'BlackChancery': ['BlackChancery', 'sans-serif'],
     },
     container: {
       center: true,
