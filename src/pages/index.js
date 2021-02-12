@@ -21,7 +21,7 @@ export default function IndexPage() {
     query {
       HavamalLogo: file(relativePath: { eq: "images/havamal_bg.png" }) {
         childImageSharp {
-          fluid(sizes: "(max-width: 500px) 400px, (max-width: 768px) 550px, (min-width: 1024px) 100vw") {
+          fluid(maxWidth: 800) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
