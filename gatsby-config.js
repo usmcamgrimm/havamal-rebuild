@@ -43,7 +43,6 @@ module.exports = {
         develop: true,
         tailwind: true,
         ignore: ['src/pages/index.js'],
-        whitelist: ['.gatsby-image-wrapper'],
       },
     },
     {

@@ -5,17 +5,9 @@
 html {
   background-color: #0e181f;
 }
-/* @layer utilities {
-  .band-image {
-    max-width: 300px;
-    height: auto;
-    border-radius: 5px;
-    box-shadow: 3px 3px 8px #030303;
-  }
-} */
+
 /* purgecss start ignore */
 
-/* This is messing up the logo image */
 /* Needed for all the other image queries not handled by SsanitySanity */
 .gatsby-image-wrapper {
     width: 800px;
