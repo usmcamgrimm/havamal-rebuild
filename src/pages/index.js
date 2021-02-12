@@ -1,20 +1,16 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-import Layout from '../components/Layout'
+// import Layout from '../components/Layout'
 import SEO from '../components/seo'
-import styled from 'styled-components'
+// import styled from 'styled-components'
 
-const LogoSection = styled.div`
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-`;
+// const LogoSection = styled.div`
+//   position: fixed;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// `;
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -60,13 +56,11 @@ export default function IndexPage() {
 
   return (
     <>
-      <Layout>
-        <SEO title="Home" />
-        <LogoSection>
-          <Img fluid={logos} alt="Havamal logo" />
-          <h1 className="text-4xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
-        </LogoSection>
-      </Layout>
+      <SEO title="Home" />
+      <div className="flex flex-col items-center justify-center h-screen">
+        <Img fluid={logos} alt="Havamal logo" />
+        <h1 className="text-4xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
+      </div>
     </>
   )
 }
