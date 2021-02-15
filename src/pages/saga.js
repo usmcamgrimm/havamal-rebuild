@@ -68,7 +68,7 @@ export default function SagaPage({ data }) {
         </p>
       </div>
       <div className="text-center">
-        <h2 className="font-grenze text-4xl py-4 text-blue-lighter">
+        <h2 className="font-BlackChancery text-4xl py-4 text-blue-lighter">
           Hail Havamal!
         </h2>
       </div>
