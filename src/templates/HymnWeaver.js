@@ -5,12 +5,11 @@ import styled from 'styled-components'
 
 const SingleImage = styled.div`
   .gatsby-image-wrapper {
-    max-width: 500px;
+    max-width: 400px;
     height: auto;
     margin: 0 auto;
     margin-top: 1rem;
     box-shadow: 5px 3px 16px rgba(0, 0, 0, 0.8);
-
   }
 `;
 
