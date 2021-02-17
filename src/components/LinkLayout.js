@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import Bandbond from '../resources/icons/bandbond'
+// import Bandbond from '../resources/icons/bandbond'
 import Bandcamp from '../resources/icons/bandcamp'
 import Facebook from '../resources/icons/facebook'
 import Instagram from '../resources/icons/instagram'
@@ -41,7 +41,7 @@ export default function LinkLayout() {
         <LinkItem>
           <Bandcamp className="m-12" />
           <Facebook className="p-12" />
-          <Bandbond className="p-12" />
+          {/* <Bandbond className="p-12" /> */}
           <Instagram className="p-12" />
           <Youtube className="p-12" />
         </LinkItem>
