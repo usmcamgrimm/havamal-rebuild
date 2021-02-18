@@ -12,10 +12,15 @@ export default function ResourcesPage() {
         Resources
       </h1>
       <LinkLayout />
-      <div>
-        <h1 className="font-grenze text-blue-lighter text-5xl text-center pt-12">Contact Havamal</h1>
+      <div className="flex flex-row justify-evenly">
+        <div className="flex flex-col justify-center">
+          <h2 className="font-grenze text-blue-lighter text-4xl text-center pt-12">Contact Havamal</h2>
+          <Contact />
+        </div>
+        <div className="flex flex-col items-center">
+          <h2 className="font-grenze text-blue-lighter text-4xl text-center pt-12">Support the Band!</h2>
+        </div>
       </div>
-      <Contact />
     </>
   )
 }
