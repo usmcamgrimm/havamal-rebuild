@@ -45,8 +45,11 @@ export default function SagaPage({ data }) {
               <p className="font-grenze text-xl lg:text-2xl text-white">
                 {`${band.name}`}
               </p>
+              <p className="font-grenze text-xl lg:text-2xl text-blue-lighter">
+                {`${band.instrument}`}
+              </p>
+              <Img fluid={band.image.asset.fluid} />
             </Link>
-            <Img fluid={band.image.asset.fluid} />
           </HW>
         ))}
       </ShowBand>
