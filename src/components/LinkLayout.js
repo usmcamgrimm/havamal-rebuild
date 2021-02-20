@@ -7,13 +7,18 @@ import Facebook from '../resources/icons/facebook'
 import Instagram from '../resources/icons/instagram'
 import Youtube from '../resources/icons/youtube'
 import AGR from '../resources/icons/AGR'
-import Horde from '../resources/icons/horde'
 
 const LinkGrid = styled.div`
   display: grid;
   place-items: center;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
 `;
 
 const LinkItem = styled.div`
@@ -29,9 +34,8 @@ const LinkItem = styled.div`
 `;
 
 const BannerLinks = styled.div`
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+  display: flex;
+  justify-content: center;
 `;
 
 export default function LinkLayout() {
@@ -48,8 +52,7 @@ export default function LinkLayout() {
       </LinkGrid>
       <LinkGrid>
         <BannerLinks>
-          <AGR className="pr-4" />
-          <Horde className="pl-4" />
+          <AGR />
         </BannerLinks>
       </LinkGrid>
     </>

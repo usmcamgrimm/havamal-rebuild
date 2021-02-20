@@ -7,7 +7,7 @@ const Youtube= () => {
     query {
       placeholderImage: file(relativePath: { eq: "icons/youtube.png" }) {
         childImageSharp {
-          fluid(maxWidth: 96) {
+          fluid(maxWidth: 60) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
