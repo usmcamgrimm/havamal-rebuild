@@ -1,5 +1,6 @@
 import React from 'react'
-// import { useStaticQuery, graphql } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 import styled from 'styled-components'
 
 import SEO from "../components/seo"
@@ -7,11 +8,30 @@ import LinkLayout from '../components/LinkLayout'
 import Contact from '../components/Contact'
 import Horde from '../resources/icons/horde'
 
+const FlexContainer = styled.div`
+  @media screen and (min-width: 1025px) {
+    margin-top: -8rem;
+  }
+`;
+
 const FlexSection = styled.div`
   width: 50%;
 `;
 
 export default function ResourcesPage() {
+  const data = useStaticQuery(graphql`
+  query {
+    logoImage: file(relativePath: { eq: "images/havamal_bg.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 400) {
+          ...GatsbyImageSharpFluid_noBase64
+          ...GatsbyImageSharpFluidLimitPresentationSize
+        }
+      }
+    }
+  }
+  `)
+
   return (
     <>
       <SEO title="Resources" />
@@ -19,7 +39,11 @@ export default function ResourcesPage() {
         Resources
       </h1>
       <LinkLayout />
-      <div className="flex flex-row justify-evenly">
+      <Img
+        fluid={data.logoImage.childImageSharp.fluid}
+        className="container mx-auto my-16"
+      />
+      <FlexContainer className="flex flex-row justify-evenly -mt-16">
         <FlexSection className="flex flex-col justify-center">
           <h2 className="font-grenze text-blue-lighter text-4xl text-center pt-12">Contact Havamal</h2>
           <Contact />
@@ -33,7 +57,7 @@ export default function ResourcesPage() {
           <h2 className="font-grenze text-white text-3xl text-center pt-16">Join the Horde</h2>
           <Horde />
         </FlexSection>
-      </div>
+      </FlexContainer>
     </>
   )
 }
