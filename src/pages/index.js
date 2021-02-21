@@ -1,16 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
-// import Layout from '../components/Layout'
 import SEO from '../components/seo'
-// import styled from 'styled-components'
-
-// const LogoSection = styled.div`
-//   position: fixed;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// `;
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
