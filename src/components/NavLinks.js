@@ -31,7 +31,7 @@ export default function NavLinks() {
       <NavContainer className="lg:from-transparent lg:via-blue lg:to-transparent lg:bg-gradient-to-r lg:p-1">
         <NavLink to="/">Home</NavLink>
         <NavLink to="/music">Music</NavLink>
-        <NavLink to="/videos">Videos</NavLink>
+        <NavLink to="/video">Videos</NavLink>
         <NavLink to="/media">Media</NavLink>
         <NavLink to="/saga">Saga</NavLink>
         <NavLink to="/raids">Raids</NavLink>
