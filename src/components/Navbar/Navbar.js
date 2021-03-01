@@ -63,12 +63,14 @@ export default function NavbarV2() {
         {navExpand ? <AxeMenu open /> : <AxeMenu />}
       </NavToggle>
       {navExpand ? (
-        <NavLinksContainer>
+        <NavLinksContainer
+          onClick={() => setNavExpand(!navExpand)}
+        >
           <NavLinks />
         </NavLinksContainer>
       ) : (
           <NavLinksContainer open>
-          <NavLinks />
+            <NavLinks />
           </NavLinksContainer>
       )}
     </NavBar>
