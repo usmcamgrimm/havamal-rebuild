@@ -23,7 +23,6 @@ const NavBar = styled.nav`
 const NavToggle = styled.div`
   display: none;
   height: 100%;
-  cursor: crosshair;
   padding: 0 10vw;
   @media screen and (max-width:768px) {
     display: flex;
