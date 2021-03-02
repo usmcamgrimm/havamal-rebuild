@@ -2,6 +2,13 @@ import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
+import BgImage from '../components/BgImage'
+import styled from 'styled-components'
+
+const FullscreenWrapper = styled.div`
+  height: 100vh;
+  maxWidth: 100%;
+`;
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -29,7 +36,7 @@ export default function IndexPage() {
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
         }
-      } 
+      }
     }
   `)
 
@@ -48,10 +55,14 @@ export default function IndexPage() {
   return (
     <>
       <SEO title="Home" />
-      <div className="flex flex-col items-center justify-center h-screen">
-        <Img fluid={logos} alt="Havamal logo" />
-        <h1 className="text-6xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
-      </div>
+        <FullscreenWrapper>
+          <div className="flex flex-col items-center justify-center h-screen">
+            <BgImage>
+              <Img fluid={logos} alt="Havamal logo" />
+              <h1 className="text-4xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
+            </BgImage>
+          </div>
+        </FullscreenWrapper>
     </>
   )
 }
