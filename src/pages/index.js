@@ -56,12 +56,12 @@ export default function IndexPage() {
     <>
       <SEO title="Home" />
         <FullscreenWrapper>
-          <div className="flex flex-col items-center justify-center h-screen">
-            <BgImage>
+          <BgImage>
+            <div className="flex flex-col items-center justify-center h-screen">
               <Img fluid={logos} alt="Havamal logo" />
               <h1 className="text-4xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
-            </BgImage>
-          </div>
+            </div>
+          </BgImage>
         </FullscreenWrapper>
     </>
   )
