@@ -6,8 +6,9 @@ import BgImage from '../components/BgImage'
 import styled from 'styled-components'
 
 const FullscreenWrapper = styled.div`
-  height: 100vh;
-  maxWidth: 100%;
+  max-height: 94vh;
+  width: 100%;
+  overflow: hidden;
 `;
 
 export default function IndexPage() {
