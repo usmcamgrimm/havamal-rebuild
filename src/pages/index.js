@@ -5,9 +5,8 @@ import SEO from '../components/seo'
 import BgImage from '../components/BgImage'
 import styled from 'styled-components'
 
-const FullscreenWrapper = styled.div`
-  height: 100vh;
-  maxWidth: 100%;
+const wrapper = styled.div`
+  height: 90vh;
 `;
 
 export default function IndexPage() {
@@ -55,14 +54,14 @@ export default function IndexPage() {
   return (
     <>
       <SEO title="Home" />
-        <FullscreenWrapper>
+        <wrapper>
           <BgImage>
             <div className="flex flex-col items-center justify-center h-screen">
               <Img fluid={logos} alt="Havamal logo" />
               <h1 className="text-4xl lg:text-6xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
             </div>
           </BgImage>
-        </FullscreenWrapper>
+        </wrapper>
     </>
   )
 }
