@@ -23,7 +23,7 @@ export default function IndexPage() {
       }
       tabletLogo: file(relativePath: { eq: "images/havamal_bg.png" }) {
         childImageSharp {
-          fluid(maxWidth: 5500) {
+          fluid(maxWidth: 550) {
             ...GatsbyImageSharpFluid_noBase64
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
