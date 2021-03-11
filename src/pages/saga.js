@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, Link } from 'gatsby'
+import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
@@ -41,15 +41,13 @@ export default function SagaPage({ data }) {
       <ShowBand className="container mx-auto">
         {hymnweavers.map(band => (
           <HW>
-            <Link to={`/hymnweavers/${band.slug.current}`}>
-              <p className="font-grenze text-xl lg:text-2xl text-white">
-                {`${band.name}`}
-              </p>
-              <p className="font-grenze text-xl lg:text-2xl text-blue-lighter">
-                {`${band.instrument}`}
-              </p>
-              <Img fluid={band.image.asset.fluid} />
-            </Link>
+            <p className="font-grenze text-xl lg:text-2xl text-white">
+              {`${band.name}`}
+            </p>
+            <p className="font-grenze text-xl lg:text-2xl text-blue-lighter">
+              {`${band.instrument}`}
+            </p>
+            <Img fluid={band.image.asset.fluid} />
           </HW>
         ))}
       </ShowBand>
