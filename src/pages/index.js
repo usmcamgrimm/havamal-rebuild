@@ -8,9 +8,6 @@ import styled from 'styled-components'
 const PageContainer = styled.div`
   max-height: 94vh;
   overflow: hidden;
-  @media screen and (max-width: 600px) {
-    max-height: 92vh;
-  }
 `;
 
 export default function IndexPage() {
