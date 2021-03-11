@@ -5,14 +5,14 @@ import AxeIcon from './AxeIcon'
 
 const NavBar = styled.nav`
   display: flex;
-  height: 6vh;
+  height: 2.5rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   z-index: 2;
   @media screen and (max-width: 768px) {
     position: sticky;
-    height: 8vh;
+    height: 4rem;
     top: 0;
     right: 0;
     bottom: 0;
@@ -23,7 +23,7 @@ const NavBar = styled.nav`
 const NavToggle = styled.div`
   display: none;
   height: 100%;
-  padding: 0 10vw;
+  padding: 0 3rem;
   @media screen and (max-width:768px) {
     display: flex;
     align-items: center;
