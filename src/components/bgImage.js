@@ -12,7 +12,7 @@ const BGImage = styled(BackgroundImage)`
 export default function bgImage ({ children }) {
   const data = useStaticQuery(graphql`
     query {
-      bgimg: file(relative path: { eq: "images/stage2.jpg" }) {
+      bgimg: file(relativePath: { eq: "images/stage2.jpg" }) {
         childImageSharp {
           fluid(quality: 90){
             ...GatsbyImageSharpFluid_withWebp
