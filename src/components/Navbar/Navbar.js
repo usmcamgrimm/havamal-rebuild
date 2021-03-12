@@ -11,6 +11,7 @@ const NavBar = styled.nav`
   align-items: center;
   z-index: 2;
   @media screen and (max-width: 768px) {
+    background-color: #002f54;
     position: sticky;
     height: 4rem;
     top: 0;
@@ -42,7 +43,7 @@ const NavLinksContainer = styled.div`
     padding-top: 2rem;
     background-color: #002f54;
     transition: all 0.3s ease-in;
-    top: 2rem;
+    top: 3.5rem;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `;
