@@ -39,10 +39,10 @@ const NavLinksContainer = styled.div`
     position: fixed;
     width: 100%;
     justify-content: flex-start;
-    padding-top: 10vh;
+    padding-top: 2rem;
     background-color: #002f54;
     transition: all 0.3s ease-in;
-    top: 8vh;
+    top: 2rem;
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `;
