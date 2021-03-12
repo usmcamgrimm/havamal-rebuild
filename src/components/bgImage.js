@@ -1,20 +1,20 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { useStaticQuery, graphql } from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
 import styled from 'styled-components'
 
-const BGImage = styled(BackgroundImage)`
-  max-width: 100%;
-  height: auto;
+const StyledBgImage = styled(BackgroundImage)`
+  width: 100%;
+  height: 100vh;
   z-index: -1;
 `;
 
-export default function bgImage ({ children }) {
+export default function BgImage({ children }) {
   const data = useStaticQuery(graphql`
     query {
-      bgimg: file(relativePath: { eq: "images/stage2.jpg" }) {
+      background: file(relativePath: { eq: "images/stage2.jpg" }) {
         childImageSharp {
-          fluid(quality: 90){
+          fluid(quality: 90) {
             ...GatsbyImageSharpFluid_withWebp
           }
         }
@@ -22,11 +22,13 @@ export default function bgImage ({ children }) {
     }
   `)
 
-  const bg = data.bgimg.childImageSharp.fluid;
+  const bg = data.background.childImageSharp.fluid
 
   return (
-    <BGImage fluid={bg}>
+    <StyledBgImage
+      fluid={bg}
+    >
       {children}
-    </BGImage>
+    </StyledBgImage>
   )
 }
