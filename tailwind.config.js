@@ -11,6 +11,9 @@ module.exports = {
       'pirata': ['"pirata one"', 'serif'],
       'BlackChancery': ['BlackChancery', 'sans-serif'],
     },
+    fontSize: {
+      '6xl': '5rem',
+    },
     container: {
       center: true,
     },
