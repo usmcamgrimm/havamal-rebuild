@@ -3,6 +3,11 @@ import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import SEO from '../components/seo'
 import BgImage from '../components/BgImage'
+import styled from 'styled-components'
+
+const TextShadow = styled.h1`
+  text-shadow: 4px 4px 5px #000000;
+`;
 
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
@@ -52,7 +57,7 @@ export default function IndexPage() {
       <BgImage>
         <div className="flex flex-col -mt-12 items-center justify-center h-screen">
           <Img fluid={logos} className="pt-4" alt="Havamal logo" />
-          <h1 className="text-4xl lg:text-6xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</h1>
+          <TextShadow className="text-4xl lg:text-6xl text-center font-pirata text-blue-lighter">Hail, Hordes of Havamal!</TextShadow>
         </div>
       </BgImage>
     </>
