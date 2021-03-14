@@ -13,7 +13,7 @@ export default function NewsPage({ data }) {
         News
       </h1>
       <div className="font-grenze text-center text-2xl text-white">
-        <p>There are {news.length} posts</p>
+        <p>Stay up to date with Havamal! There are {news.length} posts listed on this page.</p>
       </div>
       <NewsPosts news={news} />
     </>

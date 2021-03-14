@@ -10,7 +10,7 @@ export default function NewsItemPage({ data: { news }}) {
       <div className="flex flex-wrap justify-center items-center">
         <div className="container mt-12 flex flex-col content-between items-center">
           <Img fluid={news.image.asset.fluid} />
-          <p className="font-grenze text-2xl text-white pt-16 px-24">{news.newsItem}</p>"
+          <p className="font-grenze text-2xl text-white pt-16 px-14">{news.newsItem}</p>"
         </div>
       </div>
     </>
