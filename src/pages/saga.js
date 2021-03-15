@@ -14,6 +14,12 @@ const ShowBand = styled.div`
   @media screen and (min-width: 1026px) {
     padding: 0;
   }
+  @media screen and (max-width: 500px) {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 7rem;
+  }
 `;
 
 const HW = styled.div`
