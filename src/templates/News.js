@@ -10,6 +10,11 @@ const PostImage = styled(Img)`
   }
 `;
 
+const Post = styled.p`
+  text-align: center;
+  padding: 1rem 12px;
+`;
+
 export default function NewsItemPage({ data: { news }}) {
   return (
     <>
@@ -18,7 +23,7 @@ export default function NewsItemPage({ data: { news }}) {
       <div className="flex flex-wrap justify-center items-center">
         <div className="container mt-12 flex flex-col content-between items-center">
           <PostImage fluid={news.image.asset.fluid} />
-          <p className="font-grenze text-2xl text-white pt-16 px-14">{news.newsItem}</p>"
+          <Post className="font-grenze text-2xl text-white">{news.newsItem}</Post>
         </div>
       </div>
     </>
