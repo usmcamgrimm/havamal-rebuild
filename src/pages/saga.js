@@ -10,6 +10,10 @@ const ShowBand = styled.div`
   place-items: center;
   grid-gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0 7rem;
+  @media screen and (min-width: 1026px) {
+    padding: 0;
+  }
 `;
 
 const HW = styled.div`
@@ -41,10 +45,10 @@ export default function SagaPage({ data }) {
       <ShowBand className="container mx-auto">
         {hymnweavers.map(band => (
           <HW>
-            <p className="font-grenze text-xl lg:text-2xl text-white">
+            <p className="font-grenze text-xl lg:text-2xl text-white text-center">
               {`${band.name}`}
             </p>
-            <p className="font-grenze text-xl lg:text-2xl text-blue-lighter">
+            <p className="font-grenze text-xl lg:text-2xl text-blue-lighter text-center">
               {`${band.instrument}`}
             </p>
             <Img fluid={band.image.asset.fluid} />
