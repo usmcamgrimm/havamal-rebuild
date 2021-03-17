@@ -46,7 +46,7 @@ const FlexSection = styled.div`
 export default function ResourcesPage() {
   const data = useStaticQuery(graphql`
   query {
-    logoImage: file(relativePath: { eq: "images/havamal_bg.png" }) {
+    logoImage: file(relativePath: { eq: "images/havamal_new_logo.png" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_noBase64
