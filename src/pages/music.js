@@ -3,6 +3,7 @@ import React from 'react'
 import SEO from "../components/seo"
 import CallOfTheNorth from '../components/albums/CallOfTheNorth'
 import TalesFromYggdrasil from '../components/albums/TalesFromYggdrasil'
+import TheShadowChapter from '../components/albums/TheShadowChapter'
 import styled from 'styled-components'
 
 const Line = styled.hr`
@@ -20,6 +21,27 @@ export default function MusicPage() {
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         Music
       </h1>
+      <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
+        <TheShadowChapter />
+        <div className="flex flex-col items-center">
+          <h3 className="font-grenze text-white text-2xl">The Shadow Chapter</h3>
+          <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | May 2021</h4>
+          <ol className="list-inside text-xl font-grenze text-white">
+            <li>The North Awakes</li>
+            <li>Fenris</li>
+            <li>Nidhoggr</li>
+            <li>Kraken</li>
+            <li>Empire of the Ashen Sun</li>
+            <li>Nornir's Call</li>
+            <li>Jormungandr</li>
+            <li>Hel</li>
+            <li>The Curse of Grendel</li>
+          </ol>
+        </div>
+      </div>
+
+      <Line />
+
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
         <TalesFromYggdrasil />
         <div className="flex flex-col items-center">
@@ -39,6 +61,6 @@ export default function MusicPage() {
           <iframe title="Call Of The North Sample on Spotify" src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" width="300" height="328" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
-  </>
+    </>
   )
 }
