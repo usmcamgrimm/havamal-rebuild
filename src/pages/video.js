@@ -26,6 +26,10 @@ export default function VideoPage() {
       </YTLink>
       <div className="container mx-auto mt-12">
         <div className="grid lg:grid-cols-2 md:gap-16">
+        <HavamalVideo
+            videoURL="https://www.youtube.com/embed/w6Gy4ZGG5eg"
+            videoTitle="Nidhöggr"
+          />
           <HavamalVideo
             videoURL="https://www.youtube.com/embed/nQYwDQd5SBk"
             videoTitle="Berserker"
@@ -53,10 +57,6 @@ export default function VideoPage() {
           <HavamalVideo
             videoURL="https://www.youtube.com/embed/1WqMnulsCI8"
             videoTitle="Dawn of the Frost Giants (Live)"
-          />
-          <HavamalVideo
-            videoURL="https://www.youtube.com/embed/nQDsz0Cz_EI"
-            videoTitle="Death of Balder"
           />
         </div>
       </div>
