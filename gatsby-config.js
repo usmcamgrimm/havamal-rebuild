@@ -63,6 +63,16 @@ module.exports = {
         watchMode: true,
         token: process.env.SANITY_TOKEN,
       }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        commonmark: true,
+        footnotes: true,
+        pedantic: true,
+        gfm: true,
+        plugins:[],
+      }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
