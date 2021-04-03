@@ -8,8 +8,8 @@ import SEO from "../components/seo"
 const ShowBand = styled.div`
   display: grid;
   place-items: center;
-  grid-gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 0 7rem;
   @media screen and (min-width: 1026px) {
     padding: 0;
