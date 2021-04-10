@@ -2,7 +2,7 @@
 
 <p align="center">
   <a href="https://havamal-rebuild-test.netlify.app/">
-    <img alt="Havamal" src="https://i.imgur.com/laowgoL.png" />
+    <img alt="Havamal" src="https://i.imgur.com/q3rDwYw.png" />
 
   </a>
 </p>
