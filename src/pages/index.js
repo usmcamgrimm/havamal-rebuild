@@ -12,7 +12,7 @@ const TextShadow = styled.h1`
 export default function IndexPage() {
   const data = useStaticQuery(graphql`
     query {
-      mobileLogo: file(relativePath: { eq: "images/havamal_new_logo.png" }) {
+      mobileLogo: file(relativePath: { eq: "images/havamal_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 400) {
             ...GatsbyImageSharpFluid_noBase64
@@ -20,7 +20,7 @@ export default function IndexPage() {
           }
         }
       }
-      tabletLogo: file(relativePath: { eq: "images/havamal_new_logo.png" }) {
+      tabletLogo: file(relativePath: { eq: "images/havamal_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 550) {
             ...GatsbyImageSharpFluid_noBase64
@@ -28,7 +28,7 @@ export default function IndexPage() {
           }
         }
       }
-      desktopLogo: file(relativePath: { eq: "images/havamal_new_logo.png" }) {
+      desktopLogo: file(relativePath: { eq: "images/havamal_logo.png" }) {
         childImageSharp {
           fluid(maxWidth: 1000) {
             ...GatsbyImageSharpFluid_noBase64
