@@ -5,6 +5,7 @@ import createSchema from 'part:@sanity/base/schema-creator'
 import schemaTypes from 'all:part:@sanity/base/schema-type'
 
 // We import object and document schemas
+import MarkdownInput from 'sanity-plugin-markdown'
 import newsPost from './newsPost'
 import contactForm from './contactForm'
 import band from './band'
