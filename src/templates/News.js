@@ -3,6 +3,13 @@ import { graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 
+// const toMarkdown = require('@sanity/block-content-to-markdown')
+// const client = require('@sanity/client')({
+//   projectId: 'GATSBY_SANITY_PROJECT_ID',
+//   dataset: 'GATSBY_SANITY_PROJECT_DATASET',
+//   useCdn: true
+// })
+
 const PostImage = styled(Img)`
   @media screen and (Max-width: 500px) {
     max-width: 350px;
@@ -14,6 +21,16 @@ const Post = styled.p`
   text-align: center;
   padding: 1rem 12px;
 `;
+
+// const serializers = {
+//   types: {
+//     code: props => '```' + props.node.language + '\n' + props.node.code + '\n```'
+//   }
+// }
+
+// client.fetch('*[_type == "article"][0]').then(article => {
+//   console.log(toMarkdown(article.body, {serializers}))
+// })
 
 export default function NewsItemPage({ data: { news }}) {
   return (

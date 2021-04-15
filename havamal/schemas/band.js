@@ -30,11 +30,5 @@ export default {
       title: 'Instrument',
       type: 'string',
     },
-    {
-      name: 'bio',
-      title: 'Bio',
-      type: 'text',
-      description: 'A short bio for each member of Havamal'
-    },
   ],
 }
