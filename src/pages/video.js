@@ -28,8 +28,8 @@ export default function VideoPage() {
         <div className="grid lg:grid-cols-2 md:gap-16">
           <HavamalVideo
               videoURL="https://www.youtube.com/embed/KOkd-_kT7fM"
-              videoTitle="Death of Balder (Live)"
-            />
+              videoTitle="Kraken"
+          />
           <HavamalVideo
               videoURL="https://www.youtube.com/embed/w6Gy4ZGG5eg"
               videoTitle="Nidhöggr"
