@@ -26,9 +26,13 @@ export default function VideoPage() {
       </YTLink>
       <div className="container mx-auto mt-12">
         <div className="grid lg:grid-cols-2 md:gap-16">
-        <HavamalVideo
-            videoURL="https://www.youtube.com/embed/w6Gy4ZGG5eg"
-            videoTitle="Nidhöggr"
+          <HavamalVideo
+              videoURL="https://www.youtube.com/embed/KOkd-_kT7fM"
+              videoTitle="Death of Balder (Live)"
+            />
+          <HavamalVideo
+              videoURL="https://www.youtube.com/embed/w6Gy4ZGG5eg"
+              videoTitle="Nidhöggr"
           />
           <HavamalVideo
             videoURL="https://www.youtube.com/embed/nQYwDQd5SBk"
@@ -49,10 +53,6 @@ export default function VideoPage() {
           <HavamalVideo
             videoURL="https://www.youtube.com/embed/sc_IlYJ1Fps"
             videoTitle="Jotun War"
-          />
-          <HavamalVideo
-            videoURL="https://www.youtube.com/embed/uAM1b2z75Xg"
-            videoTitle="Death of Balder (Live)"
           />
           <HavamalVideo
             videoURL="https://www.youtube.com/embed/1WqMnulsCI8"
