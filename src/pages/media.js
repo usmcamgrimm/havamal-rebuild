@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import MediaGallery from '../components/MediaGallery'
 import SimpleReactLightbox from 'simple-react-lightbox'
 

@@ -1,6 +1,6 @@
 import React from 'react'
 
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import CallOfTheNorth from '../components/albums/CallOfTheNorth'
 import TalesFromYggdrasil from '../components/albums/TalesFromYggdrasil'
 import TheShadowChapter from '../components/albums/TheShadowChapter'

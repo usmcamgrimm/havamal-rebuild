@@ -10,19 +10,16 @@ const StyledBgImage = styled(BackgroundImage)`
 `;
 
 export default function BgImage({ children }) {
-  const data = useStaticQuery(graphql`
-    query {
-      background: file(relativePath: { eq: "images/stage.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  background: file(relativePath: {eq: "images/stage.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(quality: 90, layout: FULL_WIDTH)
     }
-  `)
+  }
+}
+`)
 
-  const bg = data.background.childImageSharp.fluid
+  const bg = data.background.childImageSharp.gatsbyImageData
 
   return (
     <StyledBgImage

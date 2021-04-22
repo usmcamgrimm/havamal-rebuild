@@ -1,7 +1,8 @@
 import React from 'react'
 import { graphql } from 'gatsby';
+import { GatsbyImage } from "gatsby-plugin-image"
 
-import SEO from "../components/seo"
+import SEO from "../components/SEO"
 import NewsPosts from '../components/NewsPosts'
 
 export default function NewsPage({ data }) {
@@ -34,9 +35,7 @@ export const query = graphql`
         newsItem
         image {
           asset {
-            fluid(maxWidth: 400) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(width: 400)
           }
         }
       }

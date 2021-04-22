@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components'
 
 const AlbumCover = styled.div`
@@ -10,23 +10,20 @@ const AlbumCover = styled.div`
 `;
 
 const CallOfTheNorth = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      COTN: file(relativePath: { eq: "albums/cotn.jpg" }) {
-        childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed_noBase64
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  COTN: file(relativePath: {eq: "albums/cotn.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 400, height: 400, placeholder: NONE, layout: FIXED)
     }
-  `)
+  }
+}
+`)
 
   return (
     <AlbumCover>
-      <Img fixed={data.COTN.childImageSharp.fixed} />
+      <GatsbyImage image={data.COTN.childImageSharp.gatsbyImageData} />
     </AlbumCover>
-  )
+  );
 }
 
 export default CallOfTheNorth

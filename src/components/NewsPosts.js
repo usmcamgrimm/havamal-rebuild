@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components';
 
 const NewsGrid = styled.div`
@@ -32,10 +32,13 @@ function SinglePost({ news }) {
         <h2 className="text-2xl font-grenze text-blue-lighter m-0">
           {news.postAuthor}
         </h2>
-        <Img fluid={news.image.asset.fluid} alt={news.name} className="max-w-xs" />
+        <GatsbyImage
+          image={news.image.childImageSharp.gatsbyImageData}
+          alt={news.name}
+          className="max-w-xs" />
       </Link>
     </NewsItem>
-  )
+  );
 }
 
 export default function NewsPosts({ news }) {

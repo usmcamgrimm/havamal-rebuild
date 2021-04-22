@@ -1,22 +1,16 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 
 export default function AxeIcon() {
-  const data = useStaticQuery(graphql`
-    query {
-      AxeIcon: file(relativePath: { eq: "images/axes.png" }) {
-        childImageSharp {
-          fluid(maxWidth: 50) {
-            ...GatsbyImageSharpFluid_noBase64
-            ...GatsbyImageSharpFluidLimitPresentationSize
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  AxeIcon: file(relativePath: {eq: "images/axes.png"}) {
+    childImageSharp {
+      gatsbyImageData(width: 50, placeholder: NONE, layout: FIXED)
     }
-  `)
+  }
+}
+`)
 
-  return (
-    <Img fluid={data.AxeIcon.childImageSharp.fluid} alt="menu button" />
-  )
+  return <GatsbyImage image={data.AxeIcon.childImageSharp.gatsbyImageData} alt="menu button" />;
 }

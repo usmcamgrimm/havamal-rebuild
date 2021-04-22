@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components'
 
 // const toMarkdown = require('@sanity/block-content-to-markdown')
@@ -10,7 +10,7 @@ import styled from 'styled-components'
 //   useCdn: true
 // })
 
-const PostImage = styled(Img)`
+const PostImage = styled(GatsbyImage)`
   @media screen and (Max-width: 500px) {
     max-width: 350px;
     height: auto;
@@ -55,9 +55,7 @@ export const query = graphql`
       postAuthor
       image {
         asset {
-          fluid(maxWidth: 500) {
-            ...GatsbySanityImageFluid
-          }
+          gatsbyImageData(layout: FIXED)
         }
       }
       newsItem

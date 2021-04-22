@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import { GatsbyImage } from "gatsby-plugin-image";
 import styled from 'styled-components'
 
 const AlbumCover = styled.div`
@@ -10,23 +10,20 @@ const AlbumCover = styled.div`
 `;
 
 const TheShadowChapter = () => {
-  const data = useStaticQuery(graphql`
-    query {
-      TSC: file(relativePath: { eq: "albums/tsc.jpg" }) {
-        childImageSharp {
-          fixed(width: 400, height: 400) {
-            ...GatsbyImageSharpFixed_noBase64
-          }
-        }
-      }
+  const data = useStaticQuery(graphql`{
+  TSC: file(relativePath: {eq: "albums/tsc.jpg"}) {
+    childImageSharp {
+      gatsbyImageData(width: 400, height: 400, placeholder: NONE, layout: FIXED)
     }
-  `)
+  }
+}
+`)
 
   return (
     <AlbumCover>
-      <Img fixed={data.TSC.childImageSharp.fixed} />
+      <GatsbyImage image={data.TSC.childImageSharp.gatsbyImageData} />
     </AlbumCover>
-  )
+  );
 }
 
 export default TheShadowChapter
