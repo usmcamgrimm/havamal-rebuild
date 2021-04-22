@@ -3,26 +3,22 @@
 <p align="center">
   <a href="https://havamal-rebuild-test.netlify.app/">
     <img alt="Havamal" src="https://i.imgur.com/q3rDwYw.png" />
-
   </a>
 </p>
 <h1 align="center">Hail Havamal!</h1>
 
-## Rebuilding the website for the Swedish band **[HAVAMAL](https://havamal-rebuild-test.netlify.app/)**
+### Website for the Swedish band **[HAVAMAL](https://havamal-rebuild-test.netlify.app/)**
 
+### This website is built using these resources and technologies:
 
+* GatsbyJS
+* Sanity CMS
+* Cloudinary
+* TailwindCSS
+* Styled Components
 
-## The old site I made for Havamal was built with HTML, CSS, and JavaScript.  Wanting to develop and expand my skills, I rebuilt the site to make it better and faster.
+This started as a Gatsby project for Vets Who Code. I started it, then scrapped it, started again, then wrote the entire project in HTML, CSS, and JavaScript. 
 
+I wasn't happy with the result and felt limited. I decided to re-write the project in Gatsby so I could work with React and incorporate some features from Gatsby.  My goal was to learn different technologies while improving the speed and usability of the website.
 
-## This website is built using these resources and technologies:
-
-## -GatsbyJS
-
-## -Sanity CMS
-
-## -Cloudinary
-
-## -TailwindCSS
-
-## -Styled Components
+I started with TailwindCSS, and added styled-components to fill in some gaps.
