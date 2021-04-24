@@ -7,7 +7,7 @@
 </p>
 <h1 align="center">Hail Havamal!</h1>
 
-### Website for the Swedish band **[HAVAMAL](https://havamal-rebuild-test.netlify.app/)**
+### Website for the Swedish band **[HAVAMAL](https://havamalband.com)**
 
 ### This website is built using these resources and technologies:
 
@@ -15,10 +15,10 @@
 * Sanity CMS
 * Cloudinary
 * TailwindCSS
-* Styled Components
+* Styled-Components
 
 This started as a Gatsby project for Vets Who Code. I started it, then scrapped it, started again, then wrote the entire project in HTML, CSS, and JavaScript. 
 
 I wasn't happy with the result and felt limited. I decided to re-write the project in Gatsby so I could work with React and incorporate some features from Gatsby.  My goal was to learn different technologies while improving the speed and usability of the website.
 
-I started with TailwindCSS, and added styled-components to fill in some gaps.
+Wanting to expand my knowledge of CSS frameworks, I began styling with TailwindCSS, then added styled-components to fill in some gaps.
