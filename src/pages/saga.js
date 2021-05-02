@@ -93,7 +93,6 @@ export const query = graphql`
       nodes {
         name
         id
-        bio
         instrument
         slug {
           current
