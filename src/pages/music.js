@@ -45,6 +45,17 @@ export default function MusicPage() {
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
         <TheShadowChapter />
         <div className="flex flex-col items-center">
+          <h3 className="font-grenze text-white text-2xl">Hel</h3>
+          <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
+          <iframe title="Hel Sample on Spotify" src="https://open.spotify.com/embed/track/5GkmMQsuMARKcbtC18cmsf" width="300" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+      </div>
+
+      <Line />
+
+      <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
+        <TheShadowChapter />
+        <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Kraken</h3>
           <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
           <iframe title="Kraken Sample on Spotify" src="https://open.spotify.com/embed/track/3zcJQkq6eoxWNCbHHyjycI" width="300" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
