@@ -27,6 +27,10 @@ export default function VideoPage() {
       <div className="container mx-auto mt-12">
         <div className="grid lg:grid-cols-2 md:gap-16">
           <HavamalVideo
+              videoURL="https://www.youtube.com/embed/0zJ9InTWRwo"
+              videoTitle="Nidhöggr"
+          />
+          <HavamalVideo
               videoURL="https://www.youtube.com/embed/KOkd-_kT7fM"
               videoTitle="Kraken"
           />
