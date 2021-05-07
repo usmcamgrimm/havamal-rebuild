@@ -1,4 +1,5 @@
 const path = require('path');
+const graphql = require('gatsby').graphql
 
 async function newsPostPages({ graphql, actions }) {
   const newsTemplate = path.resolve('./src/templates/News.js');
