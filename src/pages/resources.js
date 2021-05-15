@@ -1,6 +1,6 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import SEO from "../components/seo"
@@ -48,10 +48,11 @@ export default function ResourcesPage() {
   query {
     logoImage: file(relativePath: { eq: "images/havamal_logo.png" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
-          ...GatsbyImageSharpFluid_noBase64
-          ...GatsbyImageSharpFluidLimitPresentationSize
-        }
+        gatsbyImageData(
+          width: 400
+          placeholder: BLURRED
+          formats: [AUTO, WEBP]
+        )
       }
     }
   }
@@ -64,8 +65,8 @@ export default function ResourcesPage() {
         Resources
       </h1>
       <LinkLayout />
-      <Img
-        fluid={data.logoImage.childImageSharp.fluid}
+      <GatsbyImage
+        image={data.logoImage.childImageSharp.gatsbyImageData}
         className="container mx-auto my-16"
       />
       <FlexContainer>

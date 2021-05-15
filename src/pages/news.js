@@ -34,9 +34,9 @@ export const query = graphql`
         newsItem
         image {
           asset {
-            fluid(maxWidth: 400) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(
+              width: 400
+            )
           }
         }
       }

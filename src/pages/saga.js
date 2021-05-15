@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import Img from 'gatsby-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import SEO from "../components/seo"
@@ -57,7 +57,7 @@ export default function SagaPage({ data }) {
             <p className="font-grenze text-xl lg:text-2xl text-blue-lighter text-center">
               {`${band.instrument}`}
             </p>
-            <Img fluid={band.image.asset.fluid} />
+            <GatsbyImage image={band.image.asset.gatsbyImageData} />
           </HW>
         ))}
       </ShowBand>
@@ -99,9 +99,9 @@ export const query = graphql`
         }
         image {
           asset {
-            fluid(maxWidth: 250) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(
+              width: 250
+            )
           }
         }
       }

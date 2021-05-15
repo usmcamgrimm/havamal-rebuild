@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
-import { SRLWrapper } from  'simple-react-lightbox'
+import { SRLWrapper } from 'simple-react-lightbox'
 
 const MediaGrid = styled.div`
   display: grid;

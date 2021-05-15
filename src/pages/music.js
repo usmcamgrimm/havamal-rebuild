@@ -1,9 +1,7 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 
 import SEO from "../components/seo"
-import CallOfTheNorth from '../components/albums/CallOfTheNorth'
-import TalesFromYggdrasil from '../components/albums/TalesFromYggdrasil'
-import TheShadowChapter from '../components/albums/TheShadowChapter'
 import styled from 'styled-components'
 
 const Line = styled.hr`
@@ -22,7 +20,7 @@ export default function MusicPage() {
         Music
       </h1>
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
+        <StaticImage src="../resources/albums/tsc.jpg" alt="album cover for The Shadow Chapter" />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">The Shadow Chapter</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | May 2021</h4>
@@ -43,7 +41,7 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
+      <StaticImage src="../resources/albums/tsc.jpg" alt="album cover for The Shadow Chapter" />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Hel</h3>
           <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
@@ -54,7 +52,7 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
+      <StaticImage src="../resources/albums/tsc.jpg" alt="album cover for The Shadow Chapter" />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Kraken</h3>
           <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
@@ -65,7 +63,7 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
+      <StaticImage src="../resources/albums/tsc.jpg" alt="album cover for The Shadow Chapter" />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Nidhoggr</h3>
           <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
@@ -76,7 +74,7 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TalesFromYggdrasil />
+      <StaticImage src="../resources/albums/tfy.jpg" alt="album cover for Tales From Yggdrasil" />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Tales From Yggdrasil</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | June 2019</h4>
@@ -87,7 +85,7 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6 pt-6 pb-10">
-        <CallOfTheNorth />
+      <StaticImage src="../resources/albums/cotn.jpg" alt="album cover for Call of The North" />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Call Of The North</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Independent | June 2017</h4>
