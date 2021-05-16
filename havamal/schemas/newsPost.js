@@ -40,8 +40,7 @@ export default {
       name: 'newsItem',
       title: 'News Item',
       description: 'Newsworthy posts from Havamal for updates and such',
-      type: 'array',
-      of: [{type: 'block'}]
+      type: 'markdown'
     }
   ]
 }
