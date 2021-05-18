@@ -46,7 +46,7 @@ const FlexSection = styled.div`
 export default function ResourcesPage() {
   const data = useStaticQuery(graphql`
   query {
-    logoImage: file(relativePath: { eq: "images/havamal_logo.png" }) {
+    Nidhoggr: file(relativePath: { eq: "images/Nidhoggr.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 400) {
           ...GatsbyImageSharpFluid_noBase64
@@ -65,7 +65,7 @@ export default function ResourcesPage() {
       </h1>
       <LinkLayout />
       <Img
-        fluid={data.logoImage.childImageSharp.fluid}
+        fluid={data.Nidhoggr.childImageSharp.fluid}
         className="container mx-auto my-16"
       />
       <FlexContainer>

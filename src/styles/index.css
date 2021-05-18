@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 html {
-  background-color: #0e181f;
+  background-color: #000000;
 }
 @font-face {
   font-family: "BlackChancery";
