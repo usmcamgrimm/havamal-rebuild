@@ -5,7 +5,7 @@ export default function RaidsPage() {
   return (
     <>
       <SEO title="Raids" />
-      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-cyan">
         Upcoming Raids
       </h1>
       <div className="container mx-auto flex flex-col">

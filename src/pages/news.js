@@ -9,7 +9,7 @@ export default function NewsPage({ data }) {
   return (
     <>
       <SEO title="News" />
-      <h1 className="text-6xl text-center pt-16 pb-6 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-6xl text-center pt-16 pb-6 font-pirata font-medium text-cyan">
         News
       </h1>
       <div className="font-grenze text-center text-2xl text-white">

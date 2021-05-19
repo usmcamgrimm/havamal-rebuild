@@ -18,7 +18,7 @@ export default function MusicPage() {
   return (
     <>
       <SEO title="Music" />
-      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-cyan">
         Music
       </h1>
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">

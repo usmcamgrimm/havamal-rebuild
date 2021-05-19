@@ -45,7 +45,7 @@ export default function SagaPage({ data }) {
   return (
     <>
       <SEO title="Saga" />
-      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-cyan">
         The Hymn-Weavers
       </h1>
       <ShowBand className="container mx-auto">
@@ -54,14 +54,14 @@ export default function SagaPage({ data }) {
             <p className="font-grenze text-xl lg:text-2xl text-white text-center">
               {`${band.name}`}
             </p>
-            <p className="font-grenze text-xl lg:text-2xl text-blue-lighter text-center">
+            <p className="font-grenze text-xl lg:text-2xl text-red-lighter text-center">
               {`${band.instrument}`}
             </p>
             <Img fluid={band.image.asset.fluid} />
           </HW>
         ))}
       </ShowBand>
-      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-cyan">
         The Havamal Saga
       </h1>
       <div className="container px-8 text-start">

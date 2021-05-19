@@ -17,12 +17,14 @@ module.exports = {
     extend: {
       colors: {
         yellow: `#ffcd00`,
+        cyan: `#02dcba`,
         blue: {
           lighter: `#66add9`,
           default: `#004b87`,
           darker: `#002f54`,
         },
         red: {
+          lighter: `#550731`,
           default: `#ce1126`,
           darker: `#d50000`,
         }

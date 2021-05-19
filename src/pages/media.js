@@ -8,7 +8,7 @@ export default function MediaPage() {
   return (
     <>
       <SEO title="Media" />
-      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-cyan">
         Media
       </h1>
       <SimpleReactLightbox>
