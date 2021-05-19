@@ -46,9 +46,9 @@ const FlexSection = styled.div`
 export default function ResourcesPage() {
   const data = useStaticQuery(graphql`
   query {
-    logoImage: file(relativePath: { eq: "images/havamal_logo.png" }) {
+    Nidhoggr: file(relativePath: { eq: "images/Nidhoggr.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 400) {
+        fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid_noBase64
           ...GatsbyImageSharpFluidLimitPresentationSize
         }
@@ -60,12 +60,12 @@ export default function ResourcesPage() {
   return (
     <>
       <SEO title="Resources" />
-      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
+      <h1 className="text-6xl text-center my-16 font-pirata font-medium text-cyan">
         Resources
       </h1>
       <LinkLayout />
       <Img
-        fluid={data.logoImage.childImageSharp.fluid}
+        fluid={data.Nidhoggr.childImageSharp.fluid}
         className="container mx-auto my-16"
       />
       <FlexContainer>
