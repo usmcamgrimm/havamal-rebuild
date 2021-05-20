@@ -21,55 +21,13 @@ export default function MusicPage() {
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-cyan">
         Music
       </h1>
-      <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
-        <div className="flex flex-col items-center">
-          <h3 className="font-grenze text-white text-2xl">The Shadow Chapter</h3>
-          <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | May 2021</h4>
-          <ol className="list-inside text-xl font-grenze text-white">
-            <li>The North Awakes</li>
-            <li>Fenris</li>
-            <li>Nidhoggr</li>
-            <li>Kraken</li>
-            <li>Empire of the Ashen Sun</li>
-            <li>Nornir's Call</li>
-            <li>Jormungandr</li>
-            <li>Hel</li>
-            <li>The Curse of Grendel</li>
-          </ol>
-        </div>
-      </div>
-
-      <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
         <TheShadowChapter />
         <div className="flex flex-col items-center">
-          <h3 className="font-grenze text-white text-2xl">Hel</h3>
-          <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
-          <iframe title="Hel Sample on Spotify" src="https://open.spotify.com/embed/track/5GkmMQsuMARKcbtC18cmsf" width="300" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-
-      <Line />
-
-      <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
-        <div className="flex flex-col items-center">
-          <h3 className="font-grenze text-white text-2xl">Kraken</h3>
-          <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
-          <iframe title="Kraken Sample on Spotify" src="https://open.spotify.com/embed/track/3zcJQkq6eoxWNCbHHyjycI" width="300" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
-      </div>
-
-      <Line />
-
-      <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-        <TheShadowChapter />
-        <div className="flex flex-col items-center">
-          <h3 className="font-grenze text-white text-2xl">Nidhoggr</h3>
-          <h4 className="font-grenze text-white text-lg pb-2">The Shadow Chapter | Art Gates Records</h4>
-          <iframe title="Nidhoggr Sample on Spotify" src="https://open.spotify.com/embed/track/27zFuccloYJQj9jDd6muU6" width="300" height="300" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <h3 className="font-grenze text-white text-2xl">Tales From Yggdrasil</h3>
+          <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | June 2019</h4>
+          <iframe title="The Shadow Chapter Sample on Spotify" src="https://open.spotify.com/embed/album/1I4MAMVeh0dqfe0tz1f5Gh" width="300" height="328" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
 
