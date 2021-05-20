@@ -45,17 +45,33 @@ const FlexSection = styled.div`
 
 export default function ResourcesPage() {
   const data = useStaticQuery(graphql`
-  query {
-    Nidhoggr: file(relativePath: { eq: "images/Nidhoggr.jpg" }) {
-      childImageSharp {
-        fluid(maxWidth: 600) {
-          ...GatsbyImageSharpFluid_noBase64
-          ...GatsbyImageSharpFluidLimitPresentationSize
+    query {
+      Nidhoggr: file(relativePath: { eq: "images/Nidhoggr2.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 400) {
+            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+      NidhoggrFull: file(relativePath: { eq: "images/Nidhoggr.jpg" }) {
+        childImageSharp {
+          fluid(maxWidth: 750) {
+            ...GatsbyImageSharpFluid_noBase64
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
         }
       }
     }
-  }
   `)
+
+  const NidhoggrHavamal = [
+    data.Nidhoggr.childImageSharp.fluid,
+    {
+      ...data.NidhoggrFull.childImageSharp.fluid,
+      media: `(min-width: 601px)`,
+    },
+  ]
 
   return (
     <>
@@ -65,7 +81,7 @@ export default function ResourcesPage() {
       </h1>
       <LinkLayout />
       <Img
-        fluid={data.Nidhoggr.childImageSharp.fluid}
+        fluid={NidhoggrHavamal}
         className="container mx-auto my-16"
       />
       <FlexContainer>
