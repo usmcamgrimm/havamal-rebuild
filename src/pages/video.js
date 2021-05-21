@@ -55,10 +55,6 @@ export default function VideoPage() {
             videoTitle="Live Stream Rehearsal"
           />
           <HavamalVideo
-            videoURL="https://www.youtube.com/embed/sc_IlYJ1Fps"
-            videoTitle="Jotun War"
-          />
-          <HavamalVideo
             videoURL="https://www.youtube.com/embed/1WqMnulsCI8"
             videoTitle="Dawn of the Frost Giants (Live)"
           />
