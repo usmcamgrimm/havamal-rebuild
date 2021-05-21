@@ -25,8 +25,8 @@ export default function MusicPage() {
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
         <TheShadowChapter />
         <div className="flex flex-col items-center">
-          <h3 className="font-grenze text-white text-2xl">Tales From Yggdrasil</h3>
-          <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | June 2019</h4>
+          <h3 className="font-grenze text-white text-2xl">The Shadow Chapter</h3>
+          <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | May 2021</h4>
           <iframe title="The Shadow Chapter Sample on Spotify" src="https://open.spotify.com/embed/album/1I4MAMVeh0dqfe0tz1f5Gh" width="300" height="328" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
       </div>
