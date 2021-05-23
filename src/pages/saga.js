@@ -45,7 +45,7 @@ export default function SagaPage({ data }) {
   return (
     <>
       <SEO title="Saga" />
-      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-cyan">
+      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Hymn-Weavers
       </h1>
       <ShowBand className="container mx-auto">

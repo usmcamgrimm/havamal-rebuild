@@ -19,7 +19,7 @@ export default function VideoPage() {
       <div className="font-grenze text-center text-white text-3xl mt-12">
         Find more videos on YouTube:
       </div>
-      <YTLink className="font-grenze text-center text-white text-2xl mt-6">
+      <YTLink className="font-grenze text-center text-blue-lighter text-2xl mt-6">
         <a href="https://www.youtube.com/channel/UCmGfesgQAVTgpJqGf9dt3wA/videos" target="_blank" rel="noreferrer">
           HAVAMAL OFFICIAL
         </a>
