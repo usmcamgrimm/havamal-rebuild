@@ -10,7 +10,10 @@ const NavBar = styled.nav`
   justify-content: center;
   align-items: center;
   z-index: 2;
+  background-image: linear-gradient(to right, rgba(0, 75, 135,0), rgba(0, 75, 135,1), rgba(0, 75, 135,0));
+  padding: 0.25rem;
   @media screen and (max-width: 768px) {
+    background-image: none;
     background-color: #002f54;
     position: sticky;
     height: 4rem;
@@ -55,7 +58,7 @@ const AxeMenu = styled.div`
 export default function NavbarV2() {
   const [navExpand, setNavExpand] = useState(false)
   return(
-    <NavBar className="lg:from-transparent lg:via-blue lg:to-transparent lg:bg-gradient-to-r lg:p-1">
+    <NavBar>
       <NavToggle
         navExpand={navExpand}
         onClick={() => setNavExpand(!navExpand)}
