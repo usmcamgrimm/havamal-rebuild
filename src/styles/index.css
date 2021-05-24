@@ -13,7 +13,7 @@ html {
 
 /* purgecss start ignore */
 
-/* Needed for all the other image queries not handled by SsanitySanity */
+/* Needed for all the other image queries not handled by Sanity */
 .gatsby-image-wrapper {
     width: 800px;
 }

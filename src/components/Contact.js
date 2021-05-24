@@ -1,5 +1,6 @@
 import React from 'react'
-import { useForm } from 'react-hook-form'
+import { Formik, Form, Field, ErrorMessage } from 'formik'
+import * as Yup from 'yup'
 import { navigate } from 'gatsby'
 import styled from 'styled-components';
 
@@ -12,98 +13,101 @@ const FormWrapper = styled.div`
   }
 `;
 
-export default function Contact() {
-  const { register, handleSubmit, errors, reset } = useForm();
+const SubmitBtn = styled.button`
+  background-color: #004b87;
+`;
 
+export default function Contact() {
   const encode = (data) => {
     return Object.keys(data)
-      .map(
-        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-      )
-      .join("&")
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
   }
-
-  const handlePost = (formData, event) => {
-    fetch(`/`, {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contactForm", ...formData }),
-    })
-      .then((response) => {
-        navigate("/FormSuccess/")
-        reset()
-        console.log(response)
-      })
-      .catch((error) => {
-        console.log(error)
-      })
-    event.preventDefault()
-  }
-
   return (
-    <FormWrapper className="pt-8">
-      <form
-        className="flex flex-col justify-center items:center;"
-        onSubmit={handleSubmit(handlePost)}
-        name="contactForm"
-        method="POST"
-        action="/FormSuccess/"
-        data-netlify="true"
-        netlify-honeypot="got-ya"
-      >
-        <input type="hidden" name="form-name" value="contactForm" />
-        <input
-          type="hidden"
-          name="formId"
-          value="contactForm"
-          ref={register()}
-        />
-        <label htmlFor="name">
-          <p className="font-grenze text-blue-lighter text-xl">Your Name</p>
-          {errors.name && <span className="font-roboto text-white">Name is required</span>}
-          <input className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline" name="name" ref={register({ required: true })} />
-        </label>
-        <label htmlFor="email">
-          <p className="font-grenze text-blue-lighter text-xl mt-4">Email Address</p>
-          {errors.email && <span className="font-roboto text-white">Please use a properly formatted email address</span>}
-          <input
+    <Formik
+      initialValues={{
+        name: '',
+        email: '',
+        message: '', 
+      }}
+      validationSchema={Yup.object({
+        name: Yup.string()
+          .max(40, 'Must be 40 characters or less')
+          .required('Required'),
+        email: Yup.string()
+          .email('Must be a valid email address')
+          .required('Required'),
+        message: Yup.string()
+          .required('Required'),
+      })}
+      onSubmit={
+        (values, actions) => {
+          fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: encode({ "form-name": "contactForm", ...values })
+          })
+          .then(() => {
+            navigate("/FormSuccess")
+            actions.resetForm()
+          })
+          .catch(() => {
+            alert('Error');
+          })
+          .finally(() => actions.setSubmitting(false))
+        }
+      }
+    >
+      <FormWrapper className="pt-8">
+        <Form
+          className="flex flex-col justify-center items:center;"
+          name="contactForm"
+          data-netlify={true}
+        >
+          <label htmlFor="name">
+            <p className="font-grenze text-blue-lighter text-xl">Your Name</p>
+          </label>
+          <Field
+            className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+            name="name"
+            type="text"
+            placeholder="Name"
+          />
+          <ErrorMessage name="name" />
+
+          <label htmlFor="email">
+            <p className="font-grenze text-blue-lighter text-xl pt-4">Email Address</p>
+          </label>
+          <Field
             className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
             name="email"
-            ref={register({
-              required: true,
-              pattern: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
-            })}
+            type="email"
+            placeholder="Email address"
           />
-        </label>
-        <label htmlFor="message">
-          <p className="font-grenze text-blue-lighter text-xl mt-4">Type Your Message...
-          </p>
-          <textarea
-            className="w-full h-24 mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
-            name="message" 
-            ref={register()}
+          <ErrorMessage name="email" />
+
+          <label htmlFor="message">
+           <p className="font-grenze text-blue-lighter text-xl pt-4">Message</p>
+          </label>
+          <Field
+            className="form-textarea w-full h-24 mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+            as="text-area"
+            component="textarea"
+            name="message"
+            placeholder="Type your message to Havamal..."
           />
-        </label>
-        <label
-          htmlFor="got-ya"
-          style={{
-            position: "absolute",
-            overflow: "hidden",
-            clip: "rect(0 0 0 0)",
-            height: "1px",
-            width: "1px",
-            margin: "-1px",
-            padding: "0",
-            border: "0",
-          }}
-        >
-          Don't fill this out if you're a human:
-          <input tabIndex="0" name="got-ya" ref={register()} />
-        </label>
-        <div className="mt-4">
-          <button className="text-xl font-grenze text-yellow text-center tracking-wide p-3 mb-2 rounded-lg w-full bg-blue focus:outline-none focus:shadow-outline hover:bg-blue-darker" type="submit">Submit Message</button>
-        </div>
-      </form>
-    </FormWrapper>
+          <ErrorMessage name="message" />
+
+          <div className="mt-4">
+            <SubmitBtn 
+              className="text-xl font-grenze text-yellow text-center tracking-wide p-3 mb-2 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-blue-darker"
+              type="submit"
+            >
+              Submit Message
+            </SubmitBtn>
+          </div>
+        </Form>
+      </FormWrapper>
+    </Formik>
   )
 }
