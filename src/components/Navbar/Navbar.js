@@ -11,7 +11,7 @@ const NavBar = styled.nav`
   align-items: center;
   z-index: 2;
   background-image: linear-gradient(to right, rgba(0, 75, 135,0), rgba(0, 75, 135,1), rgba(0, 75, 135,0));
-  padding: 0.25rem;
+  padding: 0.25rem 0 0.5rem 0;
   @media screen and (max-width: 768px) {
     background-image: none;
     background-color: #002f54;
