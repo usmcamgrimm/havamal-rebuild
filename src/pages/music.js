@@ -21,7 +21,13 @@ export default function MusicPage() {
       </h1>
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-      <StaticImage src="../resources/albums/tsc.jpg" alt="album cover for The Shadow Chapter" />
+      <StaticImage
+        src="../resources/albums/tsc.jpg"
+        alt="album cover for The Shadow Chapter"
+        layout="fullWidth"
+        breakpoints={[500, 769, 1025, 1440]}
+        placeholder="blurred"
+      />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">The Shadow Chapter</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | June 2019</h4>
@@ -32,7 +38,12 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6">
-      <StaticImage src="../resources/albums/tfy.jpg" alt="album cover for Tales From Yggdrasil" />
+      <StaticImage
+        src="../resources/albums/tfy.jpg"
+        alt="album cover for Tales From Yggdrasil"
+        layout="constrained"
+        placeholder="blurred"
+      />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Tales From Yggdrasil</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Art Gates Records | June 2019</h4>
@@ -43,7 +54,12 @@ export default function MusicPage() {
       <Line />
 
       <div className="flex flex-wrap justify-center items-center space-x-6 px-6 pt-6 pb-10">
-      <StaticImage src="../resources/albums/cotn.jpg" alt="album cover for Call of The North" />
+      <StaticImage
+        src="../resources/albums/cotn.jpg"
+        alt="album cover for Call of The North"
+        layout="constrained"
+        placeholder="blurred"
+      />
         <div className="flex flex-col items-center">
           <h3 className="font-grenze text-white text-2xl">Call Of The North</h3>
           <h4 className="font-grenze text-white text-lg pb-2">Independent | June 2017</h4>
