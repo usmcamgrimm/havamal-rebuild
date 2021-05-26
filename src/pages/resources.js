@@ -72,7 +72,10 @@ export default function ResourcesPage() {
         <FlexSection>
           <h2 className="font-grenze text-blue-lighter text-4xl text-center pt-12">Support Havamal</h2>
           <p className="font-grenze text-white text-3xl text-center mt-12">
-            Click the links below for official HAVAMAL merch!
+            The Shadow Chapter now available!
+          </p>
+          <p className="font-grenze text-white text-3xl text-center mt-12">
+            Check out the links below for official HAVAMAL merch!
           </p>
           <a href="https://havamal.bandcamp.com/merch" className="font-grenze text-blue-lighter text-center text-3xl">Havamal on Bandcamp</a>
           <a href="https://artgatesrecords.com/store/en/havamal" className="font-grenze text-blue-lighter text-center text-3xl">Havamal at Art Gates Records</a>
