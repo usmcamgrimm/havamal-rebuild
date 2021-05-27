@@ -1,12 +1,6 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
-
-// import Bandbond from '../resources/icons/bandbond'
-import Bandcamp from '../resources/icons/bandcamp'
-import Facebook from '../resources/icons/facebook'
-import Instagram from '../resources/icons/instagram'
-import Youtube from '../resources/icons/youtube'
-import AGR from '../resources/icons/AGR'
 
 const LinkGrid = styled.div`
   display: grid;
@@ -43,16 +37,40 @@ export default function LinkLayout() {
     <>
       <LinkGrid>
         <LinkItem>
-          <Bandcamp className="m-12" />
-          <Facebook className="p-12" />
-          {/* <Bandbond className="p-12" /> */}
-          <Instagram className="p-12" />
-          <Youtube className="p-12" />
+          <StaticImage
+            src="../resources/icons/bandcamp.png"
+            alt="bandcamp icon"
+            layout="fixed"
+            width={75}
+          />
+          <StaticImage
+            src="../resources/icons/facebook.png"
+            alt="facebook icon"
+            layout="fixed"
+            width={75}
+          />
+          <StaticImage
+            src="../resources/icons/instagram.png"
+            alt="instagram icon"
+            layout="fixed"
+            width={75}
+          />
+          <StaticImage
+            src="../resources/icons/youtube.png"
+            alt="youtube icon"
+            layout="fixed"
+            width={75}
+          />
         </LinkItem>
       </LinkGrid>
       <LinkGrid>
         <BannerLinks>
-          <AGR />
+          <StaticImage
+            src="../resources/icons/AGR.png"
+            alt="art gates records icon"
+            layout="fixed"
+            width={400}
+          />
         </BannerLinks>
       </LinkGrid>
     </>

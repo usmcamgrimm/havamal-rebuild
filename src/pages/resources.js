@@ -1,12 +1,11 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage } from 'gatsby-plugin-image'
+import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import SEO from "../components/seo"
 import LinkLayout from '../components/LinkLayout'
 import Contact from '../components/Contact'
-import Horde from '../resources/icons/horde'
 
 const FlexContainer = styled.div`
   display: flex;
@@ -81,7 +80,12 @@ export default function ResourcesPage() {
           </p>
           <a href="https://havamal.bandcamp.com/merch" className="font-grenze text-blue-lighter text-center text-3xl">Havamal Merch</a>
           <h2 className="banner font-grenze text-white text-3xl text-center pt-16">Join the Horde</h2>
-          <Horde />
+          <StaticImage
+            src="../resources/icons/horde.png"
+            alt="hordes of havamal facebook group icon"
+            layout="fixed"
+            width={250}
+          />
         </FlexSection>
       </FlexContainer>
     </>
