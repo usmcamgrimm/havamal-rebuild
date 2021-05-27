@@ -1,11 +1,16 @@
 import React from 'react'
-import { useStaticQuery, graphql } from 'gatsby'
-import { GatsbyImage, StaticImage } from 'gatsby-plugin-image'
+import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 
 import SEO from "../components/seo"
 import LinkLayout from '../components/LinkLayout'
 import Contact from '../components/Contact'
+
+const NidhoggrHavamal = styled.div`
+  display: flex;
+  justify-content: center;
+  z-index: -99;
+`;
 
 const FlexContainer = styled.div`
   display: flex;
@@ -13,6 +18,7 @@ const FlexContainer = styled.div`
   justify-content: space-evenly;
   margin: 0 auto;
   padding: 0 2rem;
+  z-index: 2;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     justify-content: center;
@@ -30,6 +36,7 @@ const FlexSection = styled.div`
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  z-index: 2;
   @media screen and (max-width: 768px) {
     width: 100%;
     p {
@@ -43,20 +50,6 @@ const FlexSection = styled.div`
 `;
 
 export default function ResourcesPage() {
-  const data = useStaticQuery(graphql`
-  query {
-    logoImage: file(relativePath: { eq: "images/havamal_logo.png" }) {
-      childImageSharp {
-        gatsbyImageData(
-          width: 400
-          placeholder: BLURRED
-          formats: [AUTO, WEBP]
-        )
-      }
-    }
-  }
-  `)
-
   return (
     <>
       <SEO title="Resources" />
@@ -64,10 +57,13 @@ export default function ResourcesPage() {
         Resources
       </h1>
       <LinkLayout />
-      <GatsbyImage
-        image={data.logoImage.childImageSharp.gatsbyImageData}
-        className="container mx-auto my-16"
-      />
+      <NidhoggrHavamal>
+        <StaticImage
+          src="../resources/images/Nidhoggr.jpg"
+          alt="A graphic of the mighty Nidhoggr and the Havamal logo"
+          layout="fullWidth"
+        />
+      </NidhoggrHavamal>
       <FlexContainer>
         <FlexSection>
           <h2 className="font-grenze text-blue-lighter text-4xl text-center pt-12">Contact Havamal</h2>
