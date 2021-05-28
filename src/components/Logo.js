@@ -7,8 +7,8 @@ export default function Logo() {
       src="../resources/images/havamal_logo.png"
       alt="havamal logo"
       layout="fullWidth"
-      placeholder="tracedSVG"
-      breakpoints={[500, 769, 1025, 1440]}
+      placeholder="blurred"
+      breakpoints={[400, 769, 1025, 1440]}
     />
   )
 }
