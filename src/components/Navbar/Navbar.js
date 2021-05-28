@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
+import { StaticImage } from 'gatsby-plugin-image'
 import styled from 'styled-components'
 import NavLinks from './NavLinks'
-import AxeIcon from './AxeIcon'
 
 const NavBar = styled.nav`
   display: flex;
@@ -50,6 +50,7 @@ const NavLinksContainer = styled.div`
     left: ${props => (props.open ? "-100%" : "0")};
   }
 `;
+
 const AxeMenu = styled.div`
   align-self: center;
   position: relative;
@@ -63,7 +64,12 @@ export default function NavbarV2() {
         navExpand={navExpand}
         onClick={() => setNavExpand(!navExpand)}
       >
-        <AxeIcon />
+        <StaticImage
+          src="../../resources/images/axes.png"
+          alt="crossed axes toggle button"
+          layout="fixed"
+          width={50}
+        />
         {navExpand ? <AxeMenu open /> : <AxeMenu />}
       </NavToggle>
       {navExpand ? (
