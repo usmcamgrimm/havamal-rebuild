@@ -1,14 +1,38 @@
 import React from 'react'
-import { StaticImage } from 'gatsby-plugin-image'
+import { graphql } from 'gatsby'
+import { GatsbyImage, getImage, withArtDirection } from 'gatsby-plugin-image'
 
 export default function Logo() {
-  return (
-    <StaticImage
-      src="../resources/images/havamal_logo.png"
-      alt="havamal logo"
-      layout="fullWidth"
-      placeholder="blurred"
-      breakpoints={[400, 769, 1025, 1440]}
+
+  const images = withArtDirection(getImage(logoQuery.defaultLogo), [
+    {
+      media: "(max-width: 500px)",
+      image: getImage(logoQuery.mobileLogo),
+    }
+  ])
+
+  return(
+    <GatsbyImage
+      image={images}
     />
   )
 }
+
+export const logoQuery = graphql`
+  query {
+    mobileLogo: file(relativePath: { eq: "images/havamal_logo_small.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+        )
+      }
+    }
+    defaultLogo: file(relativePath: { eq: "images/havamal_logo.png" }) {
+      childImageSharp {
+        gatsbyImageData(
+          placeholder: BLURRED
+        )
+      }
+    }
+  }
+`
