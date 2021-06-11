@@ -1,6 +1,0 @@
-@media screen and (max-width: 500px) {
-  StaticImage {
-    max-width: 350px;
-    height: auto;
-  }
-}
