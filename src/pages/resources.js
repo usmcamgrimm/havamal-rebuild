@@ -80,12 +80,14 @@ export default function ResourcesPage() {
           <a href="https://havamal.bandcamp.com/merch" className="font-grenze text-blue-lighter text-center text-3xl">Havamal on Bandcamp</a>
           <a href="https://artgatesrecords.com/store/en/havamal" className="font-grenze text-blue-lighter text-center text-3xl">Havamal at Art Gates Records</a>
           <h2 className="banner font-grenze text-white text-3xl text-center pt-16">Join the Horde</h2>
-          <StaticImage
-            src="../resources/icons/horde.png"
-            alt="hordes of havamal facebook group icon"
-            layout="fixed"
-            width={250}
-          />
+          <a href="https://facebook.com/groups/338634033565609" target="_blank" rel="noreferrer">
+            <StaticImage
+              src="../resources/icons/horde.png"
+              alt="hordes of havamal facebook group icon"
+              layout="fixed"
+              width={250}
+            />
+          </a>
         </FlexSection>
       </FlexContainer>
     </>
