@@ -61,7 +61,7 @@ export default function SagaPage({ data }) {
           </HW>
         ))}
       </ShowBand>
-      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-cyan">
+      <h1 className="text-5xl lg:text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         The Havamal Saga
       </h1>
       <div className="container px-8 text-start">
