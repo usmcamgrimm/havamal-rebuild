@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
-    title: "havamal-v4",
+    siteUrl: "https://www.havamalband.com",
+    title: "Havamal",
   },
   plugins: [
     {
