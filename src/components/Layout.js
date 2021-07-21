@@ -1,4 +1,6 @@
 import React from 'react'
+import '../styles/layout.css'
+
 import { css } from '@emotion/react'
 
 
