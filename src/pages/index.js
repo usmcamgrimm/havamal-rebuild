@@ -4,6 +4,19 @@ import Navbar from '../components/Navbar/Navbar'
 
 import styled from '@emotion/styled'
 
+export default function Index() {
+ return (
+   <Layout>
+     <Navbar />
+     <Container>
+      <Welcome>
+        Hail, Hordes of Havamal!
+      </Welcome>
+     </Container>
+   </Layout> 
+  )
+}
+
 const Welcome = styled.h1`
   font-family: "pirata one";
   font-size: 2.25rem;
@@ -21,16 +34,3 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 `
-
-export default function Index() {
- return (
-   <Layout>
-     <Navbar />
-     <Container>
-      <Welcome>
-        Hail, Hordes of Havamal!
-      </Welcome>
-     </Container>
-   </Layout> 
-  )
-}

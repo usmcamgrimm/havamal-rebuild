@@ -2,6 +2,21 @@ import React from 'react'
 import { Link } from 'gatsby'
 import styled from '@emotion/styled'
 
+export default function NavLinks() {
+  return(
+    <>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/music">Music</NavLink>
+      <NavLink to="/video">Videos</NavLink>
+      <NavLink to="/photos">Photos</NavLink>
+      <NavLink to="/saga">Saga</NavLink>
+      <NavLink to="/raids">Raids</NavLink>
+      <NavLink to="/news">News</NavLink>
+      <NavLink to="/resources">Resources</NavLink>
+    </>
+  )
+}
+
 const NavLink = styled(Link)`
   color: #ffcd00;
   font-family: grenze;
@@ -17,18 +32,3 @@ const NavLink = styled(Link)`
     z-index: 5;
   }
 `;
-
-export default function NavLinks() {
-  return(
-    <>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/music">Music</NavLink>
-      <NavLink to="/video">Videos</NavLink>
-      <NavLink to="/photos">Photos</NavLink>
-      <NavLink to="/saga">Saga</NavLink>
-      <NavLink to="/raids">Raids</NavLink>
-      <NavLink to="/news">News</NavLink>
-      <NavLink to="/resources">Resources</NavLink>
-    </>
-  )
-}

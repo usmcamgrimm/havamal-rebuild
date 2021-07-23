@@ -3,6 +3,37 @@ import { StaticImage } from 'gatsby-plugin-image'
 import styled from '@emotion/styled'
 import NavLinks from './NavLinks'
 
+export default function NavbarV2() {
+  const [navExpand, setNavExpand] = useState(false)
+  return(
+    <NavBar>
+      <NavToggle
+        navExpand={navExpand}
+        onClick={() => setNavExpand(!navExpand)}
+      >
+        <StaticImage
+          src="../../resources/images/axes.png"
+          alt="crossed axes toggle button"
+          layout="fixed"
+          width={50}
+        />
+        {navExpand ? <AxeMenu open /> : <AxeMenu />}
+      </NavToggle>
+      {navExpand ? (
+        <NavLinksContainer
+          onClick={() => setNavExpand(!navExpand)}
+        >
+          <NavLinks />
+        </NavLinksContainer>
+      ) : (
+          <NavLinksContainer open>
+            <NavLinks />
+          </NavLinksContainer>
+      )}
+    </NavBar>
+  )
+}
+
 const NavBar = styled.nav`
   display: flex;
   height: 2.5rem;
@@ -55,34 +86,3 @@ const AxeMenu = styled.div`
   align-self: center;
   position: relative;
 `;
-
-export default function NavbarV2() {
-  const [navExpand, setNavExpand] = useState(false)
-  return(
-    <NavBar>
-      <NavToggle
-        navExpand={navExpand}
-        onClick={() => setNavExpand(!navExpand)}
-      >
-        <StaticImage
-          src="../../resources/images/axes.png"
-          alt="crossed axes toggle button"
-          layout="fixed"
-          width={50}
-        />
-        {navExpand ? <AxeMenu open /> : <AxeMenu />}
-      </NavToggle>
-      {navExpand ? (
-        <NavLinksContainer
-          onClick={() => setNavExpand(!navExpand)}
-        >
-          <NavLinks />
-        </NavLinksContainer>
-      ) : (
-          <NavLinksContainer open>
-            <NavLinks />
-          </NavLinksContainer>
-      )}
-    </NavBar>
-  )
-}
