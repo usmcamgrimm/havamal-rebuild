@@ -1,3 +1,17 @@
+/* Colors */
+/*!
+yellow: `#ffcd00`,
+blue: {
+  lighter: `#66add9`,
+  default: `#004b87`,
+  darker: `#002f54`,
+},
+red: {
+  default: `#ce1126`,
+  darker: `#d50000`,
+}
+*/
+
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
