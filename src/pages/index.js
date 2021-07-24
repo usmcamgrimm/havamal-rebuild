@@ -1,13 +1,11 @@
 import * as React from "react"
 import Layout from "../components/Layout"
-import Navbar from '../components/Navbar/Navbar'
 
 import styled from '@emotion/styled'
 
 export default function Index() {
  return (
    <Layout>
-     <Navbar />
      <Container>
       <Welcome>
         Hail, Hordes of Havamal!
@@ -27,7 +25,6 @@ const Welcome = styled.h1`
     text-size: 3rem;
   }
 `
-
 const Container = styled.div`
   display: flex;
   flex-direction: column;
