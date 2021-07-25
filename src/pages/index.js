@@ -21,6 +21,18 @@ export default function Index() {
             box-shadow: 2px 4px 12px #000000, -2px -4px 12px #000000;
           `}
         />
+        <StaticImage
+          src="../resources/images/havamal_logo.png"
+          alt="Havamal logo"
+          placeholder="blurred"
+          layout="constrained"
+          css={css`
+            margin-top: -300px;
+            max-width: 600px;
+            height: auto;
+            z-index: 99;
+          `}
+        />
         <Welcome>
           Hail, Hordes of Havamal!
         </Welcome>
