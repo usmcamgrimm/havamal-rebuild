@@ -16,7 +16,7 @@ export default function Index() {
           layout="constrained"
           css={css`
             max-width: 80%;
-            margin-top: 3rem;
+            margin-top: 2rem;
             border-radius: 5px;
             box-shadow: 2px 4px 12px #000000, -2px -4px 12px #000000;
           `}
@@ -35,6 +35,7 @@ const Welcome = styled.h1`
   font-weight: normal;
   text-align: center;
   color: #66add9;
+  padding: 2rem;
   @media screen and (min-width: 1025px) {
     text-size: 3rem;
   }
