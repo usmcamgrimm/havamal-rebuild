@@ -37,6 +37,17 @@ export default function Index() {
           Hail, Hordes of Havamal!
         </Welcome>
       </Container>
+      <h1 css={css`
+        font-family: grenze;
+        font-size: 2rem;
+        color: #002f54;
+        text-align: center;
+      `}>Upcoming Raids</h1>
+      <RaidContainer>
+        <RaidDescription>
+          
+        </RaidDescription>
+      </RaidContainer>
     </Layout> 
   )
 }
