@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function HavamalVideo ({ videoURL, videoTitle, ...props )} {
+export default function HavamalVideo ({ videoURL, videoTitle, ...props }) {
   return (
     <div>
       <iframe
