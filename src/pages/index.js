@@ -75,7 +75,7 @@ export default function Index() {
 
 const Welcome = styled.h1`
   font-family: "pirata one";
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: normal;
   text-align: center;
   color: #66add9;
@@ -99,7 +99,7 @@ const RaidDescription = styled.div`
   flex-flow: row wrap;
   place-content: center;
   width: 450px;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: #ffffff;
 `
 const RaidInformation = styled.div`
