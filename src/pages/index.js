@@ -27,8 +27,8 @@ export default function Index() {
           placeholder="blurred"
           layout="constrained"
           css={css`
-            margin-top: -300px;
-            max-width: 600px;
+            margin-top: -400px;
+            max-width: 900px;
             height: auto;
             z-index: 99;
           `}
@@ -37,6 +37,14 @@ export default function Index() {
           Hail, Hordes of Havamal!
         </Welcome>
       </Container>
+      <>
+      <hr css={css`
+        width: 55%;
+        margin: 0 auto;
+        border: 1px solid rgba(147, 147, 147, 0.2); 
+        margin-bottom: 3rem; 
+      `} />
+      </>
       <h1 css={css`
         font-family: grenze;
         font-size: 2rem;
@@ -75,14 +83,11 @@ export default function Index() {
 
 const Welcome = styled.h1`
   font-family: "pirata one";
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4rem, 5rem);
   font-weight: normal;
   text-align: center;
   color: #66add9;
   padding: 2rem;
-  @media screen and (min-width: 1025px) {
-    text-size: 3rem;
-  }
 `
 const Container = styled.div`
   display: flex;
