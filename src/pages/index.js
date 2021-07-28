@@ -41,7 +41,7 @@ export default function Index() {
       <hr css={css`
         width: 55%;
         margin: 0 auto;
-        border: 1px solid rgba(147, 147, 147, 0.2); 
+        border: 1px solid #434353; 
         margin-bottom: 3rem; 
       `} />
       </>
@@ -50,32 +50,20 @@ export default function Index() {
         font-size: 2rem;
         color: #66add9;
         text-align: center;
+        margin-bottom: 4rem;
       `}>Upcoming Raids</h1>
       <RaidContainer>
-        <RaidDescription>
-          <p>Järfälla Metal Fest - 28 May 2022</p>
-          <p>Fredagsmangel, Järfälla, Sweden</p>
-        </RaidDescription>
-        <RaidInformation>
+        <DateTitle>28 May 2022</DateTitle>
+        <EventTitle className="event">Järfälla Metal Fest</EventTitle>
+        <LocationTitle className="location" css={css`grid-area: location`}>Fredagsmangel, Järfälla, Sweden</LocationTitle>
         <a href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo" target="_blank" rel="noreferrer">
           <p 
             css={css`
               font-family: grenze;
               color: #ffffff;
             `}
-            className="flyer"
           >INFO</p>
         </a>
-        <a href="https://www.google.com/maps/place/Drabantv%C3%A4gen+11,+177+50+J%C3%A4rf%C3%A4lla,+Sweden/@59.4246958,17.8351142,17.75z/data=!4m5!3m4!1s0x465fa1d8b6ffe2eb:0x853a0a00e50acb6!8m2!3d59.4240721!4d17.8380435" target="_blank" rel="noreferrer">
-          <p
-            css={css`
-              font-family: grenze;
-              color: #ffffff
-            `}
-            className="map"
-          >MAP</p>
-        </a>
-        </RaidInformation>
       </RaidContainer>
     </Layout> 
   )
@@ -94,23 +82,45 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const DateTitle = styled.p`
+  grid-area: date;
+`
+const EventTitle = styled.p`
+  grid-area: event;
+`
+const LocationTitle = styled.p`
+  grid-area: location;
+`
+const InfoTitle = styled.p`
+  grid-area: info;
+`
 const RaidContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`
-const RaidDescription = styled.div`
-  display: flex;
-  flex-flow: row wrap;
-  place-content: center;
-  width: 450px;
-  font-size: 1.25rem;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+  grid-template-columns: 200px 300px 300px . 100px;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "date event location info";
+  grid-gap: 12px;
+  font-family: grenze;
+  font-size: 1.4rem;
   color: #ffffff;
+  width: 50%;
+  border-bottom: 1px solid rgba(147, 147, 147, 0.4);
 `
-const RaidInformation = styled.div`
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  font-size: 1rem;
-  color: #ffffff;
-`
+// const RaidDescription = styled.div`
+//   display: flex;
+//   flex-flow: row wrap;
+//   place-content: center;
+//   width: 450px;
+//   font-size: 1.25rem;
+//   color: #ffffff;
+// `
+// const RaidInformation = styled.div`
+//   display: flex;
+//   flex-flow: row nowrap;
+//   justify-content: space-between;
+//   font-size: 1rem;
+//   color: #ffffff;
+// `
