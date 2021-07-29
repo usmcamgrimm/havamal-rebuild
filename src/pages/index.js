@@ -56,14 +56,16 @@ export default function Index() {
         <DateTitle>28 May 2022</DateTitle>
         <EventTitle className="event">Järfälla Metal Fest</EventTitle>
         <LocationTitle className="location" css={css`grid-area: location`}>Fredagsmangel, Järfälla, Sweden</LocationTitle>
-        <a href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo" target="_blank" rel="noreferrer">
-          <p 
-            css={css`
-              font-family: grenze;
-              color: #ffffff;
-            `}
-          >INFO</p>
-        </a>
+        <InfoTitle>
+          <a href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo" target="_blank" rel="noreferrer">
+            <p 
+              css={css`
+                font-family: grenze;
+                color: #ffffff;
+              `}
+            >INFO</p>
+          </a>
+        </InfoTitle>
       </RaidContainer>
     </Layout> 
   )
@@ -91,7 +93,7 @@ const EventTitle = styled.p`
 const LocationTitle = styled.p`
   grid-area: location;
 `
-const InfoTitle = styled.p`
+const InfoTitle = styled.div`
   grid-area: info;
 `
 const RaidContainer = styled.div`
