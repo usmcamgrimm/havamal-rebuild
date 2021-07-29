@@ -48,7 +48,7 @@ export default function Index() {
       <h1 css={css`
         font-family: grenze;
         font-size: 2rem;
-        color: #66add9;
+        color: #004b87;
         text-align: center;
         margin-bottom: 4rem;
       `}>Upcoming Raids</h1>
