@@ -74,7 +74,7 @@ const Welcome = styled.h1`
   font-size: clamp(1.5rem, 4rem, 5rem);
   font-weight: normal;
   text-align: center;
-  color: #66add9;
+  color: #004b87;
   padding: 2rem;
 `
 const Container = styled.div`
