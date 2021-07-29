@@ -1,6 +1,7 @@
 import * as React from "react"
 import { StaticImage } from 'gatsby-plugin-image'
 import Layout from "../components/Layout"
+import LinkLayout from '../components/LinkLayout'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -44,6 +45,7 @@ export default function Index() {
         border: 1px solid #434353; 
         margin-bottom: 3rem; 
       `} />
+      <LinkLayout />
       </>
       <h1 css={css`
         font-family: grenze;
