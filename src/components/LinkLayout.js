@@ -41,7 +41,6 @@ export default function LinkLayout() {
             alt="bandcamp icon"
             layout="constrained"
             width={50}
-            css={css`padding: 0;`}
           />
           <StaticImage
             src="../resources/icons/bandbond.png"
@@ -58,6 +57,12 @@ export default function LinkLayout() {
           <StaticImage
             src="../resources/icons/instagram.png"
             alt="instagram icon"
+            layout="constrained"
+            width={50}
+          />
+          <StaticImage
+            src="../resources/icons/spotify.png"
+            alt="spotify icon"
             layout="constrained"
             width={50}
           />
