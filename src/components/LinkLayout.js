@@ -1,6 +1,5 @@
 import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
-import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 const LinkGrid = styled.div`
