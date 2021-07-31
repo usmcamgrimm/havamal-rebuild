@@ -11,7 +11,12 @@ red: {
   darker: `#d50000`,
 }
 */
-
+@font-face {
+  font-family: 'norse';
+  src: url('../fonts/norse/Norse.woff2') format('woff2'),
+       url('../fonts/norse/Norse.woff') format('woff'),
+       url('../fonts/norse/Norse.ttf') format('truetype');
+}
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
