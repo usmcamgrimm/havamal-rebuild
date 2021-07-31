@@ -46,15 +46,15 @@ export default function Index() {
           border: 1px solid #434353; 
           margin-bottom: 3rem; 
         `} />
-        <LinkLayout />
       </>
       <Raids />
+      <LinkLayout />
     </Layout> 
   )
 }
 
 const Welcome = styled.h1`
-  font-family: "pirata one";
+  font-family: "norse";
   font-size: clamp(1.5rem, 4rem, 5rem);
   font-weight: normal;
   text-align: center;
