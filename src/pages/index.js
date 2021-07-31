@@ -32,7 +32,16 @@ export default function Index() {
             margin-top: -400px;
             max-width: 900px;
             height: auto;
-            z-index: 99;
+            z-index: 10;
+            @media screen and (max-width: 1025px) {
+              margin-top: -300px;
+            }
+            @media screen and (max-width: 768px) {
+              margin-top: -250px;
+            }
+            @media screen and (max-width: 500px) {
+              margin-top: -100px;
+            }
           `}
         />
         <Welcome>
