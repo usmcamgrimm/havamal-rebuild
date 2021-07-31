@@ -19,8 +19,8 @@ export default function Index() {
           css={css`
             max-width: 80%;
             margin-top: 2rem;
-            border-radius: 5px;
-            box-shadow: 2px 4px 12px #000000, -2px -4px 12px #000000;
+            border-radius: 12px;
+            box-shadow: 12px 12px 18px #000000, -12px -12px 18px #000000;
           `}
         />
         <StaticImage
@@ -30,7 +30,7 @@ export default function Index() {
           layout="constrained"
           css={css`
             margin-top: -400px;
-            max-width: 900px;
+            max-width: 1100px;
             height: auto;
             z-index: 10;
             @media screen and (max-width: 1025px) {
