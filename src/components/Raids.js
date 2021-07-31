@@ -14,6 +14,9 @@ const LocationTitle = styled.p`
 `
 const InfoTitle = styled.div`
   grid-area: info;
+  font-family: grenze;
+  color: #ffffff;
+  text-decoration: none;
 `
 const RaidContainer = styled.div`
   margin: 0 auto;
@@ -60,15 +63,13 @@ export default function Raids() {
         <DateTitle>28 May 2022</DateTitle>
         <EventTitle className="event">Järfälla Metal Fest</EventTitle>
         <LocationTitle className="location" css={css`grid-area: location`}>Fredagsmangel, Järfälla, Sweden</LocationTitle>
-        <InfoTitle>
-          <a href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo" target="_blank" rel="noreferrer">
-            <p 
-              css={css`
-                font-family: grenze;
-                color: #ffffff;
-              `}
-            >INFO</p>
-          </a>
+        <InfoTitle
+          as="a"
+          href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo"
+          target="_blank" 
+          rel="noreferrer"
+        >
+          INFO
         </InfoTitle>
       </RaidContainer>
     </>
