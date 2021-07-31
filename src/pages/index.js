@@ -43,7 +43,8 @@ export default function Index() {
         <hr css={css`
           width: 55%;
           margin: 0 auto;
-          border: 1px solid #434353; 
+          line-height: 1;
+          border-bottom: 2px solid #434353;
           margin-bottom: 3rem; 
         `} />
       </>
