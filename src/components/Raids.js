@@ -31,8 +31,14 @@ const RaidContainer = styled.div`
   font-size: 1.4rem;
   color: #ffffff;
   width: 50%;
-  border-bottom: 1px solid rgba(147, 147, 147, 0.4);
 `
+const Line = styled.hr`
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid rgba(147, 147, 147, 0.4);
+`;
 // const RaidDescription = styled.div`
 //   display: flex;
 //   flex-flow: row wrap;
@@ -59,6 +65,20 @@ export default function Raids() {
         text-align: center;
         margin-bottom: 4rem;
       `}>Upcoming Raids</h1>
+      <RaidContainer>
+        <DateTitle>10 Sept 2021</DateTitle>
+        <EventTitle className="event">Raise Your Horns</EventTitle>
+        <LocationTitle className="location" css={css`grid-area: location`}>Musikhuzet, Rønne, Denmark</LocationTitle>
+        <InfoTitle
+          as="a"
+          href="https://www.facebook.com/raiseyourhornsdk/"
+          target="_blank" 
+          rel="noreferrer"
+        >
+          INFO
+        </InfoTitle>
+      </RaidContainer>
+      <Line />
       <RaidContainer>
         <DateTitle>28 May 2022</DateTitle>
         <EventTitle className="event">Järfälla Metal Fest</EventTitle>
