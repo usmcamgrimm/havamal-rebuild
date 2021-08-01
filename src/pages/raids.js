@@ -1,5 +1,14 @@
 import React from 'react'
 import SEO from "../components/seo"
+import styled from 'styled-components'
+
+const Line = styled.hr`
+  width: 40%;
+  margin: 0 auto;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border: 1px solid #606060;
+`;
 
 export default function RaidsPage() {
   return (
@@ -8,6 +17,21 @@ export default function RaidsPage() {
       <h1 className="text-6xl text-center my-16 font-pirata font-medium text-blue-lighter">
         Upcoming Raids
       </h1>
+      <div className="container mx-auto flex flex-col">
+        <div className="flex flex-col justify-center items-center font-grenze text-white text-2xl">
+          <p>Raise Your Horns - 10 Sept 2021</p>
+          <p>Musikhuzet, Rønne, Denmark</p>
+        </div>
+        <div className="flex flex-row place-content-center space-x-16 font-grenze text-white text-xl">
+          <a href="https://www.facebook.com/raiseyourhornsdk/" target="_blank" rel="noreferrer">
+            <p className="font-grenze text-white hover:text-yellow">INFO</p>
+          </a>
+          <a href="https://www.google.com/maps/place/Musikhuzet/@55.1025185,14.6967818,17z/data=!3m1!4b1!4m5!3m4!1s0x46551ae2afe105cf:0xdfa50fd55375a00e!8m2!3d55.1025185!4d14.6989705" target="_blank" rel="noreferrer">
+            <p className="font-grenze text-white hover:text-yellow">MAP</p>
+          </a>
+        </div>
+      </div>
+      <Line />
       <div className="container mx-auto flex flex-col">
         <div className="flex flex-col justify-center items-center font-grenze text-white text-2xl">
           <p>Järfälla Metal Fest - 28 May 2022</p>
