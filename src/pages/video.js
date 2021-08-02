@@ -28,7 +28,7 @@ export default function VideoPage() {
         <div className="grid lg:grid-cols-2 md:gap-16">
           <HavamalVideo
               videoURL="https://www.youtube.com/embed/0zJ9InTWRwo"
-              videoTitle="Nidhöggr"
+              videoTitle="Hel"
           />
           <HavamalVideo
               videoURL="https://www.youtube.com/embed/KOkd-_kT7fM"
