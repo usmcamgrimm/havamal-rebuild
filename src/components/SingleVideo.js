@@ -7,6 +7,8 @@ export default function HavamalVideo ({ videoURL, videoTitle, ...props }) {
         src={videoURL}
         title={videoTitle}
         frameborder="0"
+        width="888"
+        height="500"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       />

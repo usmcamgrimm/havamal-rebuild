@@ -3,6 +3,7 @@ import { StaticImage } from 'gatsby-plugin-image'
 import Layout from "../components/Layout"
 import LinkLayout from '../components/LinkLayout'
 import Raids from '../components/Raids'
+import HavamalVideo from '../components/SingleVideo'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -57,6 +58,12 @@ export default function Index() {
           margin-bottom: 3rem; 
         `} />
       </>
+      <VideoContainer>
+        <HavamalVideo
+          videoURL="https://www.youtube.com/embed/w6Gy4ZGG5eg"
+          videoTitle="Nidhöggr"
+        />
+      </VideoContainer>
       <Raids />
       <LinkLayout />
     </Layout> 
@@ -76,3 +83,8 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
 `
+const VideoContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
