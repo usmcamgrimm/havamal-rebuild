@@ -49,15 +49,6 @@ export default function Index() {
           Hail, Hordes of Havamal!
         </Welcome>
       </Container>
-      <>
-        <hr css={css`
-          width: 55%;
-          margin: 0 auto;
-          line-height: 1;
-          border-bottom: 2px solid #434353;
-          margin-bottom: 3rem; 
-        `} />
-      </>
       <VideoContainer>
         <HavamalVideo
           videoURL="https://www.youtube.com/embed/w6Gy4ZGG5eg"
@@ -65,18 +56,12 @@ export default function Index() {
         />
       </VideoContainer>
       <Raids />
-      <hr css={css`
-          width: 55%;
-          margin: 0 auto;
-          line-height: 1;
-          border-bottom: 2px solid #434353;
-          margin-bottom: 3rem; 
-        `} />
         <h1 css={css`
           font-family: grenze;
           font-size: 2rem;
           color: #004b87;
           text-align: center;
+          margin-top: 2rem;
           margin-bottom: 2rem;
       `}>Follow Havamal:</h1>
       <LinkLayout />
