@@ -64,7 +64,7 @@ export default function Index() {
 }
 
 const Welcome = styled.h1`
-  font-family: "norse";
+  font-family: norse;
   font-size: clamp(1.5rem, 4rem, 5rem);
   font-weight: normal;
   text-align: center;

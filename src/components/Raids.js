@@ -59,7 +59,7 @@ export default function Raids() {
   return(
     <>
       <h1 css={css`
-        font-family: norse;
+        font-family: grenze;
         font-size: 2rem;
         color: #004b87;
         text-align: center;
