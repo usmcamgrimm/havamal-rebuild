@@ -65,6 +65,20 @@ export default function Index() {
         />
       </VideoContainer>
       <Raids />
+      <hr css={css`
+          width: 55%;
+          margin: 0 auto;
+          line-height: 1;
+          border-bottom: 2px solid #434353;
+          margin-bottom: 3rem; 
+        `} />
+        <h1 css={css`
+          font-family: grenze;
+          font-size: 2rem;
+          color: #004b87;
+          text-align: center;
+          margin-bottom: 2rem;
+      `}>Follow Havamal:</h1>
       <LinkLayout />
     </Layout> 
   )

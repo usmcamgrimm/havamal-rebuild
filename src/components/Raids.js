@@ -35,7 +35,7 @@ const RaidContainer = styled.div`
 const Line = styled.hr`
   width: 50%;
   margin: 0 auto;
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-bottom: 2rem;
   border-bottom: 1px solid rgba(147, 147, 147, 0.4);
 `;
