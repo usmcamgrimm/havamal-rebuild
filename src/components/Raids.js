@@ -74,6 +74,11 @@ export default function Raids() {
           href="https://www.facebook.com/raiseyourhornsdk/"
           target="_blank" 
           rel="noreferrer"
+          css={css`
+            &:hover {
+              color: #ffcd00;
+            }
+          `}
         >
           INFO
         </InfoTitle>
@@ -88,6 +93,11 @@ export default function Raids() {
           href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo"
           target="_blank" 
           rel="noreferrer"
+          css={css`
+            &:hover {
+              color: #ffcd00;
+            }
+          `}
         >
           INFO
         </InfoTitle>
