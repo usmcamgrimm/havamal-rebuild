@@ -5,13 +5,17 @@ import styled from '@emotion/styled'
 const VideoContainer = styled.div`
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 60%;
+  margin-bottom: 2rem;
   ::after {
     padding-top: 56.25%;
     display: block;
     content: '';
+  }
+  @media screen and (max-width: 1024px) {
+    width: 80%;
+  } 
 `;
-
 
 export default function HavamalVideo ({ videoURL, videoTitle, ...props }) {
   return (
