@@ -26,6 +26,7 @@ const AlbumTitle = styled.h3`
   font-family: grenze;
   color: #ffffff;
   font-size: 1.75rem;
+  margin: 0;
   font-weight: normal;
 `;
 const ReleaseInfo = styled.h4`
@@ -63,7 +64,15 @@ export default function MusicPage() {
       <AlbumDetails>
         <AlbumTitle>The Shadow Chapter</AlbumTitle>
         <ReleaseInfo>Art Gates Records | May 2021</ReleaseInfo>
-        <iframe title="The Shadow Chapter Sample on Spotify" src="https://open.spotify.com/embed/album/1I4MAMVeh0dqfe0tz1f5Gh" width="300" height="328" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        <iframe 
+          title="The Shadow Chapter Sample on Spotify" 
+          src="https://open.spotify.com/embed/album/1I4MAMVeh0dqfe0tz1f5Gh" 
+          width="325" 
+          height="360" 
+          frameBorder="0" 
+          allowtransparency="true" 
+          allow="encrypted-media"
+        ></iframe>
       </AlbumDetails>
     </AlbumContainer>
 
@@ -84,7 +93,15 @@ export default function MusicPage() {
         <AlbumDetails>
           <AlbumTitle>Tales From Yggdrasil</AlbumTitle>
           <ReleaseInfo>Art Gates Records | June 2019</ReleaseInfo>
-          <iframe title="Tales From Yggdrasil Sample on Spotify" src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" width="300" height="328" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe 
+            title="Tales From Yggdrasil Sample on Spotify" 
+            src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" 
+            width="325" 
+            height="360" 
+            frameBorder="0" 
+            allowtransparency="true" 
+            allow="encrypted-media"
+          ></iframe>
         </AlbumDetails>
       </AlbumContainer>
 
@@ -105,7 +122,15 @@ export default function MusicPage() {
         <AlbumDetails>
           <AlbumTitle>Call Of The North</AlbumTitle>
           <ReleaseInfo>Independent | June 2017</ReleaseInfo>
-          <iframe title="Call Of The North Sample on Spotify" src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" width="300" height="328" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe 
+            title="Call Of The North Sample on Spotify" 
+            src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" 
+            width="325" 
+            height="360" 
+            frameBorder="0" 
+            allowtransparency="true" 
+            allow="encrypted-media"
+          ></iframe>
         </AlbumDetails>
       </AlbumContainer>
     </Layout>
