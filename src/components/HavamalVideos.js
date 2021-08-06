@@ -10,29 +10,29 @@ const VideoContainer = styled.div`
 
 export default function HavamalVideos ({ id }) {
   return (
-    <div id={id}>
+    <section id="videoList">
       <VideoContainer>
-      <HavamalVideo
-        videoURL="https://www.youtube.com/embed/0zJ9InTWRwo"
-        videoTitle="Hel"
-      />
-      <HavamalVideo
-        videoURL="https://www.youtube.com/embed/KOkd-_kT7fM"
-        videoTitle="Kraken"
-      />
-      <HavamalVideo
-        videoURL="https://www.youtube.com/embed/Ks1P1zgKLuQ"
-        videoTitle="Live Stream Rehearsal"
-      />
-      <HavamalVideo
-        videoURL="https://www.youtube.com/embed/nQYwDQd5SBk"
-        videoTitle="Berserker"
-      />
-      <HavamalVideo
-        videoURL="https://www.youtube.com/embed/5nb_1gEoIko"
-        videoTitle="Ginnungagap"
-      />
-    </VideoContainer>
-    </div>
+        <HavamalVideo
+          videoURL="https://www.youtube.com/embed/0zJ9InTWRwo"
+          videoTitle="Hel"
+        />
+        <HavamalVideo
+          videoURL="https://www.youtube.com/embed/KOkd-_kT7fM"
+          videoTitle="Kraken"
+        />
+        <HavamalVideo
+          videoURL="https://www.youtube.com/embed/Ks1P1zgKLuQ"
+          videoTitle="Live Stream Rehearsal"
+        />
+        <HavamalVideo
+          videoURL="https://www.youtube.com/embed/nQYwDQd5SBk"
+          videoTitle="Berserker"
+        />
+        <HavamalVideo
+          videoURL="https://www.youtube.com/embed/5nb_1gEoIko"
+          videoTitle="Ginnungagap"
+        />
+      </VideoContainer>
+    </section>
   )
 }

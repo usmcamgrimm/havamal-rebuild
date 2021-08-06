@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../components/Layout'
+import HavamalVideos from '../components/HavamalVideos'
 import { StaticImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -133,6 +134,8 @@ export default function MusicPage() {
           ></iframe>
         </AlbumDetails>
       </AlbumContainer>
+
+      <HavamalVideos />
     </Layout>
   )
 }
