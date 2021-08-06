@@ -49,54 +49,25 @@ export default function MusicPage() {
         margin-top: 4rem;
         margin-bottom: 4rem;
       `}>The Hymns of Havamal</h1>
-
-    <AlbumContainer>
-      <StaticImage
-        src="../resources/albums/tsc.jpg"
-        alt="album cover for The Shadow Chapter"
-        layout="constrained"
-        placeholder="blurred"
-        css={css`
-          margin-right: 2rem;
-          max-width: 500px;
-          height: auto;
-        `}
-      />
-      <AlbumDetails>
-        <AlbumTitle>The Shadow Chapter</AlbumTitle>
-        <ReleaseInfo>Art Gates Records | May 2021</ReleaseInfo>
-        <iframe 
-          title="The Shadow Chapter Sample on Spotify" 
-          src="https://open.spotify.com/embed/album/1I4MAMVeh0dqfe0tz1f5Gh" 
-          width="325" 
-          height="360" 
-          frameBorder="0" 
-          allowtransparency="true" 
-          allow="encrypted-media"
-        ></iframe>
-      </AlbumDetails>
-    </AlbumContainer>
-
-      <Line />
-
+    <section id="albumsList">
       <AlbumContainer>
         <StaticImage
-          src="../resources/albums/tfy.jpg"
-          alt="album cover for Tales From Yggdrasil"
+          src="../resources/albums/tsc.jpg"
+          alt="album cover for The Shadow Chapter"
           layout="constrained"
           placeholder="blurred"
           css={css`
             margin-right: 2rem;
             max-width: 500px;
             height: auto;
-        `}
+          `}
         />
         <AlbumDetails>
-          <AlbumTitle>Tales From Yggdrasil</AlbumTitle>
-          <ReleaseInfo>Art Gates Records | June 2019</ReleaseInfo>
+          <AlbumTitle>The Shadow Chapter</AlbumTitle>
+          <ReleaseInfo>Art Gates Records | May 2021</ReleaseInfo>
           <iframe 
-            title="Tales From Yggdrasil Sample on Spotify" 
-            src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" 
+            title="The Shadow Chapter Sample on Spotify" 
+            src="https://open.spotify.com/embed/album/1I4MAMVeh0dqfe0tz1f5Gh" 
             width="325" 
             height="360" 
             frameBorder="0" 
@@ -106,36 +77,68 @@ export default function MusicPage() {
         </AlbumDetails>
       </AlbumContainer>
 
-      <Line />
+        <Line />
 
-      <AlbumContainer css={css`padding-bottom: 2rem;`}>
-        <StaticImage
-          src="../resources/albums/cotn.jpg"
-          alt="album cover for Call of The North"
-          layout="constrained"
-          placeholder="blurred"
-          css={css`
-            margin-right: 2rem;
-            max-width: 500px;
-            height: auto;
-        `}
-        />
-        <AlbumDetails>
-          <AlbumTitle>Call Of The North</AlbumTitle>
-          <ReleaseInfo>Independent | June 2017</ReleaseInfo>
-          <iframe 
-            title="Call Of The North Sample on Spotify" 
-            src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" 
-            width="325" 
-            height="360" 
-            frameBorder="0" 
-            allowtransparency="true" 
-            allow="encrypted-media"
-          ></iframe>
-        </AlbumDetails>
-      </AlbumContainer>
+        <AlbumContainer>
+          <StaticImage
+            src="../resources/albums/tfy.jpg"
+            alt="album cover for Tales From Yggdrasil"
+            layout="constrained"
+            placeholder="blurred"
+            css={css`
+              margin-right: 2rem;
+              max-width: 500px;
+              height: auto;
+          `}
+          />
+          <AlbumDetails>
+            <AlbumTitle>Tales From Yggdrasil</AlbumTitle>
+            <ReleaseInfo>Art Gates Records | June 2019</ReleaseInfo>
+            <iframe 
+              title="Tales From Yggdrasil Sample on Spotify" 
+              src="https://open.spotify.com/embed/album/6WIQW0JtBAgoKuUuuwclcP" 
+              width="325" 
+              height="360" 
+              frameBorder="0" 
+              allowtransparency="true" 
+              allow="encrypted-media"
+            ></iframe>
+          </AlbumDetails>
+        </AlbumContainer>
 
-      <HavamalVideos />
+        <Line />
+
+        <AlbumContainer css={css`padding-bottom: 2rem;`}>
+          <StaticImage
+            src="../resources/albums/cotn.jpg"
+            alt="album cover for Call of The North"
+            layout="constrained"
+            placeholder="blurred"
+            css={css`
+              margin-right: 2rem;
+              max-width: 500px;
+              height: auto;
+          `}
+          />
+          <AlbumDetails>
+            <AlbumTitle>Call Of The North</AlbumTitle>
+            <ReleaseInfo>Independent | June 2017</ReleaseInfo>
+            <iframe 
+              title="Call Of The North Sample on Spotify" 
+              src=" https://open.spotify.com/embed/album/2GrDVeDkYT0IEIHiwNeaQz" 
+              width="325" 
+              height="360" 
+              frameBorder="0" 
+              allowtransparency="true" 
+              allow="encrypted-media"
+            ></iframe>
+          </AlbumDetails>
+        </AlbumContainer>
+      </section>
+
+      <section id="videoList">
+        <HavamalVideos />
+      </section>
     </Layout>
   )
 }
