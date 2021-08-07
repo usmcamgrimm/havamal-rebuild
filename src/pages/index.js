@@ -59,15 +59,19 @@ export default function Index() {
       <section id="raids">
         <Raids />
       </section>
-      <h1 css={css`
-        font-family: grenze;
-        font-size: 2rem;
-        color: #004b87;
-        text-align: center;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-      `}>Follow Havamal:</h1>
-      <LinkLayout />
+
+      <section id="linksSection">
+        <h1 css={css`
+          font-family: grenze;
+          font-size: 2rem;
+          color: #004b87;
+          text-align: center;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        `}>Follow Havamal:</h1>
+        <LinkLayout />
+      </section>
+
     </Layout> 
   )
 }
