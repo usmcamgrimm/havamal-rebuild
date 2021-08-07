@@ -55,14 +55,17 @@ export default function Index() {
           videoTitle="Nidhöggr"
         />
       </VideoContainer>
-      <Raids />
-        <h1 css={css`
-          font-family: grenze;
-          font-size: 2rem;
-          color: #004b87;
-          text-align: center;
-          margin-top: 2rem;
-          margin-bottom: 2rem;
+      
+      <section id="raids">
+        <Raids />
+      </section>
+      <h1 css={css`
+        font-family: grenze;
+        font-size: 2rem;
+        color: #004b87;
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
       `}>Follow Havamal:</h1>
       <LinkLayout />
     </Layout> 
