@@ -12,6 +12,9 @@ const VideoContainer = styled.div`
     display: block;
     content: '';
   }
+  @media screen and (min-width: 1025px) {
+    width: 60%;
+  }
   @media screen and (max-width: 1024px) {
     width: 80%;
   } 
