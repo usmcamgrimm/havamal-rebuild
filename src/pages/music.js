@@ -19,9 +19,12 @@ const AlbumContainer = styled.div`
   align-items: center;
 `;
 const AlbumDetails = styled.div`
-  disp[lay: flex;
-    flex-directioon: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (max-width: 768px) {
+    margin-top: 1.5rem;
+  }
 `;
 const AlbumTitle = styled.h3`
   font-family: grenze;
@@ -60,6 +63,11 @@ export default function MusicPage() {
             margin-right: 2rem;
             max-width: 500px;
             height: auto;
+            box-shadow: 2px 4px 12px #000000;
+            @media screen and (max-width: 500px) {
+              margin: 0 auto;
+              max-width: 90%;
+            }
           `}
         />
         <AlbumDetails>
@@ -89,6 +97,11 @@ export default function MusicPage() {
               margin-right: 2rem;
               max-width: 500px;
               height: auto;
+              box-shadow: 2px 4px 12px #000000;
+              @media screen and (max-width: 500px) {
+                margin: 0 auto;
+                max-width: 90%;
+              }
           `}
           />
           <AlbumDetails>
@@ -118,6 +131,11 @@ export default function MusicPage() {
               margin-right: 2rem;
               max-width: 500px;
               height: auto;
+              box-shadow: 2px 4px 12px #000000;
+              @media screen and (max-width: 500px) {
+                margin: 0 auto;
+                max-width: 90%;
+              }
           `}
           />
           <AlbumDetails>
