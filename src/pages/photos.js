@@ -15,7 +15,7 @@ export default function PhotosPage() {
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 4rem;
-      `}>The Hymns of Havamal</h1>
+      `}>Havamal Photos</h1>
 
       <SimpleReactLightbox>
         <MediaGallery />

@@ -60,7 +60,8 @@ export default function MediaGallery() {
     }
   `)
 
-  const HavamalImages = data.MediaGallery.edges;
+  const HavamalImages = data.media.edges;
+
   return (
     <SRLWrapper options={options}>
       <MediaGrid>
