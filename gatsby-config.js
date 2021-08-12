@@ -32,5 +32,14 @@ module.exports = {
         maxResults: 50,
       }
     },
+    {
+      resolve: `gatsby-source-sanity`,
+      options: {
+        projectId: `wdalvcgt`,
+        dataset: `production`,
+        watchMode: true,
+        token: process.env.SANITY_TOKEN,
+      }
+    },
   ],
 };
