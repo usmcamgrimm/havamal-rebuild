@@ -6,12 +6,6 @@ module.exports = {
     title: "Havamal",
   },
   plugins: [
-    {
-      resolve: "gatsby-source-datocms",
-      options: {
-        apiToken: "d5a27da30d3916ea38abc0ab6bbbe7",
-      },
-    },
     "gatsby-plugin-emotion",
     "gatsby-plugin-image",
     "gatsby-plugin-react-helmet",

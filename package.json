@@ -31,7 +31,6 @@
     "gatsby-plugin-sharp": "^3.9.0",
     "gatsby-plugin-sitemap": "^4.5.0",
     "gatsby-source-cloudinary": "^0.1.14",
-    "gatsby-source-datocms": "^2.6.16",
     "gatsby-source-filesystem": "^3.9.0",
     "gatsby-transformer-sharp": "^3.9.0",
     "react": "^17.0.1",
