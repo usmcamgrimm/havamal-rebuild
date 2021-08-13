@@ -29,7 +29,25 @@ export default function NavLinks() {
       </a>
       <NavLink to="/photos">Photos</NavLink>
       <NavLink to="/saga">Saga</NavLink>
-      <NavLink to="/raids">Raids</NavLink>
+      <a href="../#raids"
+        css={css`
+          color: #ffcd00;
+          font-family: grenze;
+          font-size: 1.25rem;
+          text-decoration: none;
+          padding: 8px 1.25rem;
+          :hover {
+            color: #ffffff;
+          }
+          @media screen and (max-width: 768px) {
+            padding: 12px 0;
+            font-size: 1.75rem;
+            z-index: 5;
+          }
+        `}
+      >
+        Raids
+      </a>
       <NavLink to="/news">News</NavLink>
       <NavLink to="/resources">Resources</NavLink>
     </>
