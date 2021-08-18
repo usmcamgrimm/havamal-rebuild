@@ -21,7 +21,7 @@ const PhotoStyle = styled.div`
   }
   padding: 6px;
   img:hover {
-    transform: scale(2);
+    transform: scale(1.4);
     cursor: crosshair;
   }
 `;
