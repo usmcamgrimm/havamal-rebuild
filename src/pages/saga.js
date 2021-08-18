@@ -7,7 +7,7 @@ import styled from '@emotion/styled'
 const Band = styled.div`
   display: grid;
   place-items: center;
-  grid-gap: 1rem;;
+  grid-gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding: 0;
   @media screen and (min-width: 1026px) {
