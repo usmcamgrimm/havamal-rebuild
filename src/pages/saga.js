@@ -8,9 +8,8 @@ const Band = styled.div`
   display: grid;
   place-items: center;
   grid-gap: 1rem;;
-  grid-template-columns: (auto-fit, minmax(150px, 1fr));
-  padding: 0 7rem;
-  margin: 0 auto;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  padding: 0;
   @media screen and (min-width: 1026px) {
     padding: 0rem;
   }
