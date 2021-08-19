@@ -1,54 +1,24 @@
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/e9457660-cd47-47cc-a30c-fb92560a7bb1/deploy-status)](https://app.netlify.com/sites/havamal-rebuild-test/deploys) -->
+
 <p align="center">
-  <a href="https://www.gatsbyjs.com/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
+  <!-- <a href="https://havamal-rebuild-test.netlify.app/">
+    <img alt="Havamal" src="https://i.imgur.com/q3rDwYw.png" />
+  </a> -->
+  <img alt="Havamal" src="https://i.imgur.com/q3rDwYw.png" />
 </p>
-<h1 align="center">
-  Gatsby minimal starter
-</h1>
+<h1 align="center">Hail Havamal!</h1>
 
-## 🚀 Quick start
+### Website for the Swedish band **[HAVAMAL](https://havamalband.com)**
 
-1.  **Create a Gatsby site.**
+### This website is built using these resources and technologies:
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+* GatsbyJS
+* Sanity CMS
+* Cloudinary
+* Emotion
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+What started as a project for the VetsWhoCode cohort has evolved and is now in its 4th iteration. I started it, then scrapped it, started again, then wrote the entire project in HTML, CSS, and JavaScript. 
 
-2.  **Start developing.**
+I wasn't happy with the result and felt limited. I decided to re-write the project in Gatsby so I could work with React and incorporate some features from Gatsby.  My goal was to learn different technologies while improving the speed and usability of the website.
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
-
-4.  **Learn more**
-
-    - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Guides](https://www.gatsbyjs.com/tutorial/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Plugin Library](https://www.gatsbyjs.com/plugins?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
-
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
+While upgrading the project to Gatsby version 3, I kept Sanity and traded TailwindCSS for Emotion. 
