@@ -1,7 +1,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e9457660-cd47-47cc-a30c-fb92560a7bb1/deploy-status)](https://app.netlify.com/sites/havamal-rebuild-test/deploys)
 
 <p align="center">
-  <a href="https://havamal-rebuild-test.netlify.app/">
+  <a href="https://havamalband.com/">
     <img alt="Havamal" src="https://i.imgur.com/q3rDwYw.png" />
   </a>
 </p>
