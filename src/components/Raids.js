@@ -12,17 +12,11 @@ const EventTitle = styled.p`
 const LocationTitle = styled.p`
   grid-area: location;
 `
-const InfoTitle = styled.div`
-  grid-area: info;
-  font-family: grenze;
-  color: #ffffff;
-  text-decoration: none;
-`
 const RaidContainer = styled.div`
   margin: 0 auto;
   display: grid;
   place-items: center;
-  grid-template-columns: 200px 300px 300px . 100px;
+  grid-template-columns: 200px 300px 300px;
   grid-template-rows: auto;
   grid-template-areas:
     "date event location info";
@@ -39,21 +33,6 @@ const Line = styled.hr`
   margin-bottom: 2rem;
   border-bottom: 1px solid rgba(147, 147, 147, 0.4);
 `;
-// const RaidDescription = styled.div`
-//   display: flex;
-//   flex-flow: row wrap;
-//   place-content: center;
-//   width: 450px;
-//   font-size: 1.25rem;
-//   color: #ffffff;
-// `
-// const RaidInformation = styled.div`
-//   display: flex;
-//   flex-flow: row nowrap;
-//   justify-content: space-between;
-//   font-size: 1rem;
-//   color: #ffffff;
-// `
 
 export default function Raids() {
   return(
@@ -65,42 +44,40 @@ export default function Raids() {
         text-align: center;
         margin-bottom: 4rem;
       `}>Upcoming Raids</h1>
-      <RaidContainer>
+      <RaidContainer
+        as="a"
+        href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo"
+        target="_blank" 
+        rel="noreferrer"
+        css={css`
+          text-decoration: none;
+          &:hover {
+            color: #004b87;
+            transform: scale(1.05);
+          }
+        `}
+      >
         <DateTitle>10 Sept 2021</DateTitle>
         <EventTitle className="event">Raise Your Horns</EventTitle>
         <LocationTitle className="location" css={css`grid-area: location`}>Musikhuzet, Rønne, Denmark</LocationTitle>
-        <InfoTitle
-          as="a"
-          href="https://www.facebook.com/raiseyourhornsdk/"
-          target="_blank" 
-          rel="noreferrer"
-          css={css`
-            &:hover {
-              color: #ffcd00;
-            }
-          `}
-        >
-          INFO
-        </InfoTitle>
       </RaidContainer>
       <Line />
-      <RaidContainer>
+      <RaidContainer
+        as="a"
+        href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo"
+        target="_blank" 
+        rel="noreferrer"
+        css={css`
+          text-decoration: none;
+          &:hover {
+            color: #004b87;
+            transform: scale(1.05);
+          }
+        `}
+      >
         <DateTitle>28 May 2022</DateTitle>
         <EventTitle className="event">Järfälla Metal Fest</EventTitle>
         <LocationTitle className="location" css={css`grid-area: location`}>Fredagsmangel, Järfälla, Sweden</LocationTitle>
-        <InfoTitle
-          as="a"
-          href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo"
-          target="_blank" 
-          rel="noreferrer"
-          css={css`
-            &:hover {
-              color: #ffcd00;
-            }
-          `}
-        >
-          INFO
-        </InfoTitle>
       </RaidContainer>
     </>
   )
