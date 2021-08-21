@@ -59,7 +59,7 @@ export default function Raids() {
       >
         <DateTitle>10 Sept 2021</DateTitle>
         <EventTitle className="event">Raise Your Horns</EventTitle>
-        <LocationTitle className="location" css={css`grid-area: location`}>Musikhuzet, Rønne, Denmark</LocationTitle>
+        <LocationTitle className="location">Musikhuzet, Rønne, Denmark</LocationTitle>
       </RaidContainer>
       <Line />
       <RaidContainer
@@ -77,7 +77,7 @@ export default function Raids() {
       >
         <DateTitle>28 May 2022</DateTitle>
         <EventTitle className="event">Järfälla Metal Fest</EventTitle>
-        <LocationTitle className="location" css={css`grid-area: location`}>Fredagsmangel, Järfälla, Sweden</LocationTitle>
+        <LocationTitle className="location">Fredagsmangel, Järfälla, Sweden</LocationTitle>
       </RaidContainer>
     </>
   )
