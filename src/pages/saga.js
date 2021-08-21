@@ -10,9 +10,8 @@ const Band = styled.div`
   grid-gap: 12px;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   padding: 0;
-  @media screen and (min-width: 1026px) {
-    padding: 0rem;
-  }
+  width: 50%;
+  margin: 0 auto;
   @media screen and (max-width: 500px) {
     display: flex;
     justify-content: center;
