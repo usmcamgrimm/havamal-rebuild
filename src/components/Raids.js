@@ -19,12 +19,11 @@ const RaidContainer = styled.div`
   grid-template-columns: 200px 300px 300px;
   grid-template-rows: auto;
   grid-template-areas:
-    "date event location info";
+    "date event location";
   grid-gap: 12px;
   font-family: grenze;
   font-size: 1.4rem;
   color: #ffffff;
-  width: 50%;
 `
 const Line = styled.hr`
   width: 50%;
@@ -51,9 +50,11 @@ export default function Raids() {
         rel="noreferrer"
         css={css`
           text-decoration: none;
+          display: flex;
+          justify-content: space-evenly;
           &:hover {
             color: #004b87;
-            transform: scale(1.05);
+            transform: scale(1.01);
           }
         `}
       >
@@ -69,6 +70,8 @@ export default function Raids() {
         rel="noreferrer"
         css={css`
           text-decoration: none;
+          display: flex;
+          justify-content: space-evenly;
           &:hover {
             color: #004b87;
             transform: scale(1.05);
