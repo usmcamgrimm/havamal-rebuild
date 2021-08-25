@@ -1,6 +1,7 @@
 import React from 'react'
+import { graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
@@ -19,8 +20,26 @@ const Band = styled.div`
     padding: 1rem 7rem;
   }
 `;
+const HW = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .gatsby-image-wrapper {
+    max-width: 250px;
+    height: auto;
+    box-shadow: 5px 3px 16px rgba(0, 0, 0, 0.8);
+  }
+  a {
+    text-align: center;
+  }
+  .bio {
+    padding: 6px;
+    text-align: center;
+  }
+`;
 
-export default function Saga() {
+export default function Saga({ data }) {
+  const hymnweavers = data.hymnweavers.nodes
   return (
     <Layout>
       <h1 css={css`
@@ -32,57 +51,36 @@ export default function Saga() {
         margin-bottom: 4rem;
       `}>The Hymn Weavers</h1>
       <Band>
-        <StaticImage
-          src="../resources/band-photos/andreas.jpg"
-          alt="Andreas Herlogsson"
-          placeholder="blurred"
-          layout="constrained"
-          css={css`
-            max-width: 150px;
-            border-radius: 5px;
-          `}
-        />
-        <StaticImage
-          src="../resources/band-photos/bjorn.jpg"
-          alt="Andreas Herlogsson"
-          placeholder="blurred"
-          layout="constrained"
-          css={css`
-            max-width: 150px;
-            border-radius: 5px;
-          `}
-        />
-        <StaticImage
-          src="../resources/band-photos/Kjell.jpg"
-          alt="Andreas Herlogsson"
-          placeholder="blurred"
-          layout="constrained"
-          css={css`
-            max-width: 150px;
-            border-radius: 5px;
-          `}
-        />
-        <StaticImage
-          src="../resources/band-photos/lennie.jpg"
-          alt="Andreas Herlogsson"
-          placeholder="blurred"
-          layout="constrained"
-          css={css`
-            max-width: 150px;
-            border-radius: 5px;
-          `}
-        />
-        <StaticImage
-          src="../resources/band-photos/tino.jpg"
-          alt="Andreas Herlogsson"
-          placeholder="blurred"
-          layout="constrained"
-          css={css`
-            max-width:150px;
-            border-radius: 5px;
-          `}
-        />
+        {hymnweavers.map(band => (
+          <HW>
+            <p>{`${band.name}`}</p>
+            <p>{`${band.instrument}`}</p>
+            <GatsbyImage image={band.image.asset.fluid} />
+          </HW>
+        ))}
       </Band>
     </Layout>
   )
 }
+
+export const query = graphql`
+  query {
+    hymnweavers: allSanityBand {
+      nodes {
+        name
+        id
+        instrument
+        slug {
+          current
+        }
+        image {
+          asset {
+            gatsbyImageData(
+              width: 250
+            )
+          }
+        }
+      }
+    }
+  }
+`;
