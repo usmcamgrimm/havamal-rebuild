@@ -29,11 +29,10 @@ const HW = styled.div`
     height: auto;
     box-shadow: 5px 3px 16px rgba(0, 0, 0, 0.8);
   }
-  a {
-    text-align: center;
-  }
-  .bio {
-    padding: 6px;
+  p {
+    font-family: grenze;
+    color: #ffffff;
+    font-size: 1.4rem;
     text-align: center;
   }
 `;
