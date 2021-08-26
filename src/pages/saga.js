@@ -55,7 +55,7 @@ export default function Saga({ data }) {
           <HW>
             <p>{`${band.name}`}</p>
             <p>{`${band.instrument}`}</p>
-            <GatsbyImage image={band.image.asset.fluid} />
+            <GatsbyImage image={band.image.asset.gatsbyImageData} />
           </HW>
         ))}
       </Band>
