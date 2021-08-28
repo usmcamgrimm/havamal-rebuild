@@ -56,7 +56,7 @@ export default function Saga({ data }) {
       <h1 css={css`
         font-family: grenze;
         font-size: 2rem;
-        color: #004b87;
+        color: #66add9;
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 4rem;
@@ -78,7 +78,7 @@ export default function Saga({ data }) {
         <h1 css={css`
           font-family: grenze;
           font-size: 2rem;
-          color: #004b87;
+          color: #66add9;
           text-align: center;
           margin-top: 4rem;
           margin-bottom: 4rem;
@@ -99,7 +99,7 @@ export default function Saga({ data }) {
           <h1 css={css`
             font-family: Norse;
             font-size: 3rem;
-            color: #004b87;
+            color: #66add9;
             text-align: center;
             margin-top: 4rem;
         `}>Hail Havamal!</h1>

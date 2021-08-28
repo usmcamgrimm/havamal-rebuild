@@ -56,15 +56,20 @@ export default function Index() {
         />
       </VideoContainer>
       
-      <section id="raids">
+      <section id="raids"
+        css={css`
+            margin-bottom: 3rem;
+        `}
+      >
         <Raids />
       </section>
 
       <section id="linksSection">
         <h1 css={css`
           font-family: grenze;
-          font-size: 2rem;
-          color: #004b87;
+          font-size: 3rem;
+          font-weight: normal;
+          color: #66add9;
           text-align: center;
           margin-top: 2rem;
           margin-bottom: 2rem;
@@ -81,7 +86,7 @@ const Welcome = styled.h1`
   font-size: clamp(1.5rem, 4rem, 5rem);
   font-weight: normal;
   text-align: center;
-  color: #004b87;
+  color: #66add9;
   padding: 2rem;
 `
 const Container = styled.div`

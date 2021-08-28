@@ -43,8 +43,9 @@ export default function Raids() {
     <>
       <h1 css={css`
         font-family: grenze;
-        font-size: 2rem;
-        color: #004b87;
+        font-size: 3rem;
+        font-weight: normal;
+        color: #66add9;
         text-align: center;
         margin-bottom: 4rem;
       `}>Upcoming Raids</h1>

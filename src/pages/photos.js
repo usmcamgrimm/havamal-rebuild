@@ -10,8 +10,9 @@ export default function PhotosPage() {
     <Layout>
       <h1 css={css`
         font-family: grenze;
-        font-size: 2rem;
-        color: #004b87;
+        font-size: 3rem;
+        font-weight: normal;
+        color: #66add9;
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 4rem;
