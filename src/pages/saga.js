@@ -32,8 +32,11 @@ const HW = styled.div`
   p {
     font-family: grenze;
     color: #ffffff;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     text-align: center;
+  }
+  p.instrument {
+    color: #66add9;
   }
 `;
 const SagaContainer = styled.div`
@@ -69,7 +72,7 @@ export default function Saga({ data }) {
           {hymnweavers.map(band => (
             <HW>
               <p>{`${band.name}`}</p>
-              <p>{`${band.instrument}`}</p>
+              <p className="instrument">{`${band.instrument}`}</p>
               <GatsbyImage image={band.image.asset.gatsbyImageData} />
             </HW>
           ))}
