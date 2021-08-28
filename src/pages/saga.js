@@ -40,13 +40,14 @@ const SagaContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 80%;
   text-align: start;
+  margin: 0 auto;
+  width: 60%;
 `;
 const SagaText = styled.p`
   font-family: grenze;
   color: #ffffff;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 `;
 
 export default function Saga({ data }) {
@@ -55,7 +56,8 @@ export default function Saga({ data }) {
     <Layout>
       <h1 css={css`
         font-family: grenze;
-        font-size: 2rem;
+        font-size: 3rem;
+        font-weight: normal;
         color: #66add9;
         text-align: center;
         margin-top: 4rem;
@@ -77,7 +79,8 @@ export default function Saga({ data }) {
       <section id="havamal-saga">
         <h1 css={css`
           font-family: grenze;
-          font-size: 2rem;
+          font-size: 3rem;
+          font-weight: normal;
           color: #66add9;
           text-align: center;
           margin-top: 4rem;
