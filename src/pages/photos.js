@@ -9,7 +9,7 @@ export default function PhotosPage() {
   return (
     <Layout>
       <h1 css={css`
-        font-family: grenze;
+        font-family: Norse;
         font-size: 3rem;
         font-weight: normal;
         color: #66add9;

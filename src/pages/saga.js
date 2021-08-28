@@ -55,14 +55,14 @@ export default function Saga({ data }) {
   return (
     <Layout>
       <h1 css={css`
-        font-family: grenze;
+        font-family: Norse;
         font-size: 3rem;
         font-weight: normal;
         color: #66add9;
         text-align: center;
         margin-top: 4rem;
         margin-bottom: 4rem;
-      `}>The Hymn Weavers</h1>
+      `}>The Hymn-Weavers</h1>
 
       <section id="band-images">
         <Band>
@@ -78,13 +78,13 @@ export default function Saga({ data }) {
 
       <section id="havamal-saga">
         <h1 css={css`
-          font-family: grenze;
+          font-family: Norse;
           font-size: 3rem;
           font-weight: normal;
           color: #66add9;
           text-align: center;
           margin-top: 4rem;
-          margin-bottom: 4rem;
+          margin-bottom: 2rem;
         `}>The Havamal Saga</h1>
         <SagaContainer>
           <SagaText>
