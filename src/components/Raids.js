@@ -77,7 +77,7 @@ export default function Raids() {
             text-decoration: none;
             &:hover {
               color: #004b87;
-              transform: scale(1.05);
+              transform: scale(1.01);
             }
           `}
         >
