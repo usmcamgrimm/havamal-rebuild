@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import Nidhoggr from '../components/Nidhoggr'
+import ContactForm from '../components/ContactForm'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -9,6 +10,9 @@ const BackgroundWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+`;
+const ContactContainer = styled.div`
+  display: flex;
 `;
 
 export default function resources() {
@@ -30,6 +34,12 @@ export default function resources() {
           `}
         />
       </BackgroundWrapper>
+
+      <section id="contactArea">
+        <ContactContainer>
+          <ContactForm />
+        </ContactContainer>
+      </section>
     </Layout>
   )
 }
