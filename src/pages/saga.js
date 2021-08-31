@@ -100,7 +100,7 @@ export default function Saga({ data }) {
             Signed by Art Gates Records in 2019, the first full-length album, <strong>Tales From Yggdrasil</strong>, was released. Once again proving their musical prowess, Havamal unleashed many raids throughout their home country and spread their music. Hopefully we will soon see Havamal set sail on their longships, expanding their reach and raiding across the globe.
           </SagaText>
           <SagaText>
-            Havamal's second full-length album, "The Shadow Chapter", is out NOW!
+            Havamal's second full-length album, <strong>The Shadow Chapter</strong>, is out NOW!
           </SagaText>
           <h1 css={css`
             font-family: Norse;
