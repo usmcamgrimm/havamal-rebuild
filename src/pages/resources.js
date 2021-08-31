@@ -13,6 +13,17 @@ const BackgroundWrapper = styled.div`
 `;
 const ContactContainer = styled.div`
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  width: 80%;
+  margin: 0 auto;
+`;
+const ContactBox = styled.div`
+  display: flex
+  flex-direction: row;
+  justify-content: space-evenly;
 `;
 
 export default function resources() {
@@ -37,7 +48,9 @@ export default function resources() {
 
       <section id="contactArea">
         <ContactContainer>
-          <ContactForm />
+          <ContactBox>
+            <ContactForm />
+          </ContactBox>
         </ContactContainer>
       </section>
     </Layout>
