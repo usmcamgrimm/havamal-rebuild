@@ -34,6 +34,7 @@ const HW = styled.div`
     color: #ffffff;
     font-size: 1.2rem;
     text-align: center;
+    margin-bottom: 0;
   }
   p.instrument {
     color: #66add9;
