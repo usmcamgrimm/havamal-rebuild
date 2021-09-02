@@ -25,7 +25,7 @@ const ContactBox = styled.div`
 width: 50%;
   display: flex
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
 `;
 
