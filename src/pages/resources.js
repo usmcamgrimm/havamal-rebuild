@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Nidhoggr from '../components/Nidhoggr'
 import ContactForm from '../components/ContactForm'
+import ContactInfo from '../components/ContactInfo'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -13,17 +14,19 @@ const BackgroundWrapper = styled.div`
 `;
 const ContactContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   width: 80%;
   margin: 0 auto;
 `;
 const ContactBox = styled.div`
+width: 50%;
   display: flex
-  flex-direction: row;
-  justify-content: space-evenly;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
 `;
 
 export default function resources() {
@@ -38,18 +41,21 @@ export default function resources() {
         margin-top: 4rem;
         margin-bottom: 4rem;
       `}>Contact Information</h1>
-      <BackgroundWrapper>
+      {/* <BackgroundWrapper>
         <Nidhoggr
           css={css`
             z-index: -1;
           `}
         />
-      </BackgroundWrapper>
+      </BackgroundWrapper> */}
 
       <section id="contactArea">
         <ContactContainer>
           <ContactBox>
             <ContactForm />
+          </ContactBox>
+          <ContactBox>
+            <ContactInfo />
           </ContactBox>
         </ContactContainer>
       </section>
