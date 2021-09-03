@@ -28,6 +28,11 @@ width: 50%;
   justify-content: center;
   align-items: center;
 `;
+const MerchWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
 
 export default function resources() {
   return (
@@ -58,6 +63,20 @@ export default function resources() {
             <ContactInfo />
           </ContactBox>
         </ContactContainer>
+      </section>
+
+      <section id="merch">
+        <MerchWrapper>
+          <h1 css={css`
+          font-family: Norse;
+          font-size: 3rem;
+          font-weight: normal;
+          color: #66add9;
+          text-align: center;
+          margin-top: 4rem;
+          margin-bottom: 4rem;
+        `}>Havamal Merch!</h1>
+        </MerchWrapper>
       </section>
     </Layout>
   )
