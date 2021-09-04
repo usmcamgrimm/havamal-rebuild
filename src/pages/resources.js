@@ -1,17 +1,17 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import Nidhoggr from '../components/Nidhoggr'
+//import Nidhoggr from '../components/Nidhoggr'
 import ContactForm from '../components/ContactForm'
 import ContactInfo from '../components/ContactInfo'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-const BackgroundWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
+// const BackgroundWrapper = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+// `;
 const ContactContainer = styled.div`
   display: flex;
   flex-flow: row wrap;
@@ -20,14 +20,15 @@ const ContactContainer = styled.div`
   border-radius: 5px;
   width: 80%;
   margin: 0 auto;
+  border: 2px solid #66add9;
+  box-shadow: 6px 6px 12px #000000;
 `;
 const ContactBox = styled.div`
   width: 50%;
-  display: flex
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid #66add9;
 `;
 const MerchWrapper = styled.div`
   display: flex;
@@ -57,6 +58,18 @@ export default function resources() {
 
       <section id="contactArea">
         <ContactContainer>
+          <p
+            css={css`
+              font-family: grenze;
+              font-size: 1.25rem;
+              color: #66add9;
+              text-align: center;
+              padding-top: 12px;
+              margin-bottom: 12px;
+            `}
+          >
+            Use the form or use the link to send an email to havamal
+          </p>
           <ContactBox>
             <ContactForm />
           </ContactBox>
