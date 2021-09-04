@@ -22,11 +22,12 @@ const ContactContainer = styled.div`
   margin: 0 auto;
 `;
 const ContactBox = styled.div`
-width: 50%;
+  width: 50%;
   display: flex
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid #66add9;
 `;
 const MerchWrapper = styled.div`
   display: flex;
@@ -75,7 +76,7 @@ export default function resources() {
           text-align: center;
           margin-top: 4rem;
           margin-bottom: 4rem;
-        `}>Havamal Merch!</h1>
+        `}>Havamal Merch</h1>
         </MerchWrapper>
       </section>
     </Layout>
