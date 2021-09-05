@@ -25,6 +25,7 @@
     "dotenv": "^10.0.0",
     "formik": "^2.2.9",
     "gatsby": "^3.13.0",
+    "gatsby-cli": "^3.13.0",
     "gatsby-plugin-emotion": "^6.13.0",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-mdx": "^2.13.0",
