@@ -14,21 +14,31 @@ import styled from '@emotion/styled'
 // `;
 const ContactContainer = styled.div`
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
-  border: 2px solid #66add9;
+  padding-top: 3rem;
   box-shadow: 6px 6px 12px #000000;
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    left: 0;
+    width: 100%;
+  }
 `;
 const ContactBox = styled.div`
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
 `;
 const MerchWrapper = styled.div`
   display: flex;
@@ -57,19 +67,19 @@ export default function resources() {
       </BackgroundWrapper> */}
 
       <section id="contactArea">
+        <p
+          css={css`
+            font-family: grenze;
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            color: #66add9;
+            text-align: center;
+            padding: 12px 1rem;
+            margin-bottom: 12px;
+          `}
+        >
+          Use the form or use the link to send an email to havamal
+        </p>
         <ContactContainer>
-          <p
-            css={css`
-              font-family: grenze;
-              font-size: 1.25rem;
-              color: #66add9;
-              text-align: center;
-              padding-top: 12px;
-              margin-bottom: 12px;
-            `}
-          >
-            Use the form or use the link to send an email to havamal
-          </p>
           <ContactBox>
             <ContactForm />
           </ContactBox>

@@ -3,18 +3,31 @@ import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import { navigate } from 'gatsby'
 
+import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 const FormWrapper = styled.div`
   margin: 0 auto;
-  width: 50%;
+  width: 60%;
   @media (max-width: 768px) {
     width: 100%;
     padding: 12px;
   }
 `;
 const SubmitBtn = styled.button`
-  background-color: #004b87;
+  background: #004b87;
+  font-family: grenze;
+  color: #ffcd00;
+  font-size: 1.1rem;
+  tex-align: center;
+  padding: 12px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: none;
+  width: 100%;
+  &:hover {
+    background: #002f54;
+  }
 `;
 export default function ContactForm() {
   const encode = (data) => {
@@ -62,12 +75,30 @@ export default function ContactForm() {
           className="flex flex-col justify-center items:center;"
           name="contactForm"
           data-netlify={true}
+          css={css`
+            width: 100%;
+          `}
         >
           <label htmlFor="name">
-            <p className="font-grenze text-blue-lighter text-xl">Your Name</p>
+            <p
+              css={css`
+                font-family: grenze;
+                font-size: 1.1rem;
+                color: #ffffff;
+                margin-bottom: 0;
+              `}>Your Name</p>
           </label>
           <Field
-            className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+            css={css`
+              focus {
+                outline: 1px solid #66add9;
+              }
+              border-radius: 5px;
+              padding: 8px;
+              margin: 8px 0 12px 0;
+              width: 100%;
+              font-family: grenze;
+            `}
             name="name"
             type="text"
             placeholder="Name"
@@ -75,10 +106,25 @@ export default function ContactForm() {
           <ErrorMessage name="name" />
 
           <label htmlFor="email">
-            <p className="font-grenze text-blue-lighter text-xl pt-4">Email Address</p>
+            <p
+              css={css`
+                font-family: grenze;
+                font-size: 1.1rem;
+                color: #ffffff;
+                margin-bottom: 0;
+              `}>Email Address</p>
           </label>
           <Field
-            className="w-full mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+            css={css`
+              focus {
+                outline: 1px solid #66add9;
+              }
+              border-radius: 5px;
+              padding: 8px;
+              margin: 8px 0 12px 0;
+              width: 100%;
+              font-family: grenze;
+            `}
             name="email"
             type="email"
             placeholder="Email address"
@@ -86,10 +132,26 @@ export default function ContactForm() {
           <ErrorMessage name="email" />
 
           <label htmlFor="message">
-           <p className="font-grenze text-blue-lighter text-xl pt-4">Message</p>
+            <p
+              css={css`
+                font-family: grenze;
+                font-size: 1.1rem;
+                color: #ffffff;
+                margin-bottom: 0;
+              `}>Message</p>
           </label>
           <Field
-            className="form-textarea w-full h-24 mt-2 p-2 rounded-lg focus:outline-none focus:shadow-outline"
+            css={css`
+              width: 100%;
+              height: 6rem;
+              margin-top: 8px;
+              padding: 8px;
+              border-radius: 5px;
+              font-family: grenze;
+              focus {
+                outline: 1px solid #66add9;
+              }
+            `}
             as="text-area"
             component="textarea"
             name="message"
@@ -98,8 +160,7 @@ export default function ContactForm() {
           <ErrorMessage name="message" />
 
           <div className="mt-4">
-            <SubmitBtn 
-              className="text-xl font-grenze text-yellow text-center tracking-wide p-3 mb-2 rounded-lg w-full focus:outline-none focus:shadow-outline hover:bg-blue-darker"
+            <SubmitBtn
               type="submit"
             >
               Submit Message

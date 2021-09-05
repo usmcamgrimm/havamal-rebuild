@@ -3,30 +3,12 @@ import React from 'react'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-const HAVAMAL = styled.div`
+const Contact = styled.div`
   padding: 8px 1rem;
   p {
     font-family: grenze;
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 6px;
-  }
-`;
-const AGR = styled.div`
-  padding: 1rem;
-  p {
-    font-family: grenze;
-    font-size: 1.2rem;
-    color: #ffffff;
-    margin-bottom: 6px;
-  }
-`;
-const HFP = styled.div`
-  padding: 8px 1rem;
-  p {
-    font-family: grenze;
-    font-size: 1.2rem;
-    color: #ffffff;
+    font-size: 1.6rem;
+;    color: #ffffff;
     margin-bottom: 6px;
   }
 `;
@@ -34,7 +16,7 @@ const HFP = styled.div`
 export default function ContactInfo() {
   return (
     <>
-      <HAVAMAL>
+      <Contact>
         <a 
           href="https://www.facebook.com/Havamalofficial" 
           target="_blank" 
@@ -56,9 +38,9 @@ export default function ContactInfo() {
         >
           <p>havamal[at]email.com</p>
         </a>
-      </HAVAMAL>
+      </Contact>
 
-      <AGR>
+      <Contact>
         <a 
           href="https://artgatesrecords.com/" 
           target="_blank" 
@@ -80,9 +62,9 @@ export default function ContactInfo() {
         >
           <p>info[at]artgatesrecords.com</p>
         </a>
-      </AGR>
+      </Contact>
 
-      <HFP>
+      <Contact>
         <a 
           href="https://www.facebook.com/HellFrogPromotion/" 
           target="_blank" 
@@ -104,7 +86,7 @@ export default function ContactInfo() {
         >
           <p>hellfrog.prom[at]hotmail.com</p>
         </a>
-      </HFP>
+      </Contact>
     </>
   )
 }
