@@ -77,7 +77,7 @@ export default function resources() {
             margin-bottom: 12px;
           `}
         >
-          Use the form or use the link to send an email to havamal
+          Use the form or use the link to send an email to Havamal
         </p>
         <ContactContainer>
           <ContactBox>
