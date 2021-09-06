@@ -8,7 +8,7 @@ const Contact = styled.div`
   p {
     font-family: grenze;
     font-size: 1.6rem;
-;    color: #ffffff;
+    color: #ffffff;
     margin-bottom: 6px;
   }
 `;

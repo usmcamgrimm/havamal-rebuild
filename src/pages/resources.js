@@ -15,7 +15,7 @@ import styled from '@emotion/styled'
 const ContactContainer = styled.div`
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-evenly;
+  align-items: center;
   background: rgba(0, 0, 0, 0.6);
   border-radius: 5px;
   width: 60%;
@@ -27,7 +27,7 @@ const ContactContainer = styled.div`
     justify-content: center;
     margin: 0 auto;
     left: 0;
-    width: 100%;
+    width: 90%;
   }
 `;
 const ContactBox = styled.div`
@@ -77,7 +77,7 @@ export default function resources() {
             margin-bottom: 12px;
           `}
         >
-          Use the form or use the link to send an email to Havamal
+          Complete the form or use the link to send an email to Havamal
         </p>
         <ContactContainer>
           <ContactBox>
