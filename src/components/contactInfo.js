@@ -40,7 +40,7 @@ export default function ContactInfo() {
         </a>
       </Contact>
 
-      <Contact>
+      <Contact css={css`padding-left: 0;`}>
         <a 
           href="https://artgatesrecords.com/" 
           target="_blank" 
