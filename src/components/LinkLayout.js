@@ -10,9 +10,12 @@ const LinkGrid = styled.div`
   grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
   @media screen and (max-width: 500px) {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding-right: 1rem;
     padding-left: 1rem;
+    width: 70%;
+    margin: 0;
   }
 `;
 const LinkItem = styled.div`
@@ -132,7 +135,7 @@ export default function LinkLayout() {
             <StaticImage
               src="../resources/icons/AGR.png"
               alt="art gates records icon"
-              layout="fixed"
+              layout="constrained"
               width={400}
             />
           </a>
