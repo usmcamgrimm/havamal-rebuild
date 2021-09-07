@@ -7,9 +7,7 @@ const RaidWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  @media screen and (max-width: 500px) {
-    display: none;
-  }
+  margin: 0 auto;
 `;
 const DateTitle = styled.p`
   grid-area: date;
@@ -32,6 +30,12 @@ const RaidContainer = styled.div`
   font-family: grenze;
   font-size: 1.4rem;
   color: #ffffff;
+  @media screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 1rem;
+  }
 `;
 const Line = styled.hr`
   width: 50%;
