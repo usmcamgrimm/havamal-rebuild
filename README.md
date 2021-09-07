@@ -24,3 +24,6 @@ I wasn't happy with the result and felt limited. I decided to re-write the proje
 Wanting to expand my knowledge of CSS frameworks, I began styling with TailwindCSS, then added styled-components to fill in some gaps.
 
 This site is currently being upgraded to GatsbyJS v3 so updates are not as frequent, for the time being. 
+
+### Workflow Visualization
+![Codebase Visualization](./workflow-diagram.svg)
