@@ -4,14 +4,10 @@ import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
 const LinkGrid = styled.div`
-  display: grid;
-  place-items: center;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(300, 1fr));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   @media screen and (max-width: 500px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding-right: 1rem;
     padding-left: 1rem;
     width: 70%;
@@ -28,6 +24,7 @@ const LinkItem = styled.div`
   .gatsby-image-wrapper {
     margin: 8px;
   }
+  margin: 0;
 `;
 const BannerLinks = styled.div`
   display: flex;
