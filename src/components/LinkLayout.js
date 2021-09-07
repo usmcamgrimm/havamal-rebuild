@@ -8,10 +8,8 @@ const LinkGrid = styled.div`
   flex-direction: column;
   align-items: center;
   @media screen and (max-width: 500px) {
-    padding-right: 1rem;
-    padding-left: 1rem;
-    width: 70%;
-    margin: 0;
+    padding-right: 4rem;
+    padding-left: 4rem;
   }
 `;
 const LinkItem = styled.div`
