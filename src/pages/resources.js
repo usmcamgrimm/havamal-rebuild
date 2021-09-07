@@ -29,6 +29,9 @@ const ContactContainer = styled.div`
     left: 0;
     width: 90%;
   }
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    width: 90%;
+  }
 `;
 const ContactBox = styled.div`
   width: 50%;
