@@ -29,7 +29,7 @@ const NewsWrapper = styled.div`
 
 function SinglePost({ news }) {
   return <NewsItem>
-    <link to={`/post/${news.slug.current}`}>
+    <Link to={`/post/${news.slug.current}`}>
       <h2
         css={css`
           font-size: 1.5rem;
@@ -51,7 +51,7 @@ function SinglePost({ news }) {
         image={news.image.asset.gatsbyImageData} 
         alt={news.name} 
         css={css`max-width: 20rem;`} />
-    </link>
+    </Link>
   </NewsItem>
 }
 
