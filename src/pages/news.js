@@ -1,11 +1,12 @@
 import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
+import NewsPosts from '../components/NewsPosts'
 
 import { css } from '@emotion/react'
-import styled from '@emotion/styled'
+// import styled from '@emotion/styled'
 
-export default function news() {
+export default function news({ data }) {
   const news = data.news.nodes;
   return (
     <Layout>
