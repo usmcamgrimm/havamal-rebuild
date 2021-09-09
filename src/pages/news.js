@@ -6,7 +6,7 @@ import NewsPosts from '../components/NewsPosts'
 import { css } from '@emotion/react'
 // import styled from '@emotion/styled'
 
-export default function news({ data }) {
+export default function NewsPage({ data }) {
   const news = data.news.nodes;
   return (
     <Layout>
