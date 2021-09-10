@@ -1,6 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
-import GatsbyImage from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 import styled from '@emotion/styled'
 
@@ -27,9 +27,9 @@ export const query = graphql`
       postAuthor
       image {
         asset {
-          fluid(maxWidth: 500) {
-            ...GatsbySanityImageFluid
-          }
+          gatsbyImageData(
+            width: 500
+          )
         }
       }
       newsItem

@@ -1,5 +1,6 @@
 import React from 'react'
 import { graphql } from 'gatsby'
+import {GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
 import NewsPosts from '../components/NewsPosts'
 
@@ -25,8 +26,8 @@ export default function NewsPage({ data }) {
   )
 }
 
-export const query = graphql;`
-  query NewsQuery {
+export const query = graphql`
+  query {
     news: allSanityNewsPost(sort: {fields: postDate, order: DESC}) {
       nodes {
         name
@@ -39,9 +40,9 @@ export const query = graphql;`
         newsItem
         image {
           asset {
-            fluid(maxWidth: 400) {
-              ...GatsbySanityImageFluid
-            }
+            gatsbyImageData(
+              width: 400
+            )
           }
         }
       }
