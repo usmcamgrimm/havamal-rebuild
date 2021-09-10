@@ -25,5 +25,5 @@ Wanting to expand my knowledge of CSS frameworks, I began styling with TailwindC
 
 This site is currently being upgraded to GatsbyJS v3 so updates are not as frequent, for the time being. 
 
-### Workflow Visualization
-![Codebase Visualization](./workflow-diagram.svg)
+<!-- ### Workflow Visualization
+![Codebase Visualization](./workflow-diagram.svg) -->
