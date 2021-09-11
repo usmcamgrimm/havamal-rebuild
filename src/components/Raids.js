@@ -74,24 +74,6 @@ export default function Raids() {
           <EventTitle className="event">Raise Your Horns</EventTitle>
           <LocationTitle className="location">Musikhuzet, Rønne, Denmark</LocationTitle>
         </RaidContainer>
-        <Line />
-        <RaidContainer
-          as="a"
-          href="https://www.facebook.com/2228032767282124/posts/3635924743159579/?sfnsn=mo"
-          target="_blank" 
-          rel="noreferrer"
-          css={css`
-            text-decoration: none;
-            &:hover {
-              color: #004b87;
-              transform: scale(1.01);
-            }
-          `}
-        >
-          <DateTitle>28 May 2022</DateTitle>
-          <EventTitle className="event">Järfälla Metal Fest</EventTitle>
-          <LocationTitle className="location">Fredagsmangel, Järfälla, Sweden</LocationTitle>
-        </RaidContainer>
       </RaidWrapper>
     </>
   )
