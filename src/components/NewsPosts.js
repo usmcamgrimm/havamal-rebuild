@@ -29,11 +29,15 @@ const NewsWrapper = styled.div`
 
 function SinglePost({ news }) {
   return <NewsItem>
-    <Link to={`/post/${news.slug.current}`}>
+    <Link 
+      to={`/post/${news.slug.current}`}
+      css={css`text-decoration: none`}
+    >
       <h2
         css={css`
           font-size: 1.5rem;
           font-family: grenze;
+          font-weight: normal;
           color: #66add9;
           margin: 0;
           &:hover {
@@ -44,13 +48,20 @@ function SinglePost({ news }) {
         css={css`
           font-size: 1.5rem;
           font-family: grenze;
+          font-weight: normal;
           color: #66add9;
-          margin: 0;
+          margin-bottom: 8px;
         `}>{news.postAuthor}</h2>
       <GatsbyImage
         image={news.image.asset.gatsbyImageData} 
         alt={news.name} 
-        css={css`max-width: 20rem;`} />
+        css={css`
+          max-width: 20rem;
+          box-shadow: 1px 3px 8px #000000;
+          &:hover {
+            box-shadow: 2px 4px 12px rgba(102, 173, 217, 0.25);
+          }
+        `} />
     </Link>
   </NewsItem>
 }
