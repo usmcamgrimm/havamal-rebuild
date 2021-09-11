@@ -6,7 +6,7 @@ async function newsPostPages({ graphql, actions }) {
 
   const { data } = await graphql(`
     query {
-      updates: allSanityNerwsPost {
+      updates: allSanityNewsPost {
         nodes {
           name
           slug {
@@ -28,7 +28,7 @@ async function newsPostPages({ graphql, actions }) {
 }
 
 exports.createPages = async function (params) {
-  await Promise, all([
+  await Promise.all([
     newsPostPages(params),
   ])
 }
