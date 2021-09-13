@@ -13,8 +13,12 @@ const ScrollButton = styled.div`
   font-size: 2.25rem;
   z-index: 10;
   color: #66add9;
+  font-weight: normal;
   &:hover {
     color: #ffffff;
+  }
+  @media screen and (max-width: 500px) {
+    display: none;
   }
 `;
 
