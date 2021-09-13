@@ -3,6 +3,7 @@ import Layout from '../components/Layout'
 //import Nidhoggr from '../components/Nidhoggr'
 import ContactForm from '../components/ContactForm'
 import ContactInfo from '../components/ContactInfo'
+import Merch from '../components/Merch'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -42,11 +43,6 @@ const ContactBox = styled.div`
   @media screen and (max-width: 768px) {
     width: 100%;
   }
-`;
-const MerchWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 `;
 
 export default function resources() {
@@ -93,17 +89,7 @@ export default function resources() {
       </section>
 
       <section id="merch">
-        <MerchWrapper>
-          <h1 css={css`
-          font-family: Norse;
-          font-size: 3rem;
-          font-weight: normal;
-          color: #66add9;
-          text-align: center;
-          margin-top: 4rem;
-          margin-bottom: 4rem;
-        `}>Havamal Merch</h1>
-        </MerchWrapper>
+        <Merch />
       </section>
     </Layout>
   )
