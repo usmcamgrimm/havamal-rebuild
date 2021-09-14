@@ -41,6 +41,8 @@ export default {
       title: 'News Item',
       description: 'Newsworthy posts from Havamal for updates and such',
       type: 'text'
+      // type: 'array',
+      // of: [{type: 'block'}]
     }
   ]
 }
