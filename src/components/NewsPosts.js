@@ -21,10 +21,14 @@ const NewsGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   grid-gap: 2rem;
+  width: 80%;
 `;
 const NewsWrapper = styled.div`
   max-width: 100%;
   padding: 1rem 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 `;
 
 function SinglePost({ news }) {
