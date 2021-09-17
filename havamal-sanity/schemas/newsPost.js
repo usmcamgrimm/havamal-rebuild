@@ -36,13 +36,47 @@ export default {
         hotspot: true,
       },
     },
+    // {
+    //   name: 'newsItem',
+    //   title: 'News Item',
+    //   description: 'Newsworthy posts from Havamal for updates and such',
+    //   type: 'text'
+    // },
     {
-      name: 'newsItem',
-      title: 'News Item',
-      description: 'Newsworthy posts from Havamal for updates and such',
-      type: 'text'
-      // type: 'array',
-      // of: [{type: 'block'}]
+      name: 'News Block COntent',
+      name: 'blockContent',
+      type: 'array',
+      of: [
+        {
+          title: 'News Block',
+          type: 'block',
+          styles: [
+            {title: 'Normal', value: 'normal'},
+            {title: 'Quote', value: 'blockquote'}
+          ],
+          lists: [{title: 'Bullet', value: 'bullet'}],
+          marks: {
+            decorators: [
+              {title: 'Strong', value: 'strong'}, 
+              {title: 'Emphasis', value: 'em'}
+            ],
+            annotations: [
+              {
+                title: 'URL',
+                name: 'link',
+                type: 'object',
+                fields: [
+                  {
+                    title: 'URL',
+                    name: 'href',
+                    type: 'url'
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
     }
   ]
 }
