@@ -43,8 +43,8 @@ export default {
     //   type: 'text'
     // },
     {
-      name: 'News Block COntent',
-      name: 'blockContent',
+      name: 'newsItem',
+      title: 'News Block Content',
       type: 'array',
       of: [
         {
