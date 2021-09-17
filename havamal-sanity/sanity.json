@@ -1,11 +1,11 @@
 {
   "root": true,
+  "api": {
+    "projectId": "v5p9avbf",
+    "dataset": "production"
+  },
   "project": {
     "name": "havamal"
-  },
-  "api": {
-    "projectId": "wdalvcgt",
-    "dataset": "production"
   },
   "plugins": [
     "@sanity/base",
