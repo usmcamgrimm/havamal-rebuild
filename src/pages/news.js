@@ -7,7 +7,7 @@ import NewsPosts from '../components/NewsPosts'
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
 
-const PostIntro = styled.p`]
+const PostIntro = styled.p`
   font-family: grenze;
   font-size: 1.1rem;
   color: #ffffff;
@@ -15,7 +15,7 @@ const PostIntro = styled.p`]
 `;
 
 export default function NewsPage({ data }) {
-  const news = data.news.nodes;
+  const news = data.news.nodes.newsItem;
   return (
     <Layout>
       <h1 css={css`
@@ -32,7 +32,7 @@ export default function NewsPage({ data }) {
         Stay up to date with Havamal!
       </PostIntro>
       <PostIntro>
-        There are {news.length} posts listed on this page.
+        There are 0 posts listed on this page.
       </PostIntro>
       <NewsPosts news={news} />
     </Layout>
@@ -50,7 +50,6 @@ export const query = graphql`
         }
         postDate
         postAuthor
-        newsItem
         image {
           asset {
             gatsbyImageData(
