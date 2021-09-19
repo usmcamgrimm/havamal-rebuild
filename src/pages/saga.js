@@ -115,25 +115,3 @@ export default function Saga({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    hymnweavers: allSanityBand {
-      nodes {
-        name
-        id
-        instrument
-        slug {
-          current
-        }
-        image {
-          asset {
-            gatsbyImageData(
-              width: 250
-            )
-          }
-        }
-      }
-    }
-  }
-`;

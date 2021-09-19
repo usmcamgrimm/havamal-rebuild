@@ -38,26 +38,3 @@ export default function NewsPage({ data }) {
     </Layout>
   )
 }
-
-export const query = graphql`
-  query {
-    news: allSanityNewsPost(sort: {fields: postDate, order: DESC}) {
-      nodes {
-        name
-        id
-        slug {
-          current
-        }
-        postDate
-        postAuthor
-        image {
-          asset {
-            gatsbyImageData(
-              width: 400
-            )
-          }
-        }
-      }
-    }
-  }
-`;
