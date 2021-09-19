@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import {GatsbyImage } from 'gatsby-plugin-image'
 import Layout from '../components/layout'
-import NewsPosts from '../components/NewsPosts'
+// import NewsPosts from '../components/NewsPosts'
 
 import { css } from '@emotion/react'
 import styled from '@emotion/styled'
@@ -14,8 +14,9 @@ const PostIntro = styled.p`
   text-align: center;
 `;
 
-export default function NewsPage({ data }) {
-  const news = data.news.nodes.newsItem;
+// export default function NewsPage({ data }) {
+export default function NewsPage() {
+  // const news = data.news.nodes.newsItem;
   return (
     <Layout>
       <h1 css={css`
@@ -34,7 +35,7 @@ export default function NewsPage({ data }) {
       <PostIntro>
         There are 0 posts listed on this page.
       </PostIntro>
-      <NewsPosts news={news} />
+      {/* <NewsPosts news={news} /> */}
     </Layout>
   )
 }

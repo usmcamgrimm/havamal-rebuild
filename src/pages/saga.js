@@ -70,13 +70,16 @@ export default function Saga({ data }) {
 
       <section id="band-images">
         <Band>
-          {hymnweavers.map(band => (
+          <HW>
+            <p>Band photos will go here</p>
+          </HW>
+          {/* {hymnweavers.map(band => (
             <HW>
               <p>{`${band.name}`}</p>
               <p className="instrument">{`${band.instrument}`}</p>
               <GatsbyImage image={band.image.asset.gatsbyImageData} />
             </HW>
-          ))}
+          ))} */}
         </Band>
       </section>
 
